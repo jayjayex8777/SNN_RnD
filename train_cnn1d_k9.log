@@ -1,0 +1,167 @@
+/home/bst/Thumbthing_easy/train_cnn1d_k9.py:211: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  torch.quantization.prepare(model_q, inplace=True)
+/home/bst/Thumbthing_easy/train_cnn1d_k9.py:215: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  torch.quantization.convert(model_q, inplace=True)
+/home/bst/Thumbthing_easy/train_cnn1d_k9.py:393: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_dq = torch.quantization.quantize_dynamic(
+  Loaded 2532 samples from ./data/2_ffilled_data
+Total samples: 2532
+Device: cuda
+Kernel size: 9
+Training: Conv1d, GN+ReLU, grad_accum=16, label_smooth=0.1, cosine_LR, patience=30
+
+============================================================
+Conv1d CNN smallest (ch=16,32, k=9)
+============================================================
+  Parameters: 6,612  Size: 25.8KB
+  [Epoch   1] Train: 0.5827  Val: 0.9803  Loss: 1.1626  LR: 9.9e-04  Best: 0.9803
+  [Epoch   5] Train: 0.9753  Val: 0.9822  Loss: 0.4819  LR: 8.5e-04  Best: 0.9862
+  [Epoch  10] Train: 0.9827  Val: 0.9803  Loss: 0.4523  LR: 5.0e-04  Best: 0.9862
+  [Epoch  15] Train: 0.9906  Val: 0.9842  Loss: 0.4372  LR: 1.5e-04  Best: 0.9862
+  [Epoch  20] Train: 0.9891  Val: 0.9842  Loss: 0.4264  LR: 1.0e-03  Best: 0.9862
+  [Epoch  25] Train: 0.9872  Val: 0.9842  Loss: 0.4422  LR: 9.6e-04  Best: 0.9862
+  [Epoch  30] Train: 0.9877  Val: 0.9803  Loss: 0.4268  LR: 8.5e-04  Best: 0.9862
+  Early stopping at epoch 34 (patience=30)
+  FP32 PTL: ./models/cnn1d_smallest_sensor.ptl (38.3 KB)
+
+  Quantizing smallest...
+  Quantized Val Acc: 0.9507 (FP32 best: 0.9862)
+  Quantized PTL: ./models/qcnn1d_smallest_sensor.ptl (39.1 KB)
+
+============================================================
+Conv1d CNN small (ch=24,48, k=9)
+============================================================
+  Parameters: 13,372  Size: 52.2KB
+  [Epoch   1] Train: 0.6533  Val: 0.9665  Loss: 1.0179  LR: 9.9e-04  Best: 0.9665
+  [Epoch   5] Train: 0.9837  Val: 0.9803  Loss: 0.4428  LR: 8.5e-04  Best: 0.9822
+  [Epoch  10] Train: 0.9901  Val: 0.9822  Loss: 0.4165  LR: 5.0e-04  Best: 0.9822
+  [Epoch  15] Train: 0.9931  Val: 0.9862  Loss: 0.4066  LR: 1.5e-04  Best: 0.9862
+  [Epoch  20] Train: 0.9936  Val: 0.9882  Loss: 0.4027  LR: 1.0e-03  Best: 0.9901
+  [Epoch  25] Train: 0.9921  Val: 0.9862  Loss: 0.4116  LR: 9.6e-04  Best: 0.9901
+  [Epoch  30] Train: 0.9956  Val: 0.9822  Loss: 0.4066  LR: 8.5e-04  Best: 0.9901
+  [Epoch  35] Train: 0.9936  Val: 0.9842  Loss: 0.4009  LR: 6.9e-04  Best: 0.9921
+  [Epoch  40] Train: 0.9941  Val: 0.9862  Loss: 0.4018  LR: 5.0e-04  Best: 0.9921
+  [Epoch  45] Train: 0.9975  Val: 0.9921  Loss: 0.3919  LR: 3.1e-04  Best: 0.9921
+  [Epoch  50] Train: 0.9975  Val: 0.9901  Loss: 0.3943  LR: 1.5e-04  Best: 0.9921
+  [Epoch  55] Train: 0.9985  Val: 0.9842  Loss: 0.3906  LR: 3.8e-05  Best: 0.9921
+  [Epoch  60] Train: 0.9980  Val: 0.9901  Loss: 0.3907  LR: 1.0e-03  Best: 0.9921
+  Early stopping at epoch 64 (patience=30)
+  FP32 PTL: ./models/cnn1d_small_sensor.ptl (64.5 KB)
+
+  Quantizing small...
+  Quantized Val Acc: 0.9546 (FP32 best: 0.9921)
+  Quantized PTL: ./models/qcnn1d_small_sensor.ptl (65.1 KB)
+
+============================================================
+Conv1d CNN medium (ch=32,64, k=9)
+============================================================
+  Parameters: 22,436  Size: 87.6KB
+  [Epoch   1] Train: 0.6988  Val: 0.9684  Loss: 0.9524  LR: 9.9e-04  Best: 0.9684
+  [Epoch   5] Train: 0.9822  Val: 0.9763  Loss: 0.4327  LR: 8.5e-04  Best: 0.9842
+  [Epoch  10] Train: 0.9911  Val: 0.9803  Loss: 0.4047  LR: 5.0e-04  Best: 0.9842
+  [Epoch  15] Train: 0.9951  Val: 0.9842  Loss: 0.3935  LR: 1.5e-04  Best: 0.9862
+  [Epoch  20] Train: 0.9946  Val: 0.9882  Loss: 0.3892  LR: 1.0e-03  Best: 0.9882
+  [Epoch  25] Train: 0.9936  Val: 0.9862  Loss: 0.3969  LR: 9.6e-04  Best: 0.9882
+  [Epoch  30] Train: 0.9946  Val: 0.9842  Loss: 0.3918  LR: 8.5e-04  Best: 0.9882
+  [Epoch  35] Train: 0.9970  Val: 0.9862  Loss: 0.3853  LR: 6.9e-04  Best: 0.9882
+  [Epoch  40] Train: 0.9965  Val: 0.9862  Loss: 0.3868  LR: 5.0e-04  Best: 0.9901
+  [Epoch  45] Train: 0.9970  Val: 0.9862  Loss: 0.3835  LR: 3.1e-04  Best: 0.9901
+  [Epoch  50] Train: 0.9980  Val: 0.9921  Loss: 0.3786  LR: 1.5e-04  Best: 0.9921
+  [Epoch  55] Train: 0.9990  Val: 0.9882  Loss: 0.3789  LR: 3.8e-05  Best: 0.9921
+  [Epoch  60] Train: 0.9995  Val: 0.9921  Loss: 0.3788  LR: 1.0e-03  Best: 0.9941
+  [Epoch  65] Train: 0.9956  Val: 0.9783  Loss: 0.3893  LR: 9.9e-04  Best: 0.9941
+  [Epoch  70] Train: 0.9980  Val: 0.9862  Loss: 0.3864  LR: 9.6e-04  Best: 0.9941
+  [Epoch  75] Train: 0.9990  Val: 0.9901  Loss: 0.3833  LR: 9.2e-04  Best: 0.9941
+  [Epoch  80] Train: 0.9965  Val: 0.9822  Loss: 0.3820  LR: 8.5e-04  Best: 0.9941
+  [Epoch  85] Train: 0.9980  Val: 0.9882  Loss: 0.3810  LR: 7.8e-04  Best: 0.9941
+  Early stopping at epoch 89 (patience=30)
+  FP32 PTL: ./models/cnn1d_medium_sensor.ptl (100.0 KB)
+
+  Quantizing medium...
+  Quantized Val Acc: 0.9763 (FP32 best: 0.9941)
+  Quantized PTL: ./models/qcnn1d_medium_sensor.ptl (100.4 KB)
+
+============================================================
+Conv1d CNN large (ch=40,80, k=9)
+============================================================
+  Parameters: 33,804  Size: 132.0KB
+  [Epoch   1] Train: 0.7353  Val: 0.9428  Loss: 0.8928  LR: 9.9e-04  Best: 0.9428
+  [Epoch   5] Train: 0.9867  Val: 0.9783  Loss: 0.4175  LR: 8.5e-04  Best: 0.9822
+  [Epoch  10] Train: 0.9931  Val: 0.9842  Loss: 0.3961  LR: 5.0e-04  Best: 0.9842
+  [Epoch  15] Train: 0.9951  Val: 0.9842  Loss: 0.3865  LR: 1.5e-04  Best: 0.9882
+  [Epoch  20] Train: 0.9960  Val: 0.9882  Loss: 0.3828  LR: 1.0e-03  Best: 0.9882
+  [Epoch  25] Train: 0.9931  Val: 0.9822  Loss: 0.3918  LR: 9.6e-04  Best: 0.9882
+  [Epoch  30] Train: 0.9960  Val: 0.9822  Loss: 0.3873  LR: 8.5e-04  Best: 0.9882
+  [Epoch  35] Train: 0.9946  Val: 0.9842  Loss: 0.3838  LR: 6.9e-04  Best: 0.9901
+  [Epoch  40] Train: 0.9985  Val: 0.9882  Loss: 0.3776  LR: 5.0e-04  Best: 0.9921
+  [Epoch  45] Train: 0.9990  Val: 0.9921  Loss: 0.3765  LR: 3.1e-04  Best: 0.9921
+  [Epoch  50] Train: 0.9995  Val: 0.9941  Loss: 0.3734  LR: 1.5e-04  Best: 0.9941
+  [Epoch  55] Train: 0.9990  Val: 0.9882  Loss: 0.3728  LR: 3.8e-05  Best: 0.9941
+  [Epoch  60] Train: 0.9985  Val: 0.9882  Loss: 0.3735  LR: 1.0e-03  Best: 0.9941
+  [Epoch  65] Train: 0.9965  Val: 0.9882  Loss: 0.3825  LR: 9.9e-04  Best: 0.9941
+  [Epoch  70] Train: 0.9975  Val: 0.9803  Loss: 0.3799  LR: 9.6e-04  Best: 0.9941
+  [Epoch  75] Train: 0.9970  Val: 0.9882  Loss: 0.3779  LR: 9.2e-04  Best: 0.9941
+  [Epoch  80] Train: 0.9990  Val: 0.9921  Loss: 0.3743  LR: 8.5e-04  Best: 0.9941
+  Early stopping at epoch 80 (patience=30)
+  FP32 PTL: ./models/cnn1d_large_sensor.ptl (144.3 KB)
+
+  Quantizing large...
+  Quantized Val Acc: 0.9724 (FP32 best: 0.9941)
+  Quantized PTL: ./models/qcnn1d_large_sensor.ptl (144.5 KB)
+
+============================================================
+Conv1d CNN largest (ch=48,96, k=9)
+============================================================
+  Parameters: 47,476  Size: 185.5KB
+  [Epoch   1] Train: 0.7269  Val: 0.9645  Loss: 0.8948  LR: 9.9e-04  Best: 0.9645
+  [Epoch   5] Train: 0.9891  Val: 0.9803  Loss: 0.4110  LR: 8.5e-04  Best: 0.9822
+  [Epoch  10] Train: 0.9926  Val: 0.9822  Loss: 0.3920  LR: 5.0e-04  Best: 0.9842
+  [Epoch  15] Train: 0.9951  Val: 0.9862  Loss: 0.3828  LR: 1.5e-04  Best: 0.9862
+  [Epoch  20] Train: 0.9960  Val: 0.9882  Loss: 0.3815  LR: 1.0e-03  Best: 0.9882
+  [Epoch  25] Train: 0.9936  Val: 0.9763  Loss: 0.3892  LR: 9.6e-04  Best: 0.9882
+  [Epoch  30] Train: 0.9941  Val: 0.9862  Loss: 0.3855  LR: 8.5e-04  Best: 0.9882
+  [Epoch  35] Train: 0.9956  Val: 0.9901  Loss: 0.3805  LR: 6.9e-04  Best: 0.9901
+  [Epoch  40] Train: 0.9970  Val: 0.9842  Loss: 0.3750  LR: 5.0e-04  Best: 0.9901
+  [Epoch  45] Train: 0.9975  Val: 0.9862  Loss: 0.3741  LR: 3.1e-04  Best: 0.9901
+  [Epoch  50] Train: 0.9990  Val: 0.9882  Loss: 0.3710  LR: 1.5e-04  Best: 0.9901
+  [Epoch  55] Train: 0.9975  Val: 0.9842  Loss: 0.3712  LR: 3.8e-05  Best: 0.9921
+  [Epoch  60] Train: 0.9980  Val: 0.9882  Loss: 0.3704  LR: 1.0e-03  Best: 0.9921
+  [Epoch  65] Train: 0.9970  Val: 0.9882  Loss: 0.3794  LR: 9.9e-04  Best: 0.9921
+  [Epoch  70] Train: 0.9946  Val: 0.9803  Loss: 0.3794  LR: 9.6e-04  Best: 0.9921
+  [Epoch  75] Train: 0.9975  Val: 0.9862  Loss: 0.3742  LR: 9.2e-04  Best: 0.9921
+  [Epoch  80] Train: 0.9980  Val: 0.9882  Loss: 0.3718  LR: 8.5e-04  Best: 0.9921
+  Early stopping at epoch 81 (patience=30)
+  FP32 PTL: ./models/cnn1d_largest_sensor.ptl (197.9 KB)
+
+  Quantizing largest...
+  Quantized Val Acc: 0.9744 (FP32 best: 0.9921)
+  Quantized PTL: ./models/qcnn1d_largest_sensor.ptl (197.9 KB)
+
+
+================================================================================
+SUMMARY: Conv1d CNN (kernel=9)
+================================================================================
+Variant      Params     FP32 Best   Q-INT8     FP32 KB   Q KB     
+-----------------------------------------------------------------
+smallest     6,612      0.9862      0.9507     38.3      39.1     
+small        13,372     0.9921      0.9546     64.5      65.1     
+medium       22,436     0.9941      0.9763     100.0     100.4    
+large        33,804     0.9941      0.9724     144.3     144.5    
+largest      47,476     0.9921      0.9744     197.9     197.9    
+
+Results saved to ./result/cnn1d_k9_results.json

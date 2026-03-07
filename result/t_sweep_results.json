@@ -1,0 +1,142 @@
+[
+  {
+    "T": 3,
+    "variant": "smallest",
+    "kernel_size": 3,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 7652,
+    "size_kb": 67.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9092,
+    "best_score": 1.9092
+  },
+  {
+    "T": 3,
+    "variant": "smallest",
+    "kernel_size": 3,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 7652,
+    "size_kb": 67.4,
+    "best_score": 1.7923
+  },
+  {
+    "T": 3,
+    "variant": "small",
+    "kernel_size": 5,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 12516,
+    "size_kb": 86.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9492,
+    "best_score": 1.9492
+  },
+  {
+    "T": 3,
+    "variant": "small",
+    "kernel_size": 5,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 12516,
+    "size_kb": 86.4,
+    "best_score": 1.9196
+  },
+  {
+    "T": 3,
+    "variant": "medium",
+    "kernel_size": 7,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 17380,
+    "size_kb": 105.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9571,
+    "best_score": 1.9571
+  },
+  {
+    "T": 3,
+    "variant": "medium",
+    "kernel_size": 7,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 17380,
+    "size_kb": 105.4,
+    "best_score": 1.9546
+  },
+  {
+    "T": 3,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9551,
+    "best_score": 1.9551
+  },
+  {
+    "T": 3,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "best_score": 1.9546
+  },
+  {
+    "T": 3,
+    "variant": "largest",
+    "kernel_size": 11,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 27108,
+    "size_kb": 143.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9536,
+    "best_score": 1.9536
+  },
+  {
+    "T": 3,
+    "variant": "largest",
+    "kernel_size": 11,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 27108,
+    "size_kb": 143.4,
+    "best_score": 1.9655
+  }
+]

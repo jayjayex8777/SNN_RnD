@@ -1,0 +1,92 @@
+[
+  {
+    "variant": "smallest",
+    "type": "Conv1dCNN_k9",
+    "kernel_size": 9,
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6612,
+    "size_kb": 25.8,
+    "best_val_acc": 0.9861932938856016,
+    "file_kb_ptl": 38.3,
+    "pt_path": "./models/cnn1d_smallest_sensor.pt",
+    "ptl_path": "./models/cnn1d_smallest_sensor.ptl",
+    "q_val_acc": 0.9506903353057199,
+    "q_file_kb_ptl": 39.1,
+    "q_ptl_path": "./models/qcnn1d_smallest_sensor.ptl"
+  },
+  {
+    "variant": "small",
+    "type": "Conv1dCNN_k9",
+    "kernel_size": 9,
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13372,
+    "size_kb": 52.2,
+    "best_val_acc": 0.9921104536489151,
+    "file_kb_ptl": 64.5,
+    "pt_path": "./models/cnn1d_small_sensor.pt",
+    "ptl_path": "./models/cnn1d_small_sensor.ptl",
+    "q_val_acc": 0.9546351084812623,
+    "q_file_kb_ptl": 65.1,
+    "q_ptl_path": "./models/qcnn1d_small_sensor.ptl"
+  },
+  {
+    "variant": "medium",
+    "type": "Conv1dCNN_k9",
+    "kernel_size": 9,
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22436,
+    "size_kb": 87.6,
+    "best_val_acc": 0.9940828402366864,
+    "file_kb_ptl": 100.0,
+    "pt_path": "./models/cnn1d_medium_sensor.pt",
+    "ptl_path": "./models/cnn1d_medium_sensor.ptl",
+    "q_val_acc": 0.9763313609467456,
+    "q_file_kb_ptl": 100.4,
+    "q_ptl_path": "./models/qcnn1d_medium_sensor.ptl"
+  },
+  {
+    "variant": "large",
+    "type": "Conv1dCNN_k9",
+    "kernel_size": 9,
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33804,
+    "size_kb": 132.0,
+    "best_val_acc": 0.9940828402366864,
+    "file_kb_ptl": 144.3,
+    "pt_path": "./models/cnn1d_large_sensor.pt",
+    "ptl_path": "./models/cnn1d_large_sensor.ptl",
+    "q_val_acc": 0.9723865877712031,
+    "q_file_kb_ptl": 144.5,
+    "q_ptl_path": "./models/qcnn1d_large_sensor.ptl"
+  },
+  {
+    "variant": "largest",
+    "type": "Conv1dCNN_k9",
+    "kernel_size": 9,
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47476,
+    "size_kb": 185.5,
+    "best_val_acc": 0.9921104536489151,
+    "file_kb_ptl": 197.9,
+    "pt_path": "./models/cnn1d_largest_sensor.pt",
+    "ptl_path": "./models/cnn1d_largest_sensor.ptl",
+    "q_val_acc": 0.9743589743589743,
+    "q_file_kb_ptl": 197.9,
+    "q_ptl_path": "./models/qcnn1d_largest_sensor.ptl"
+  }
+]

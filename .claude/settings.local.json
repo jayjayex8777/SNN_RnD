@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /home/bst/Thumbthing_easy_intae/data/2_ffilled_data/*)",
+      "Bash(du -sh /home/bst/Thumbthing_easy_intae/*)"
+    ]
+  }
+}

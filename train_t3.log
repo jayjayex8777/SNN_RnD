@@ -1,0 +1,210 @@
+Device: cuda
+T values to train: [3]
+Kernel sizes: [3, 5, 7, 9, 11]
+
+============================================================
+  T = 3
+============================================================
+
+--- Teacher smallest (k=3, T=3) ---
+  Epoch 1/50 | train=0.4622 | val=0.4398
+  Epoch 11/50 | train=0.9170 | val=0.9073
+  Epoch 21/50 | train=0.9477 | val=0.9389
+  Epoch 31/50 | train=0.9447 | val=0.9448
+  Epoch 41/50 | train=0.9516 | val=0.9487
+/home/bst/Thumbthing_easy/lif_module.py:13: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if self.v is None or self.v.size() != x.size():
+  Epoch 50/50 | train=0.9486 | val=0.9527
+  Exported: snn_smallest_T3.ptl
+  Best score: 1.9092
+
+--- Student smallest (k=3, T=3) ---
+  Epoch 1/50 | train=0.4830 | val=0.4694
+  Epoch 11/50 | train=0.5032 | val=0.5049
+  Epoch 21/50 | train=0.5842 | val=0.6627
+  Epoch 31/50 | train=0.7857 | val=0.7574
+  Epoch 41/50 | train=0.8756 | val=0.8442
+/home/bst/Thumbthing_easy/model.py:76: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if self.v.numel() == 0 or self.v.shape != x.shape:
+  Epoch 50/50 | train=0.9007 | val=0.8718
+  Export failed for student_kd_smallest_T3.ptl: 
+Could not export Python function call '_HardSpikeSTE'. Remove calls to Python functions before export. Did you forget to add @script or @script_method annotation? If this is a nn.ModuleList, add it to __constants__:
+/home/bst/.local/lib/python3.10/site-packages/torch/autograd/function.py(576): apply
+/home/bst/Thumbthing_easy/model.py(83): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/Thumbthing_easy/train_t3.py(87): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1282): trace_module
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(696): _trace_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1002): trace
+/home/bst/Thumbthing_easy/train_t3.py(124): export_ptl
+/home/bst/Thumbthing_easy/train_t3.py(259): main
+/home/bst/Thumbthing_easy/train_t3.py(284): <module>
+
+  Best score: 1.7923
+
+--- Teacher small (k=5, T=3) ---
+  Epoch 1/50 | train=0.4494 | val=0.4753
+  Epoch 11/50 | train=0.9590 | val=0.9586
+  Epoch 21/50 | train=0.9575 | val=0.9645
+  Epoch 31/50 | train=0.9644 | val=0.9744
+  Epoch 41/50 | train=0.9644 | val=0.9487
+  Epoch 50/50 | train=0.9649 | val=0.9625
+  Exported: snn_small_T3.ptl
+  Best score: 1.9492
+
+--- Student small (k=5, T=3) ---
+  Epoch 1/50 | train=0.4904 | val=0.4852
+  Epoch 11/50 | train=0.7462 | val=0.6824
+  Epoch 21/50 | train=0.9086 | val=0.8836
+  Epoch 31/50 | train=0.9402 | val=0.9152
+  Epoch 41/50 | train=0.9521 | val=0.9527
+  Epoch 50/50 | train=0.9541 | val=0.9507
+  Export failed for student_kd_small_T3.ptl: 
+Could not export Python function call '_HardSpikeSTE'. Remove calls to Python functions before export. Did you forget to add @script or @script_method annotation? If this is a nn.ModuleList, add it to __constants__:
+/home/bst/.local/lib/python3.10/site-packages/torch/autograd/function.py(576): apply
+/home/bst/Thumbthing_easy/model.py(83): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/Thumbthing_easy/train_t3.py(87): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1282): trace_module
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(696): _trace_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1002): trace
+/home/bst/Thumbthing_easy/train_t3.py(124): export_ptl
+/home/bst/Thumbthing_easy/train_t3.py(259): main
+/home/bst/Thumbthing_easy/train_t3.py(284): <module>
+
+  Best score: 1.9196
+
+--- Teacher medium (k=7, T=3) ---
+  Epoch 1/50 | train=0.4341 | val=0.5424
+  Epoch 11/50 | train=0.9689 | val=0.9684
+  Epoch 21/50 | train=0.9669 | val=0.9448
+  Epoch 31/50 | train=0.9733 | val=0.9724
+  Epoch 41/50 | train=0.9719 | val=0.9763
+  Epoch 50/50 | train=0.9704 | val=0.9606
+  Exported: snn_medium_T3.ptl
+  Best score: 1.9571
+
+--- Student medium (k=7, T=3) ---
+  Epoch 1/50 | train=0.4760 | val=0.5168
+  Epoch 11/50 | train=0.8425 | val=0.8659
+  Epoch 21/50 | train=0.9541 | val=0.9389
+  Epoch 31/50 | train=0.9704 | val=0.9606
+  Epoch 41/50 | train=0.9733 | val=0.9684
+  Epoch 50/50 | train=0.9763 | val=0.9783
+  Export failed for student_kd_medium_T3.ptl: 
+Could not export Python function call '_HardSpikeSTE'. Remove calls to Python functions before export. Did you forget to add @script or @script_method annotation? If this is a nn.ModuleList, add it to __constants__:
+/home/bst/.local/lib/python3.10/site-packages/torch/autograd/function.py(576): apply
+/home/bst/Thumbthing_easy/model.py(83): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/Thumbthing_easy/train_t3.py(87): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1282): trace_module
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(696): _trace_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1002): trace
+/home/bst/Thumbthing_easy/train_t3.py(124): export_ptl
+/home/bst/Thumbthing_easy/train_t3.py(259): main
+/home/bst/Thumbthing_easy/train_t3.py(284): <module>
+
+  Best score: 1.9546
+
+--- Teacher large (k=9, T=3) ---
+  Epoch 1/50 | train=0.4894 | val=0.6391
+  Epoch 11/50 | train=0.9625 | val=0.9507
+  Epoch 21/50 | train=0.9664 | val=0.9586
+  Epoch 31/50 | train=0.9664 | val=0.9744
+  Epoch 41/50 | train=0.9723 | val=0.9704
+  Epoch 50/50 | train=0.9625 | val=0.9783
+  Exported: snn_large_T3.ptl
+  Best score: 1.9551
+
+--- Student large (k=9, T=3) ---
+  Epoch 1/50 | train=0.5077 | val=0.5187
+  Epoch 11/50 | train=0.9319 | val=0.9290
+  Epoch 21/50 | train=0.9630 | val=0.9625
+  Epoch 31/50 | train=0.9723 | val=0.9763
+  Epoch 41/50 | train=0.9773 | val=0.9645
+  Epoch 50/50 | train=0.9793 | val=0.9684
+  Export failed for student_kd_large_T3.ptl: 
+Could not export Python function call '_HardSpikeSTE'. Remove calls to Python functions before export. Did you forget to add @script or @script_method annotation? If this is a nn.ModuleList, add it to __constants__:
+/home/bst/.local/lib/python3.10/site-packages/torch/autograd/function.py(576): apply
+/home/bst/Thumbthing_easy/model.py(83): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/Thumbthing_easy/train_t3.py(87): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1282): trace_module
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(696): _trace_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1002): trace
+/home/bst/Thumbthing_easy/train_t3.py(124): export_ptl
+/home/bst/Thumbthing_easy/train_t3.py(259): main
+/home/bst/Thumbthing_easy/train_t3.py(284): <module>
+
+  Best score: 1.9546
+
+--- Teacher largest (k=11, T=3) ---
+  Epoch 1/50 | train=0.4775 | val=0.7594
+  Epoch 11/50 | train=0.9610 | val=0.9566
+  Epoch 21/50 | train=0.9615 | val=0.9586
+  Epoch 31/50 | train=0.9689 | val=0.9704
+  Epoch 41/50 | train=0.9654 | val=0.9744
+  Epoch 50/50 | train=0.9659 | val=0.9586
+  Exported: snn_largest_T3.ptl
+  Best score: 1.9536
+
+--- Student largest (k=11, T=3) ---
+  Epoch 1/50 | train=0.4820 | val=0.5030
+  Epoch 11/50 | train=0.9477 | val=0.9625
+  Epoch 21/50 | train=0.9733 | val=0.9625
+  Epoch 31/50 | train=0.9783 | val=0.9783
+  Epoch 41/50 | train=0.9802 | val=0.9744
+  Epoch 50/50 | train=0.9832 | val=0.9822
+  Export failed for student_kd_largest_T3.ptl: 
+Could not export Python function call '_HardSpikeSTE'. Remove calls to Python functions before export. Did you forget to add @script or @script_method annotation? If this is a nn.ModuleList, add it to __constants__:
+/home/bst/.local/lib/python3.10/site-packages/torch/autograd/function.py(576): apply
+/home/bst/Thumbthing_easy/model.py(83): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/Thumbthing_easy/train_t3.py(87): forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1763): _slow_forward
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1784): _call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/nn/modules/module.py(1773): _wrapped_call_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1282): trace_module
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(696): _trace_impl
+/home/bst/.local/lib/python3.10/site-packages/torch/jit/_trace.py(1002): trace
+/home/bst/Thumbthing_easy/train_t3.py(124): export_ptl
+/home/bst/Thumbthing_easy/train_t3.py(259): main
+/home/bst/Thumbthing_easy/train_t3.py(284): <module>
+
+  Best score: 1.9655
+
+============================================================
+Results saved to ./result/t_sweep_results.json
+============================================================
+  T=3 teacher  smallest (k=3): score=1.9092
+  T=3 student  smallest (k=3): score=1.7923
+  T=3 teacher  small    (k=5): score=1.9492
+  T=3 student  small    (k=5): score=1.9196
+  T=3 teacher  medium   (k=7): score=1.9571
+  T=3 student  medium   (k=7): score=1.9546
+  T=3 teacher  large    (k=9): score=1.9551
+  T=3 student  large    (k=9): score=1.9546
+  T=3 teacher  largest  (k=11): score=1.9536
+  T=3 student  largest  (k=11): score=1.9655

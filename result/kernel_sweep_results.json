@@ -1,0 +1,132 @@
+[
+  {
+    "kernel_size": 3,
+    "type": "teacher_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 7652,
+    "size_kb": 136.8,
+    "best_score": 1.962495434290306,
+    "pt": "./models/snn1d_teacher_k3.pt",
+    "variant": "smallest"
+  },
+  {
+    "kernel_size": 5,
+    "type": "teacher_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 12516,
+    "size_kb": 155.8,
+    "best_score": 1.9689093432683178,
+    "pt": "./models/snn1d_teacher_k5.pt",
+    "variant": "small"
+  },
+  {
+    "kernel_size": 7,
+    "type": "teacher_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 17380,
+    "size_kb": 174.8,
+    "best_score": 1.9743385199795456,
+    "pt": "./models/snn1d_teacher_k7.pt",
+    "variant": "medium"
+  },
+  {
+    "kernel_size": 9,
+    "type": "teacher_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 193.8,
+    "best_score": 1.9738446928190518,
+    "pt": "./models/snn1d_teacher_k9.pt",
+    "variant": "large"
+  },
+  {
+    "variant": "largest",
+    "kernel_size": 11,
+    "type": "teacher_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 27108,
+    "size_kb": 209.4,
+    "best_score": 1.9832186427058223,
+    "pt": "./models/snn1d_teacher_largest.pt"
+  },
+  {
+    "kernel_size": 3,
+    "type": "student_kd_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 7652,
+    "size_kb": 136.8,
+    "best_score": 1.8494995982175468,
+    "pt": "./models/snn1d_student_k3.pt",
+    "variant": "smallest"
+  },
+  {
+    "kernel_size": 5,
+    "type": "student_kd_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 12516,
+    "size_kb": 155.8,
+    "best_score": 1.9590357221126453,
+    "pt": "./models/snn1d_student_k5.pt",
+    "variant": "small"
+  },
+  {
+    "kernel_size": 7,
+    "type": "student_kd_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 17380,
+    "size_kb": 174.8,
+    "best_score": 1.9664489736284607,
+    "pt": "./models/snn1d_student_k7.pt",
+    "variant": "medium"
+  },
+  {
+    "kernel_size": 9,
+    "type": "student_kd_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 193.8,
+    "best_score": 1.976313828621521,
+    "pt": "./models/snn1d_student_k9.pt",
+    "variant": "large"
+  },
+  {
+    "variant": "largest",
+    "kernel_size": 11,
+    "type": "student_kd_1d",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 27108,
+    "size_kb": 209.4,
+    "best_score": 1.980752428957557,
+    "pt": "./models/snn1d_student_largest.pt"
+  }
+]
