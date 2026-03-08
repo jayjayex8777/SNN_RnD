@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -lh /home/bst/Thumbthing_easy_intae2/*.log)",
+      "Bash(wc -l /home/bst/Thumbthing_easy_intae2/*.log)",
+      "Bash(pip install openpyxl -q)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/*.pt)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/qsparse_*.ptl)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/qcnn*.ptl)",
+      "Bash(python train_sparse_quant.py)"
+    ]
+  }
+}

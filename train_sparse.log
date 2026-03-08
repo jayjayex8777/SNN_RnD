@@ -1,0 +1,1454 @@
+Device: cuda
+Phase 3: Sparsification with Firing Rate Regularization
+T values: [3, 5, 10, 15]
+Target rates: [0.3, 0.2, 0.1, 0.05]
+Lambda sparse: 5.0
+
+
+======================================================================
+  Variant=smallest (k=3), T=3
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T3.pt
+  Initial firing rates: FR1=0.429, FR2=0.492
+  Epoch   1/40 | train=0.9086 | val=0.8994 | FR1=0.410 FR2=0.482 | thresh=(0.054, 0.305) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9042 | val=0.8974 | FR1=0.336 FR2=0.397 | thresh=(0.488, 1.559) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9077 | val=0.8836 | FR1=0.310 FR2=0.360 | thresh=(0.609, 2.044) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9205 | val=0.8895 | FR1=0.304 FR2=0.348 | thresh=(0.676, 2.163) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9185 | val=0.9014 | FR1=0.308 FR2=0.347 | thresh=(0.605, 2.402) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9210 | val=0.9211 | FR1=0.305 FR2=0.342 | thresh=(0.625, 2.478) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9230 | val=0.9112 | FR1=0.307 FR2=0.343 | thresh=(0.623, 2.522) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9200 | val=0.9034 | FR1=0.305 FR2=0.343 | thresh=(0.626, 2.538) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9225 | val=0.9093 | FR1=0.304 FR2=0.344 | thresh=(0.629, 2.541) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.304, FR2=0.344
+  Best score: 1.8421
+  Exported: sparse_smallest_T3_fr30.ptl (thresh=0.627/2.539, gain=3.01)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T3.pt
+  Initial firing rates: FR1=0.429, FR2=0.492
+  Epoch   1/40 | train=0.8928 | val=0.8915 | FR1=0.409 FR2=0.477 | thresh=(0.073, 0.466) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9032 | val=0.8777 | FR1=0.265 FR2=0.352 | thresh=(0.776, 1.925) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9170 | val=0.8797 | FR1=0.222 FR2=0.310 | thresh=(0.950, 2.561) | gain=3.02 | lambda=5.00
+  Epoch  16/40 | train=0.9205 | val=0.8935 | FR1=0.210 FR2=0.294 | thresh=(0.966, 2.820) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9151 | val=0.8935 | FR1=0.207 FR2=0.282 | thresh=(0.897, 3.061) | gain=3.03 | lambda=5.00
+  Epoch  26/40 | train=0.9210 | val=0.9093 | FR1=0.211 FR2=0.285 | thresh=(0.958, 3.148) | gain=2.98 | lambda=5.00
+  Epoch  31/40 | train=0.9180 | val=0.8994 | FR1=0.221 FR2=0.288 | thresh=(0.932, 3.184) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9240 | val=0.8955 | FR1=0.201 FR2=0.281 | thresh=(0.961, 3.227) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9235 | val=0.8876 | FR1=0.202 FR2=0.277 | thresh=(0.956, 3.231) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.228, FR2=0.292
+  Best score: 1.8327
+  Exported: sparse_smallest_T3_fr20.ptl (thresh=0.918/3.177, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T3.pt
+  Initial firing rates: FR1=0.429, FR2=0.492
+  Epoch   1/40 | train=0.8938 | val=0.8955 | FR1=0.383 FR2=0.474 | thresh=(0.177, 0.345) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.8963 | val=0.8856 | FR1=0.214 FR2=0.317 | thresh=(0.927, 2.170) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9042 | val=0.8895 | FR1=0.157 FR2=0.262 | thresh=(1.176, 3.014) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9091 | val=0.8718 | FR1=0.140 FR2=0.239 | thresh=(1.373, 3.491) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9062 | val=0.8876 | FR1=0.131 FR2=0.229 | thresh=(1.372, 3.766) | gain=3.03 | lambda=5.00
+  Epoch  26/40 | train=0.9160 | val=0.8955 | FR1=0.129 FR2=0.216 | thresh=(1.406, 3.900) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9052 | val=0.8935 | FR1=0.127 FR2=0.212 | thresh=(1.426, 4.010) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9230 | val=0.8994 | FR1=0.128 FR2=0.215 | thresh=(1.430, 4.052) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9091 | val=0.8994 | FR1=0.129 FR2=0.215 | thresh=(1.430, 4.059) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.128, FR2=0.216
+  Best score: 1.8238
+  Exported: sparse_smallest_T3_fr10.ptl (thresh=1.430/4.059, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T3.pt
+  Initial firing rates: FR1=0.429, FR2=0.493
+  Epoch   1/40 | train=0.8948 | val=0.6963 | FR1=0.379 FR2=0.472 | thresh=(0.183, 0.458) | gain=3.02 | lambda=0.50
+  Epoch   6/40 | train=0.8884 | val=0.8659 | FR1=0.188 FR2=0.303 | thresh=(1.003, 2.312) | gain=3.04 | lambda=3.00
+  Epoch  11/40 | train=0.8691 | val=0.8757 | FR1=0.130 FR2=0.235 | thresh=(1.302, 3.616) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9057 | val=0.8797 | FR1=0.115 FR2=0.208 | thresh=(1.307, 4.109) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.8983 | val=0.9073 | FR1=0.101 FR2=0.165 | thresh=(1.256, 4.562) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9294 | val=0.8915 | FR1=0.093 FR2=0.158 | thresh=(1.586, 4.785) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9185 | val=0.9152 | FR1=0.093 FR2=0.156 | thresh=(1.780, 5.005) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9057 | val=0.9014 | FR1=0.093 FR2=0.153 | thresh=(1.790, 5.085) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9042 | val=0.8817 | FR1=0.093 FR2=0.153 | thresh=(1.790, 5.087) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.092, FR2=0.156
+  Best score: 1.8337
+  Exported: sparse_smallest_T3_fr05.ptl (thresh=1.780/5.005, gain=3.01)
+
+======================================================================
+  Variant=small (k=5), T=3
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_small_T3.pt
+  Initial firing rates: FR1=0.365, FR2=0.500
+  Epoch   1/40 | train=0.9565 | val=0.9467 | FR1=0.309 FR2=0.476 | thresh=(0.176, 0.607) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9570 | val=0.9389 | FR1=0.301 FR2=0.364 | thresh=(0.209, 1.855) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9595 | val=0.9310 | FR1=0.296 FR2=0.334 | thresh=(0.220, 2.208) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9654 | val=0.9606 | FR1=0.299 FR2=0.330 | thresh=(0.257, 2.384) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9669 | val=0.9448 | FR1=0.300 FR2=0.325 | thresh=(0.330, 2.505) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9674 | val=0.9566 | FR1=0.300 FR2=0.322 | thresh=(0.375, 2.599) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9679 | val=0.9546 | FR1=0.299 FR2=0.321 | thresh=(0.380, 2.657) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9654 | val=0.9684 | FR1=0.303 FR2=0.321 | thresh=(0.387, 2.665) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9728 | val=0.9606 | FR1=0.301 FR2=0.321 | thresh=(0.387, 2.669) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.301, FR2=0.325
+  Best score: 1.9393
+  Exported: sparse_small_T3_fr30.ptl (thresh=0.263/2.470, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_small_T3.pt
+  Initial firing rates: FR1=0.364, FR2=0.500
+  Epoch   1/40 | train=0.9462 | val=0.9467 | FR1=0.289 FR2=0.465 | thresh=(0.257, 0.608) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9511 | val=0.9487 | FR1=0.231 FR2=0.296 | thresh=(0.614, 2.540) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9600 | val=0.9507 | FR1=0.213 FR2=0.265 | thresh=(0.651, 3.336) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9635 | val=0.9527 | FR1=0.209 FR2=0.263 | thresh=(0.689, 3.594) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9600 | val=0.9586 | FR1=0.206 FR2=0.253 | thresh=(0.689, 3.720) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9684 | val=0.9586 | FR1=0.205 FR2=0.248 | thresh=(0.675, 3.937) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9585 | val=0.9586 | FR1=0.204 FR2=0.245 | thresh=(0.697, 3.981) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9669 | val=0.9566 | FR1=0.206 FR2=0.242 | thresh=(0.704, 4.031) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9625 | val=0.9546 | FR1=0.206 FR2=0.242 | thresh=(0.705, 4.034) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.205, FR2=0.247
+  Best score: 1.9280
+  Exported: sparse_small_T3_fr20.ptl (thresh=0.671/3.861, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_small_T3.pt
+  Initial firing rates: FR1=0.365, FR2=0.500
+  Epoch   1/40 | train=0.9556 | val=0.9467 | FR1=0.288 FR2=0.452 | thresh=(0.375, 0.735) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9516 | val=0.9408 | FR1=0.175 FR2=0.252 | thresh=(0.809, 3.092) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9575 | val=0.9507 | FR1=0.121 FR2=0.186 | thresh=(1.011, 4.793) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9644 | val=0.9586 | FR1=0.118 FR2=0.170 | thresh=(1.083, 5.386) | gain=2.97 | lambda=5.00
+  Epoch  21/40 | train=0.9615 | val=0.9527 | FR1=0.103 FR2=0.155 | thresh=(1.122, 5.593) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9659 | val=0.9546 | FR1=0.109 FR2=0.153 | thresh=(1.104, 5.800) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9694 | val=0.9586 | FR1=0.114 FR2=0.153 | thresh=(1.101, 5.910) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9684 | val=0.9665 | FR1=0.114 FR2=0.154 | thresh=(1.095, 5.922) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9664 | val=0.9428 | FR1=0.107 FR2=0.152 | thresh=(1.095, 5.927) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.095, FR2=0.140
+  Best score: 1.9359
+  Exported: sparse_small_T3_fr10.ptl (thresh=1.096/5.927, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_small_T3.pt
+  Initial firing rates: FR1=0.364, FR2=0.500
+  Epoch   1/40 | train=0.9521 | val=0.9310 | FR1=0.288 FR2=0.441 | thresh=(0.380, 0.828) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9501 | val=0.9467 | FR1=0.120 FR2=0.224 | thresh=(0.960, 3.943) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9506 | val=0.9507 | FR1=0.110 FR2=0.178 | thresh=(1.153, 5.237) | gain=2.97 | lambda=5.00
+  Epoch  16/40 | train=0.9664 | val=0.9606 | FR1=0.080 FR2=0.137 | thresh=(1.475, 5.054) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9674 | val=0.9586 | FR1=0.081 FR2=0.129 | thresh=(1.474, 4.953) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9674 | val=0.9665 | FR1=0.079 FR2=0.125 | thresh=(1.556, 4.803) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9684 | val=0.9665 | FR1=0.079 FR2=0.125 | thresh=(1.573, 4.783) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9694 | val=0.9606 | FR1=0.080 FR2=0.122 | thresh=(1.577, 4.766) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9669 | val=0.9606 | FR1=0.078 FR2=0.123 | thresh=(1.579, 4.767) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.079, FR2=0.123
+  Best score: 1.9413
+  Exported: sparse_small_T3_fr05.ptl (thresh=1.577/4.766, gain=3.01)
+
+======================================================================
+  Variant=medium (k=7), T=3
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T3.pt
+  Initial firing rates: FR1=0.217, FR2=0.480
+  Epoch   1/40 | train=0.9738 | val=0.9684 | FR1=0.223 FR2=0.462 | thresh=(0.010, 0.552) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9728 | val=0.9645 | FR1=0.275 FR2=0.355 | thresh=(0.024, 1.683) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9728 | val=0.9763 | FR1=0.290 FR2=0.326 | thresh=(0.026, 2.027) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9748 | val=0.9684 | FR1=0.294 FR2=0.317 | thresh=(0.098, 2.108) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9778 | val=0.9724 | FR1=0.295 FR2=0.315 | thresh=(0.113, 2.305) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9788 | val=0.9744 | FR1=0.293 FR2=0.315 | thresh=(0.096, 2.489) | gain=2.98 | lambda=5.00
+  Epoch  31/40 | train=0.9763 | val=0.9744 | FR1=0.298 FR2=0.313 | thresh=(0.118, 2.527) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9773 | val=0.9724 | FR1=0.297 FR2=0.314 | thresh=(0.116, 2.542) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9773 | val=0.9744 | FR1=0.294 FR2=0.314 | thresh=(0.116, 2.543) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.301, FR2=0.311
+  Best score: 1.9625
+  Exported: sparse_medium_T3_fr30.ptl (thresh=0.100/2.399, gain=2.99)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T3.pt
+  Initial firing rates: FR1=0.217, FR2=0.480
+  Epoch   1/40 | train=0.9773 | val=0.9783 | FR1=0.214 FR2=0.452 | thresh=(0.085, 0.741) | gain=2.96 | lambda=0.50
+  Epoch   6/40 | train=0.9689 | val=0.9704 | FR1=0.197 FR2=0.296 | thresh=(0.238, 2.481) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9733 | val=0.9684 | FR1=0.204 FR2=0.250 | thresh=(0.143, 3.165) | gain=2.97 | lambda=5.00
+  Epoch  16/40 | train=0.9773 | val=0.9803 | FR1=0.204 FR2=0.238 | thresh=(0.229, 3.334) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9783 | val=0.9704 | FR1=0.200 FR2=0.229 | thresh=(0.265, 3.396) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9753 | val=0.9763 | FR1=0.201 FR2=0.224 | thresh=(0.231, 3.440) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9788 | val=0.9803 | FR1=0.201 FR2=0.221 | thresh=(0.258, 3.534) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9788 | val=0.9783 | FR1=0.197 FR2=0.222 | thresh=(0.267, 3.554) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9778 | val=0.9783 | FR1=0.200 FR2=0.223 | thresh=(0.271, 3.554) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.200, FR2=0.222
+  Best score: 1.9620
+  Exported: sparse_medium_T3_fr20.ptl (thresh=0.261/3.545, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T3.pt
+  Initial firing rates: FR1=0.217, FR2=0.479
+  Epoch   1/40 | train=0.9758 | val=0.9684 | FR1=0.200 FR2=0.434 | thresh=(0.174, 1.108) | gain=2.98 | lambda=0.50
+  Epoch   6/40 | train=0.9664 | val=0.9724 | FR1=0.142 FR2=0.254 | thresh=(0.588, 3.683) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9719 | val=0.9625 | FR1=0.115 FR2=0.154 | thresh=(0.827, 5.609) | gain=2.93 | lambda=5.00
+  Epoch  16/40 | train=0.9793 | val=0.9665 | FR1=0.112 FR2=0.137 | thresh=(0.898, 6.133) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9753 | val=0.9665 | FR1=0.112 FR2=0.133 | thresh=(0.882, 6.213) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9778 | val=0.9744 | FR1=0.111 FR2=0.132 | thresh=(0.902, 6.276) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9778 | val=0.9744 | FR1=0.111 FR2=0.128 | thresh=(0.922, 6.340) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9807 | val=0.9744 | FR1=0.110 FR2=0.125 | thresh=(0.920, 6.343) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9758 | val=0.9704 | FR1=0.110 FR2=0.126 | thresh=(0.925, 6.343) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.110, FR2=0.125
+  Best score: 1.9586
+  Exported: sparse_medium_T3_fr10.ptl (thresh=0.914/6.323, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T3.pt
+  Initial firing rates: FR1=0.217, FR2=0.480
+  Epoch   1/40 | train=0.9758 | val=0.9724 | FR1=0.203 FR2=0.442 | thresh=(0.197, 1.186) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9689 | val=0.9606 | FR1=0.133 FR2=0.230 | thresh=(0.546, 3.875) | gain=3.03 | lambda=3.00
+  Epoch  11/40 | train=0.9773 | val=0.9704 | FR1=0.092 FR2=0.133 | thresh=(0.932, 5.499) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9723 | val=0.9684 | FR1=0.088 FR2=0.112 | thresh=(0.924, 6.131) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9758 | val=0.9744 | FR1=0.083 FR2=0.105 | thresh=(0.959, 6.226) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9738 | val=0.9783 | FR1=0.081 FR2=0.103 | thresh=(0.999, 6.258) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9788 | val=0.9763 | FR1=0.071 FR2=0.093 | thresh=(1.022, 6.315) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9852 | val=0.9862 | FR1=0.065 FR2=0.090 | thresh=(1.025, 6.305) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9817 | val=0.9882 | FR1=0.064 FR2=0.090 | thresh=(1.025, 6.302) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.064, FR2=0.089
+  Best score: 1.9714
+  Exported: sparse_medium_T3_fr05.ptl (thresh=1.025/6.305, gain=3.00)
+
+======================================================================
+  Variant=large (k=9), T=3
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_large_T3.pt
+  Initial firing rates: FR1=0.244, FR2=0.538
+  Epoch   1/40 | train=0.9807 | val=0.9744 | FR1=0.243 FR2=0.500 | thresh=(0.024, 0.566) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9753 | val=0.9684 | FR1=0.279 FR2=0.360 | thresh=(0.032, 1.650) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9704 | val=0.9724 | FR1=0.293 FR2=0.330 | thresh=(0.041, 1.978) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9763 | val=0.9763 | FR1=0.294 FR2=0.324 | thresh=(0.020, 2.230) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9798 | val=0.9744 | FR1=0.292 FR2=0.319 | thresh=(0.037, 2.300) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9832 | val=0.9783 | FR1=0.293 FR2=0.318 | thresh=(0.032, 2.407) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9812 | val=0.9744 | FR1=0.296 FR2=0.318 | thresh=(0.032, 2.424) | gain=2.99 | lambda=5.00
+  Epoch  36/40 | train=0.9798 | val=0.9822 | FR1=0.296 FR2=0.316 | thresh=(0.032, 2.460) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9847 | val=0.9763 | FR1=0.295 FR2=0.316 | thresh=(0.032, 2.460) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.290, FR2=0.315
+  Best score: 1.9650
+  Exported: sparse_large_T3_fr30.ptl (thresh=0.035/2.422, gain=3.01)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_large_T3.pt
+  Initial firing rates: FR1=0.244, FR2=0.538
+  Epoch   1/40 | train=0.9793 | val=0.9684 | FR1=0.207 FR2=0.475 | thresh=(0.178, 0.850) | gain=3.02 | lambda=0.50
+  Epoch   6/40 | train=0.9753 | val=0.9665 | FR1=0.203 FR2=0.306 | thresh=(0.116, 2.328) | gain=2.97 | lambda=3.00
+  Epoch  11/40 | train=0.9704 | val=0.9684 | FR1=0.210 FR2=0.229 | thresh=(0.191, 2.877) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9748 | val=0.9744 | FR1=0.204 FR2=0.228 | thresh=(0.217, 3.143) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9758 | val=0.9822 | FR1=0.205 FR2=0.217 | thresh=(0.199, 3.345) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9817 | val=0.9783 | FR1=0.206 FR2=0.216 | thresh=(0.231, 3.526) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9807 | val=0.9783 | FR1=0.205 FR2=0.216 | thresh=(0.230, 3.596) | gain=2.99 | lambda=5.00
+  Epoch  36/40 | train=0.9788 | val=0.9744 | FR1=0.201 FR2=0.220 | thresh=(0.238, 3.633) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9827 | val=0.9822 | FR1=0.200 FR2=0.220 | thresh=(0.238, 3.638) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.195, FR2=0.222
+  Best score: 1.9674
+  Exported: sparse_large_T3_fr20.ptl (thresh=0.238/3.635, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_large_T3.pt
+  Initial firing rates: FR1=0.244, FR2=0.538
+  Epoch   1/40 | train=0.9728 | val=0.9763 | FR1=0.198 FR2=0.466 | thresh=(0.220, 0.813) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9704 | val=0.9704 | FR1=0.151 FR2=0.231 | thresh=(0.530, 2.725) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9763 | val=0.9704 | FR1=0.130 FR2=0.143 | thresh=(0.523, 3.741) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9763 | val=0.9763 | FR1=0.119 FR2=0.142 | thresh=(0.526, 4.406) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9783 | val=0.9783 | FR1=0.114 FR2=0.141 | thresh=(0.558, 4.732) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9798 | val=0.9763 | FR1=0.111 FR2=0.139 | thresh=(0.611, 4.834) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9788 | val=0.9744 | FR1=0.107 FR2=0.132 | thresh=(0.661, 4.808) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9793 | val=0.9704 | FR1=0.101 FR2=0.124 | thresh=(0.692, 4.743) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9783 | val=0.9744 | FR1=0.103 FR2=0.124 | thresh=(0.697, 4.738) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.111, FR2=0.140
+  Best score: 1.9581
+  Exported: sparse_large_T3_fr10.ptl (thresh=0.618/4.854, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_large_T3.pt
+  Initial firing rates: FR1=0.244, FR2=0.539
+  Epoch   1/40 | train=0.9768 | val=0.9744 | FR1=0.195 FR2=0.473 | thresh=(0.292, 0.967) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9689 | val=0.9645 | FR1=0.136 FR2=0.190 | thresh=(0.523, 3.419) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9733 | val=0.9704 | FR1=0.102 FR2=0.127 | thresh=(0.584, 4.948) | gain=2.96 | lambda=5.00
+  Epoch  16/40 | train=0.9788 | val=0.9744 | FR1=0.088 FR2=0.109 | thresh=(0.732, 5.093) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9822 | val=0.9842 | FR1=0.081 FR2=0.097 | thresh=(0.809, 5.012) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9788 | val=0.9763 | FR1=0.078 FR2=0.099 | thresh=(0.780, 4.972) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9778 | val=0.9763 | FR1=0.074 FR2=0.094 | thresh=(0.781, 4.972) | gain=2.98 | lambda=5.00
+  Epoch  36/40 | train=0.9837 | val=0.9842 | FR1=0.071 FR2=0.089 | thresh=(0.796, 4.955) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9862 | val=0.9842 | FR1=0.071 FR2=0.088 | thresh=(0.793, 4.954) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.066, FR2=0.081
+  Best score: 1.9704
+  Exported: sparse_large_T3_fr05.ptl (thresh=0.793/4.954, gain=3.00)
+
+======================================================================
+  Variant=largest (k=11), T=3
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T3.pt
+  Initial firing rates: FR1=0.273, FR2=0.484
+  Epoch   1/40 | train=0.9817 | val=0.9842 | FR1=0.263 FR2=0.457 | thresh=(0.048, 0.530) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9832 | val=0.9842 | FR1=0.287 FR2=0.332 | thresh=(0.010, 1.641) | gain=2.97 | lambda=3.00
+  Epoch  11/40 | train=0.9852 | val=0.9783 | FR1=0.295 FR2=0.318 | thresh=(0.028, 1.980) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9867 | val=0.9842 | FR1=0.296 FR2=0.310 | thresh=(0.047, 2.114) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9867 | val=0.9862 | FR1=0.295 FR2=0.309 | thresh=(0.073, 2.189) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9822 | val=0.9783 | FR1=0.295 FR2=0.306 | thresh=(0.079, 2.292) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9872 | val=0.9862 | FR1=0.297 FR2=0.309 | thresh=(0.078, 2.352) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9847 | val=0.9842 | FR1=0.297 FR2=0.307 | thresh=(0.076, 2.386) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9891 | val=0.9783 | FR1=0.292 FR2=0.307 | thresh=(0.077, 2.384) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.292, FR2=0.307
+  Best score: 1.9734
+  Exported: sparse_largest_T3_fr30.ptl (thresh=0.078/2.352, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T3.pt
+  Initial firing rates: FR1=0.273, FR2=0.484
+  Epoch   1/40 | train=0.9842 | val=0.9724 | FR1=0.246 FR2=0.444 | thresh=(0.091, 0.907) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9798 | val=0.9704 | FR1=0.210 FR2=0.261 | thresh=(0.151, 2.429) | gain=2.96 | lambda=3.00
+  Epoch  11/40 | train=0.9788 | val=0.9763 | FR1=0.204 FR2=0.220 | thresh=(0.173, 2.764) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9837 | val=0.9803 | FR1=0.201 FR2=0.211 | thresh=(0.150, 2.930) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9832 | val=0.9822 | FR1=0.200 FR2=0.209 | thresh=(0.136, 2.994) | gain=2.98 | lambda=5.00
+  Epoch  26/40 | train=0.9877 | val=0.9822 | FR1=0.205 FR2=0.209 | thresh=(0.141, 3.141) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9886 | val=0.9842 | FR1=0.201 FR2=0.208 | thresh=(0.142, 3.221) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9867 | val=0.9822 | FR1=0.201 FR2=0.208 | thresh=(0.144, 3.212) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9881 | val=0.9822 | FR1=0.202 FR2=0.208 | thresh=(0.143, 3.216) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.197, FR2=0.207
+  Best score: 1.9763
+  Exported: sparse_largest_T3_fr20.ptl (thresh=0.144/3.206, gain=3.01)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T3.pt
+  Initial firing rates: FR1=0.273, FR2=0.485
+  Epoch   1/40 | train=0.9812 | val=0.9783 | FR1=0.239 FR2=0.427 | thresh=(0.126, 1.020) | gain=2.97 | lambda=0.50
+  Epoch   6/40 | train=0.9758 | val=0.9763 | FR1=0.153 FR2=0.213 | thresh=(0.274, 3.069) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9788 | val=0.9645 | FR1=0.127 FR2=0.154 | thresh=(0.382, 4.195) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9832 | val=0.9783 | FR1=0.129 FR2=0.135 | thresh=(0.441, 4.777) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9827 | val=0.9822 | FR1=0.117 FR2=0.131 | thresh=(0.473, 4.895) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9872 | val=0.9842 | FR1=0.118 FR2=0.129 | thresh=(0.468, 5.054) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9847 | val=0.9744 | FR1=0.116 FR2=0.129 | thresh=(0.484, 5.113) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9832 | val=0.9882 | FR1=0.108 FR2=0.129 | thresh=(0.487, 5.135) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9847 | val=0.9862 | FR1=0.107 FR2=0.129 | thresh=(0.486, 5.140) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.120, FR2=0.128
+  Best score: 1.9714
+  Exported: sparse_largest_T3_fr10.ptl (thresh=0.468/5.054, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T3.pt
+  Initial firing rates: FR1=0.273, FR2=0.485
+  Epoch   1/40 | train=0.9798 | val=0.9783 | FR1=0.218 FR2=0.408 | thresh=(0.199, 1.076) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9753 | val=0.9744 | FR1=0.134 FR2=0.189 | thresh=(0.322, 3.506) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9802 | val=0.9487 | FR1=0.105 FR2=0.101 | thresh=(0.343, 4.688) | gain=2.97 | lambda=5.00
+  Epoch  16/40 | train=0.9773 | val=0.9783 | FR1=0.081 FR2=0.112 | thresh=(0.410, 5.389) | gain=2.93 | lambda=5.00
+  Epoch  21/40 | train=0.9872 | val=0.9862 | FR1=0.071 FR2=0.087 | thresh=(0.714, 5.795) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9847 | val=0.9901 | FR1=0.069 FR2=0.084 | thresh=(0.970, 5.859) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9852 | val=0.9862 | FR1=0.069 FR2=0.083 | thresh=(1.134, 5.928) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9872 | val=0.9862 | FR1=0.067 FR2=0.082 | thresh=(1.162, 5.931) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9857 | val=0.9921 | FR1=0.066 FR2=0.080 | thresh=(1.168, 5.931) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.066, FR2=0.079
+  Best score: 1.9778
+  Exported: sparse_largest_T3_fr05.ptl (thresh=1.168/5.931, gain=3.00)
+
+======================================================================
+  Variant=smallest (k=3), T=5
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T5.pt
+  Initial firing rates: FR1=0.298, FR2=0.480
+  Epoch   1/40 | train=0.9141 | val=0.9093 | FR1=0.296 FR2=0.468 | thresh=(0.031, 0.363) | gain=3.03 | lambda=0.50
+  Epoch   6/40 | train=0.9284 | val=0.9014 | FR1=0.300 FR2=0.360 | thresh=(0.067, 1.508) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9373 | val=0.9191 | FR1=0.302 FR2=0.342 | thresh=(0.067, 1.880) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9353 | val=0.9250 | FR1=0.302 FR2=0.337 | thresh=(0.047, 2.135) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9422 | val=0.9152 | FR1=0.303 FR2=0.337 | thresh=(0.088, 2.275) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9432 | val=0.9250 | FR1=0.299 FR2=0.333 | thresh=(0.102, 2.356) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9378 | val=0.9132 | FR1=0.302 FR2=0.332 | thresh=(0.109, 2.441) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9447 | val=0.9152 | FR1=0.301 FR2=0.331 | thresh=(0.114, 2.465) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9462 | val=0.9349 | FR1=0.299 FR2=0.332 | thresh=(0.115, 2.467) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.304, FR2=0.331
+  Best score: 1.8811
+  Exported: sparse_smallest_T5_fr30.ptl (thresh=0.115/2.467, gain=3.01)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T5.pt
+  Initial firing rates: FR1=0.297, FR2=0.480
+  Epoch   1/40 | train=0.9195 | val=0.9053 | FR1=0.294 FR2=0.463 | thresh=(0.078, 0.441) | gain=3.02 | lambda=0.50
+  Epoch   6/40 | train=0.8899 | val=0.8935 | FR1=0.256 FR2=0.319 | thresh=(0.279, 1.886) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.8998 | val=0.8974 | FR1=0.226 FR2=0.285 | thresh=(0.491, 2.237) | gain=3.02 | lambda=5.00
+  Epoch  16/40 | train=0.9101 | val=0.9191 | FR1=0.226 FR2=0.283 | thresh=(0.561, 2.360) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9269 | val=0.8304 | FR1=0.223 FR2=0.271 | thresh=(0.635, 2.761) | gain=3.02 | lambda=5.00
+  Epoch  26/40 | train=0.9368 | val=0.9132 | FR1=0.219 FR2=0.268 | thresh=(0.650, 2.941) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9319 | val=0.9231 | FR1=0.214 FR2=0.265 | thresh=(0.674, 3.067) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9417 | val=0.9231 | FR1=0.211 FR2=0.266 | thresh=(0.678, 3.083) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9407 | val=0.9270 | FR1=0.211 FR2=0.265 | thresh=(0.680, 3.088) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.214, FR2=0.265
+  Best score: 1.8702
+  Exported: sparse_smallest_T5_fr20.ptl (thresh=0.656/3.050, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T5.pt
+  Initial firing rates: FR1=0.298, FR2=0.479
+  Epoch   1/40 | train=0.9259 | val=0.8619 | FR1=0.295 FR2=0.457 | thresh=(0.138, 0.595) | gain=3.02 | lambda=0.50
+  Epoch   6/40 | train=0.9131 | val=0.9053 | FR1=0.227 FR2=0.271 | thresh=(0.461, 2.737) | gain=3.03 | lambda=3.00
+  Epoch  11/40 | train=0.9294 | val=0.8974 | FR1=0.147 FR2=0.231 | thresh=(0.793, 3.800) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9160 | val=0.9132 | FR1=0.143 FR2=0.219 | thresh=(0.907, 4.262) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9259 | val=0.9073 | FR1=0.142 FR2=0.211 | thresh=(0.932, 4.803) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9230 | val=0.9093 | FR1=0.132 FR2=0.196 | thresh=(0.951, 5.017) | gain=3.03 | lambda=5.00
+  Epoch  31/40 | train=0.9116 | val=0.9093 | FR1=0.130 FR2=0.190 | thresh=(0.979, 5.131) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9106 | val=0.9034 | FR1=0.131 FR2=0.191 | thresh=(0.987, 5.161) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9180 | val=0.9152 | FR1=0.131 FR2=0.191 | thresh=(0.989, 5.165) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.131, FR2=0.190
+  Best score: 1.8539
+  Exported: sparse_smallest_T5_fr10.ptl (thresh=0.988/5.153, gain=3.01)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T5.pt
+  Initial firing rates: FR1=0.297, FR2=0.480
+  Epoch   1/40 | train=0.9067 | val=0.8876 | FR1=0.289 FR2=0.457 | thresh=(0.110, 0.621) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.8909 | val=0.8836 | FR1=0.210 FR2=0.256 | thresh=(0.597, 2.677) | gain=3.03 | lambda=3.00
+  Epoch  11/40 | train=0.8904 | val=0.9132 | FR1=0.134 FR2=0.203 | thresh=(0.968, 4.089) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9101 | val=0.9132 | FR1=0.101 FR2=0.179 | thresh=(1.106, 4.861) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9210 | val=0.9034 | FR1=0.096 FR2=0.168 | thresh=(1.176, 5.078) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9215 | val=0.9152 | FR1=0.096 FR2=0.164 | thresh=(1.219, 5.266) | gain=3.02 | lambda=5.00
+  Epoch  31/40 | train=0.9363 | val=0.9132 | FR1=0.096 FR2=0.163 | thresh=(1.231, 5.348) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9314 | val=0.9211 | FR1=0.095 FR2=0.162 | thresh=(1.266, 5.384) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9363 | val=0.9152 | FR1=0.097 FR2=0.162 | thresh=(1.275, 5.395) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.095, FR2=0.160
+  Best score: 1.8638
+  Exported: sparse_smallest_T5_fr05.ptl (thresh=1.275/5.395, gain=3.01)
+
+======================================================================
+  Variant=small (k=5), T=5
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_small_T5.pt
+  Initial firing rates: FR1=0.395, FR2=0.463
+  Epoch   1/40 | train=0.9649 | val=0.9250 | FR1=0.365 FR2=0.446 | thresh=(0.140, 0.345) | gain=3.03 | lambda=0.50
+  Epoch   6/40 | train=0.9605 | val=0.9546 | FR1=0.315 FR2=0.357 | thresh=(0.227, 1.278) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9733 | val=0.9586 | FR1=0.302 FR2=0.330 | thresh=(0.283, 1.695) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9758 | val=0.9704 | FR1=0.305 FR2=0.324 | thresh=(0.287, 1.959) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9704 | val=0.9645 | FR1=0.299 FR2=0.318 | thresh=(0.287, 2.040) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9748 | val=0.9724 | FR1=0.302 FR2=0.319 | thresh=(0.291, 2.112) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9714 | val=0.9704 | FR1=0.296 FR2=0.317 | thresh=(0.290, 2.122) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9758 | val=0.9724 | FR1=0.307 FR2=0.318 | thresh=(0.279, 2.142) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9748 | val=0.9724 | FR1=0.308 FR2=0.316 | thresh=(0.281, 2.142) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.296, FR2=0.315
+  Best score: 1.9546
+  Exported: sparse_small_T5_fr30.ptl (thresh=0.286/2.134, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_small_T5.pt
+  Initial firing rates: FR1=0.395, FR2=0.463
+  Epoch   1/40 | train=0.9664 | val=0.9606 | FR1=0.356 FR2=0.430 | thresh=(0.123, 0.516) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9664 | val=0.9625 | FR1=0.237 FR2=0.296 | thresh=(0.531, 1.664) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9649 | val=0.9586 | FR1=0.214 FR2=0.263 | thresh=(0.620, 2.464) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9709 | val=0.9645 | FR1=0.207 FR2=0.251 | thresh=(0.636, 2.791) | gain=2.97 | lambda=5.00
+  Epoch  21/40 | train=0.9733 | val=0.9645 | FR1=0.210 FR2=0.247 | thresh=(0.666, 3.027) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9733 | val=0.9803 | FR1=0.214 FR2=0.244 | thresh=(0.650, 3.245) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9719 | val=0.9704 | FR1=0.213 FR2=0.238 | thresh=(0.662, 3.427) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9743 | val=0.9645 | FR1=0.211 FR2=0.239 | thresh=(0.664, 3.458) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9738 | val=0.9665 | FR1=0.211 FR2=0.239 | thresh=(0.664, 3.461) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.213, FR2=0.244
+  Best score: 1.9536
+  Exported: sparse_small_T5_fr20.ptl (thresh=0.650/3.245, gain=3.01)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_small_T5.pt
+  Initial firing rates: FR1=0.395, FR2=0.463
+  Epoch   1/40 | train=0.9640 | val=0.9586 | FR1=0.345 FR2=0.421 | thresh=(0.134, 0.631) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9610 | val=0.9467 | FR1=0.171 FR2=0.232 | thresh=(0.779, 2.562) | gain=2.97 | lambda=3.00
+  Epoch  11/40 | train=0.9630 | val=0.9566 | FR1=0.154 FR2=0.191 | thresh=(0.942, 3.945) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9684 | val=0.9566 | FR1=0.145 FR2=0.178 | thresh=(1.001, 4.814) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9659 | val=0.9665 | FR1=0.138 FR2=0.169 | thresh=(1.024, 5.168) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9753 | val=0.9546 | FR1=0.135 FR2=0.169 | thresh=(1.113, 5.242) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9699 | val=0.9645 | FR1=0.129 FR2=0.162 | thresh=(1.186, 5.228) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9704 | val=0.9507 | FR1=0.133 FR2=0.165 | thresh=(1.194, 5.265) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9743 | val=0.9645 | FR1=0.133 FR2=0.164 | thresh=(1.196, 5.273) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.133, FR2=0.164
+  Best score: 1.9428
+  Exported: sparse_small_T5_fr10.ptl (thresh=1.192/5.257, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_small_T5.pt
+  Initial firing rates: FR1=0.395, FR2=0.463
+  Epoch   1/40 | train=0.9378 | val=0.9704 | FR1=0.336 FR2=0.417 | thresh=(0.155, 0.665) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9531 | val=0.9546 | FR1=0.162 FR2=0.206 | thresh=(0.879, 2.981) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9615 | val=0.9665 | FR1=0.128 FR2=0.165 | thresh=(1.063, 4.460) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9590 | val=0.9566 | FR1=0.106 FR2=0.148 | thresh=(1.343, 4.864) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9669 | val=0.9586 | FR1=0.103 FR2=0.146 | thresh=(1.560, 4.717) | gain=3.04 | lambda=5.00
+  Epoch  26/40 | train=0.9654 | val=0.9566 | FR1=0.098 FR2=0.142 | thresh=(1.662, 4.758) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9694 | val=0.9645 | FR1=0.098 FR2=0.142 | thresh=(1.747, 4.709) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9728 | val=0.9625 | FR1=0.089 FR2=0.141 | thresh=(1.776, 4.700) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9704 | val=0.9645 | FR1=0.089 FR2=0.144 | thresh=(1.779, 4.695) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.088, FR2=0.144
+  Best score: 1.9388
+  Exported: sparse_small_T5_fr05.ptl (thresh=1.771/4.700, gain=3.02)
+
+======================================================================
+  Variant=medium (k=7), T=5
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T5.pt
+  Initial firing rates: FR1=0.247, FR2=0.506
+  Epoch   1/40 | train=0.9827 | val=0.9763 | FR1=0.261 FR2=0.467 | thresh=(0.016, 0.785) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9753 | val=0.9684 | FR1=0.284 FR2=0.346 | thresh=(0.024, 1.913) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9778 | val=0.9763 | FR1=0.294 FR2=0.316 | thresh=(0.026, 2.197) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9822 | val=0.9645 | FR1=0.295 FR2=0.310 | thresh=(0.108, 2.286) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9842 | val=0.9763 | FR1=0.298 FR2=0.309 | thresh=(0.101, 2.325) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9807 | val=0.9803 | FR1=0.298 FR2=0.307 | thresh=(0.081, 2.391) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9837 | val=0.9822 | FR1=0.299 FR2=0.307 | thresh=(0.082, 2.417) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9807 | val=0.9763 | FR1=0.299 FR2=0.307 | thresh=(0.089, 2.421) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9842 | val=0.9803 | FR1=0.299 FR2=0.306 | thresh=(0.089, 2.424) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.298, FR2=0.305
+  Best score: 1.9689
+  Exported: sparse_medium_T5_fr30.ptl (thresh=0.089/2.424, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T5.pt
+  Initial firing rates: FR1=0.247, FR2=0.506
+  Epoch   1/40 | train=0.9802 | val=0.9763 | FR1=0.235 FR2=0.457 | thresh=(0.075, 0.986) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9738 | val=0.9566 | FR1=0.216 FR2=0.286 | thresh=(0.221, 2.452) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9798 | val=0.9684 | FR1=0.203 FR2=0.239 | thresh=(0.326, 2.590) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9793 | val=0.9606 | FR1=0.224 FR2=0.226 | thresh=(0.086, 3.070) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9802 | val=0.9724 | FR1=0.209 FR2=0.218 | thresh=(0.114, 3.232) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9783 | val=0.9783 | FR1=0.205 FR2=0.220 | thresh=(0.169, 3.457) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9773 | val=0.9724 | FR1=0.208 FR2=0.217 | thresh=(0.213, 3.548) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9812 | val=0.9803 | FR1=0.206 FR2=0.217 | thresh=(0.217, 3.566) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9773 | val=0.9724 | FR1=0.207 FR2=0.215 | thresh=(0.218, 3.568) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.212, FR2=0.216
+  Best score: 1.9615
+  Exported: sparse_medium_T5_fr20.ptl (thresh=0.201/3.540, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T5.pt
+  Initial firing rates: FR1=0.247, FR2=0.506
+  Epoch   1/40 | train=0.9807 | val=0.9744 | FR1=0.223 FR2=0.443 | thresh=(0.089, 1.129) | gain=2.97 | lambda=0.50
+  Epoch   6/40 | train=0.9694 | val=0.9606 | FR1=0.178 FR2=0.228 | thresh=(0.424, 3.157) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9649 | val=0.9665 | FR1=0.143 FR2=0.199 | thresh=(0.499, 4.285) | gain=2.97 | lambda=5.00
+  Epoch  16/40 | train=0.9758 | val=0.9704 | FR1=0.125 FR2=0.169 | thresh=(0.560, 5.060) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9768 | val=0.9546 | FR1=0.118 FR2=0.160 | thresh=(0.615, 5.358) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9768 | val=0.9763 | FR1=0.117 FR2=0.156 | thresh=(0.626, 5.443) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9822 | val=0.9744 | FR1=0.115 FR2=0.154 | thresh=(0.624, 5.512) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9798 | val=0.9763 | FR1=0.119 FR2=0.149 | thresh=(0.629, 5.536) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9798 | val=0.9842 | FR1=0.118 FR2=0.149 | thresh=(0.628, 5.537) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.118, FR2=0.150
+  Best score: 1.9640
+  Exported: sparse_medium_T5_fr10.ptl (thresh=0.628/5.537, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T5.pt
+  Initial firing rates: FR1=0.247, FR2=0.506
+  Epoch   1/40 | train=0.9778 | val=0.9625 | FR1=0.225 FR2=0.437 | thresh=(0.118, 1.099) | gain=2.96 | lambda=0.50
+  Epoch   6/40 | train=0.9699 | val=0.9606 | FR1=0.168 FR2=0.205 | thresh=(0.421, 3.717) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9669 | val=0.9389 | FR1=0.100 FR2=0.186 | thresh=(0.531, 5.121) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9738 | val=0.9822 | FR1=0.092 FR2=0.134 | thresh=(0.626, 5.753) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9773 | val=0.9724 | FR1=0.096 FR2=0.133 | thresh=(0.643, 6.305) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9758 | val=0.9783 | FR1=0.088 FR2=0.117 | thresh=(0.656, 6.613) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9783 | val=0.9724 | FR1=0.088 FR2=0.111 | thresh=(0.602, 6.823) | gain=2.99 | lambda=5.00
+  Epoch  36/40 | train=0.9793 | val=0.9783 | FR1=0.086 FR2=0.111 | thresh=(0.610, 6.846) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9802 | val=0.9744 | FR1=0.087 FR2=0.112 | thresh=(0.610, 6.855) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.087, FR2=0.111
+  Best score: 1.9625
+  Exported: sparse_medium_T5_fr05.ptl (thresh=0.608/6.844, gain=3.00)
+
+======================================================================
+  Variant=large (k=9), T=5
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_large_T5.pt
+  Initial firing rates: FR1=0.295, FR2=0.487
+  Epoch   1/40 | train=0.9817 | val=0.9744 | FR1=0.293 FR2=0.444 | thresh=(0.018, 0.528) | gain=2.96 | lambda=0.50
+  Epoch   6/40 | train=0.9817 | val=0.9744 | FR1=0.299 FR2=0.349 | thresh=(0.017, 1.414) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9832 | val=0.9744 | FR1=0.295 FR2=0.329 | thresh=(0.049, 1.700) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9827 | val=0.9763 | FR1=0.299 FR2=0.320 | thresh=(0.039, 1.929) | gain=2.98 | lambda=5.00
+  Epoch  21/40 | train=0.9817 | val=0.9744 | FR1=0.297 FR2=0.318 | thresh=(0.039, 2.047) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9842 | val=0.9763 | FR1=0.298 FR2=0.313 | thresh=(0.054, 2.120) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9832 | val=0.9842 | FR1=0.298 FR2=0.315 | thresh=(0.053, 2.144) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9847 | val=0.9862 | FR1=0.298 FR2=0.315 | thresh=(0.059, 2.143) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9881 | val=0.9783 | FR1=0.299 FR2=0.317 | thresh=(0.058, 2.143) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.285, FR2=0.325
+  Best score: 1.9709
+  Exported: sparse_large_T5_fr30.ptl (thresh=0.059/2.143, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_large_T5.pt
+  Initial firing rates: FR1=0.295, FR2=0.487
+  Epoch   1/40 | train=0.9802 | val=0.9803 | FR1=0.264 FR2=0.435 | thresh=(0.221, 0.890) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9798 | val=0.9763 | FR1=0.200 FR2=0.264 | thresh=(0.651, 2.812) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9802 | val=0.9704 | FR1=0.205 FR2=0.229 | thresh=(0.652, 3.526) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9862 | val=0.9684 | FR1=0.204 FR2=0.223 | thresh=(0.670, 3.822) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9832 | val=0.9684 | FR1=0.202 FR2=0.217 | thresh=(0.657, 4.147) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9847 | val=0.9704 | FR1=0.207 FR2=0.212 | thresh=(0.654, 4.314) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9862 | val=0.9842 | FR1=0.203 FR2=0.211 | thresh=(0.660, 4.384) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9862 | val=0.9822 | FR1=0.199 FR2=0.211 | thresh=(0.664, 4.413) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9852 | val=0.9842 | FR1=0.199 FR2=0.210 | thresh=(0.663, 4.417) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.199, FR2=0.211
+  Best score: 1.9753
+  Exported: sparse_large_T5_fr20.ptl (thresh=0.661/4.403, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_large_T5.pt
+  Initial firing rates: FR1=0.295, FR2=0.487
+  Epoch   1/40 | train=0.9842 | val=0.9803 | FR1=0.234 FR2=0.423 | thresh=(0.232, 0.991) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9802 | val=0.9803 | FR1=0.151 FR2=0.246 | thresh=(0.704, 3.311) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9788 | val=0.9744 | FR1=0.136 FR2=0.173 | thresh=(0.751, 4.264) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9743 | val=0.9606 | FR1=0.122 FR2=0.147 | thresh=(0.616, 4.795) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9862 | val=0.9803 | FR1=0.128 FR2=0.130 | thresh=(0.681, 5.099) | gain=2.95 | lambda=5.00
+  Epoch  26/40 | train=0.9827 | val=0.9744 | FR1=0.116 FR2=0.125 | thresh=(0.698, 5.267) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9852 | val=0.9763 | FR1=0.119 FR2=0.125 | thresh=(0.717, 5.318) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9842 | val=0.9783 | FR1=0.110 FR2=0.128 | thresh=(0.718, 5.334) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9857 | val=0.9803 | FR1=0.110 FR2=0.128 | thresh=(0.720, 5.334) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.109, FR2=0.128
+  Best score: 1.9669
+  Exported: sparse_large_T5_fr10.ptl (thresh=0.719/5.334, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_large_T5.pt
+  Initial firing rates: FR1=0.295, FR2=0.487
+  Epoch   1/40 | train=0.9817 | val=0.9704 | FR1=0.234 FR2=0.407 | thresh=(0.352, 1.023) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9763 | val=0.9724 | FR1=0.139 FR2=0.216 | thresh=(0.853, 3.458) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9812 | val=0.9763 | FR1=0.099 FR2=0.119 | thresh=(0.893, 4.889) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9807 | val=0.9724 | FR1=0.087 FR2=0.101 | thresh=(0.943, 5.432) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9881 | val=0.9803 | FR1=0.078 FR2=0.089 | thresh=(1.166, 5.646) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9822 | val=0.9822 | FR1=0.077 FR2=0.088 | thresh=(1.497, 5.734) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9827 | val=0.9822 | FR1=0.078 FR2=0.088 | thresh=(1.497, 5.869) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9827 | val=0.9803 | FR1=0.078 FR2=0.089 | thresh=(1.505, 5.926) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9832 | val=0.9842 | FR1=0.079 FR2=0.090 | thresh=(1.507, 5.931) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.078, FR2=0.087
+  Best score: 1.9709
+  Exported: sparse_large_T5_fr05.ptl (thresh=1.412/5.705, gain=3.00)
+
+======================================================================
+  Variant=largest (k=11), T=5
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T5.pt
+  Initial firing rates: FR1=0.233, FR2=0.482
+  Epoch   1/40 | train=0.9862 | val=0.9822 | FR1=0.226 FR2=0.458 | thresh=(0.015, 0.691) | gain=2.98 | lambda=0.50
+  Epoch   6/40 | train=0.9886 | val=0.9842 | FR1=0.283 FR2=0.338 | thresh=(0.030, 1.904) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9867 | val=0.9803 | FR1=0.292 FR2=0.317 | thresh=(0.045, 2.212) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9867 | val=0.9803 | FR1=0.294 FR2=0.314 | thresh=(0.067, 2.341) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9886 | val=0.9862 | FR1=0.292 FR2=0.312 | thresh=(0.071, 2.431) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9896 | val=0.9882 | FR1=0.293 FR2=0.311 | thresh=(0.079, 2.510) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9901 | val=0.9842 | FR1=0.295 FR2=0.310 | thresh=(0.080, 2.551) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9901 | val=0.9822 | FR1=0.297 FR2=0.310 | thresh=(0.087, 2.553) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9891 | val=0.9862 | FR1=0.299 FR2=0.310 | thresh=(0.085, 2.559) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.296, FR2=0.309
+  Best score: 1.9778
+  Exported: sparse_largest_T5_fr30.ptl (thresh=0.079/2.510, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T5.pt
+  Initial firing rates: FR1=0.234, FR2=0.482
+  Epoch   1/40 | train=0.9862 | val=0.9744 | FR1=0.210 FR2=0.433 | thresh=(0.057, 0.865) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9857 | val=0.9803 | FR1=0.197 FR2=0.275 | thresh=(0.116, 2.658) | gain=2.97 | lambda=3.00
+  Epoch  11/40 | train=0.9872 | val=0.9803 | FR1=0.199 FR2=0.235 | thresh=(0.117, 3.074) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9877 | val=0.9921 | FR1=0.204 FR2=0.213 | thresh=(0.103, 3.222) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9911 | val=0.9842 | FR1=0.199 FR2=0.216 | thresh=(0.153, 3.401) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9916 | val=0.9803 | FR1=0.197 FR2=0.212 | thresh=(0.165, 3.412) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9901 | val=0.9842 | FR1=0.199 FR2=0.210 | thresh=(0.137, 3.430) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9896 | val=0.9783 | FR1=0.198 FR2=0.208 | thresh=(0.144, 3.433) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9916 | val=0.9842 | FR1=0.195 FR2=0.213 | thresh=(0.142, 3.433) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.215, FR2=0.202
+  Best score: 1.9798
+  Exported: sparse_largest_T5_fr20.ptl (thresh=0.103/3.222, gain=2.99)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T5.pt
+  Initial firing rates: FR1=0.233, FR2=0.481
+  Epoch   1/40 | train=0.9877 | val=0.9862 | FR1=0.186 FR2=0.422 | thresh=(0.205, 1.056) | gain=2.97 | lambda=0.50
+  Epoch   6/40 | train=0.9802 | val=0.9822 | FR1=0.132 FR2=0.180 | thresh=(0.357, 3.357) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9812 | val=0.9842 | FR1=0.123 FR2=0.139 | thresh=(0.411, 3.996) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9817 | val=0.9842 | FR1=0.119 FR2=0.128 | thresh=(0.428, 4.283) | gain=2.97 | lambda=5.00
+  Epoch  21/40 | train=0.9877 | val=0.9862 | FR1=0.120 FR2=0.122 | thresh=(0.388, 4.509) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9852 | val=0.9882 | FR1=0.117 FR2=0.119 | thresh=(0.400, 4.604) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9867 | val=0.9822 | FR1=0.115 FR2=0.116 | thresh=(0.401, 4.638) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9872 | val=0.9862 | FR1=0.112 FR2=0.111 | thresh=(0.402, 4.635) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9896 | val=0.9882 | FR1=0.111 FR2=0.108 | thresh=(0.403, 4.638) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.118, FR2=0.114
+  Best score: 1.9798
+  Exported: sparse_largest_T5_fr10.ptl (thresh=0.403/4.638, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T5.pt
+  Initial firing rates: FR1=0.233, FR2=0.482
+  Epoch   1/40 | train=0.9827 | val=0.9822 | FR1=0.182 FR2=0.409 | thresh=(0.311, 1.107) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9837 | val=0.9763 | FR1=0.126 FR2=0.171 | thresh=(0.443, 3.881) | gain=2.93 | lambda=3.00
+  Epoch  11/40 | train=0.9827 | val=0.9763 | FR1=0.099 FR2=0.105 | thresh=(0.332, 5.059) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9842 | val=0.9783 | FR1=0.080 FR2=0.093 | thresh=(0.339, 5.585) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9867 | val=0.9803 | FR1=0.063 FR2=0.086 | thresh=(0.343, 5.904) | gain=2.97 | lambda=5.00
+  Epoch  26/40 | train=0.9891 | val=0.9882 | FR1=0.060 FR2=0.081 | thresh=(0.443, 5.983) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9901 | val=0.9901 | FR1=0.057 FR2=0.081 | thresh=(0.486, 6.049) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9896 | val=0.9862 | FR1=0.057 FR2=0.082 | thresh=(0.504, 6.069) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9886 | val=0.9901 | FR1=0.057 FR2=0.081 | thresh=(0.506, 6.072) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.055, FR2=0.078
+  Best score: 1.9817
+  Exported: sparse_largest_T5_fr05.ptl (thresh=0.506/6.072, gain=3.00)
+
+======================================================================
+  Variant=smallest (k=3), T=10
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T10.pt
+  Initial firing rates: FR1=0.422, FR2=0.459
+  Epoch   1/40 | train=0.9230 | val=0.9211 | FR1=0.410 FR2=0.454 | thresh=(0.120, 0.288) | gain=3.03 | lambda=0.50
+  Epoch   6/40 | train=0.9353 | val=0.9211 | FR1=0.315 FR2=0.370 | thresh=(0.533, 1.434) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9393 | val=0.9310 | FR1=0.303 FR2=0.345 | thresh=(0.558, 1.937) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9388 | val=0.9290 | FR1=0.304 FR2=0.340 | thresh=(0.607, 2.133) | gain=3.03 | lambda=5.00
+  Epoch  21/40 | train=0.9491 | val=0.9329 | FR1=0.305 FR2=0.339 | thresh=(0.591, 2.332) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9402 | val=0.9250 | FR1=0.305 FR2=0.336 | thresh=(0.599, 2.432) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9541 | val=0.9290 | FR1=0.302 FR2=0.336 | thresh=(0.605, 2.463) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9531 | val=0.9349 | FR1=0.307 FR2=0.336 | thresh=(0.605, 2.497) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9536 | val=0.9310 | FR1=0.302 FR2=0.336 | thresh=(0.606, 2.503) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.294, FR2=0.337
+  Best score: 1.9018
+  Exported: sparse_smallest_T10_fr30.ptl (thresh=0.606/2.503, gain=3.01)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T10.pt
+  Initial firing rates: FR1=0.422, FR2=0.458
+  Epoch   1/40 | train=0.9235 | val=0.9093 | FR1=0.402 FR2=0.446 | thresh=(0.254, 0.454) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9304 | val=0.9172 | FR1=0.263 FR2=0.322 | thresh=(0.759, 2.012) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9363 | val=0.7199 | FR1=0.212 FR2=0.273 | thresh=(0.937, 2.852) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9427 | val=0.9191 | FR1=0.214 FR2=0.267 | thresh=(0.951, 3.212) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9462 | val=0.9250 | FR1=0.206 FR2=0.265 | thresh=(0.965, 3.517) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9511 | val=0.9408 | FR1=0.211 FR2=0.262 | thresh=(0.952, 3.598) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9462 | val=0.9270 | FR1=0.208 FR2=0.259 | thresh=(0.978, 3.665) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9511 | val=0.9369 | FR1=0.200 FR2=0.260 | thresh=(0.974, 3.677) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9467 | val=0.9250 | FR1=0.200 FR2=0.259 | thresh=(0.974, 3.678) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.225, FR2=0.257
+  Best score: 1.8959
+  Exported: sparse_smallest_T10_fr20.ptl (thresh=0.955/3.657, gain=3.01)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T10.pt
+  Initial firing rates: FR1=0.422, FR2=0.459
+  Epoch   1/40 | train=0.9210 | val=0.9053 | FR1=0.398 FR2=0.441 | thresh=(0.297, 0.525) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9304 | val=0.9093 | FR1=0.208 FR2=0.281 | thresh=(0.954, 2.506) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9338 | val=0.9132 | FR1=0.143 FR2=0.236 | thresh=(1.140, 3.643) | gain=3.03 | lambda=5.00
+  Epoch  16/40 | train=0.9363 | val=0.9231 | FR1=0.130 FR2=0.216 | thresh=(1.198, 3.921) | gain=3.03 | lambda=5.00
+  Epoch  21/40 | train=0.9427 | val=0.9270 | FR1=0.131 FR2=0.205 | thresh=(1.239, 4.281) | gain=3.02 | lambda=5.00
+  Epoch  26/40 | train=0.9427 | val=0.9349 | FR1=0.130 FR2=0.200 | thresh=(1.253, 4.454) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9398 | val=0.9369 | FR1=0.130 FR2=0.198 | thresh=(1.270, 4.616) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9477 | val=0.9270 | FR1=0.130 FR2=0.197 | thresh=(1.271, 4.684) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9477 | val=0.9270 | FR1=0.129 FR2=0.197 | thresh=(1.272, 4.692) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.130, FR2=0.198
+  Best score: 1.8865
+  Exported: sparse_smallest_T10_fr10.ptl (thresh=1.271/4.691, gain=3.01)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T10.pt
+  Initial firing rates: FR1=0.422, FR2=0.459
+  Epoch   1/40 | train=0.9160 | val=0.9014 | FR1=0.395 FR2=0.440 | thresh=(0.306, 0.517) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9328 | val=0.9270 | FR1=0.179 FR2=0.271 | thresh=(0.982, 2.704) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9151 | val=0.9172 | FR1=0.120 FR2=0.203 | thresh=(1.230, 3.965) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9358 | val=0.9211 | FR1=0.113 FR2=0.185 | thresh=(1.367, 4.403) | gain=3.02 | lambda=5.00
+  Epoch  21/40 | train=0.9427 | val=0.9191 | FR1=0.091 FR2=0.180 | thresh=(1.517, 4.522) | gain=3.02 | lambda=5.00
+  Epoch  26/40 | train=0.9417 | val=0.9290 | FR1=0.086 FR2=0.168 | thresh=(1.575, 4.667) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9452 | val=0.9349 | FR1=0.087 FR2=0.164 | thresh=(1.634, 4.838) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9501 | val=0.9270 | FR1=0.085 FR2=0.164 | thresh=(1.652, 4.897) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9462 | val=0.9211 | FR1=0.087 FR2=0.165 | thresh=(1.653, 4.906) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.086, FR2=0.168
+  Best score: 1.8826
+  Exported: sparse_smallest_T10_fr05.ptl (thresh=1.554/4.614, gain=3.01)
+
+======================================================================
+  Variant=small (k=5), T=10
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_small_T10.pt
+  Initial firing rates: FR1=0.328, FR2=0.477
+  Epoch   1/40 | train=0.9768 | val=0.9645 | FR1=0.327 FR2=0.451 | thresh=(0.038, 0.457) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9714 | val=0.9606 | FR1=0.305 FR2=0.347 | thresh=(0.327, 1.817) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9719 | val=0.9546 | FR1=0.296 FR2=0.334 | thresh=(0.378, 2.157) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9738 | val=0.9586 | FR1=0.297 FR2=0.328 | thresh=(0.422, 2.345) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9753 | val=0.9724 | FR1=0.299 FR2=0.322 | thresh=(0.424, 2.452) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9793 | val=0.9783 | FR1=0.297 FR2=0.320 | thresh=(0.416, 2.590) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9773 | val=0.9606 | FR1=0.302 FR2=0.321 | thresh=(0.425, 2.654) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9798 | val=0.9763 | FR1=0.297 FR2=0.320 | thresh=(0.422, 2.678) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9788 | val=0.9783 | FR1=0.296 FR2=0.320 | thresh=(0.424, 2.681) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.296, FR2=0.321
+  Best score: 1.9625
+  Exported: sparse_small_T10_fr30.ptl (thresh=0.420/2.641, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_small_T10.pt
+  Initial firing rates: FR1=0.328, FR2=0.477
+  Epoch   1/40 | train=0.9758 | val=0.9684 | FR1=0.320 FR2=0.442 | thresh=(0.123, 0.524) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9664 | val=0.9665 | FR1=0.228 FR2=0.285 | thresh=(0.530, 2.623) | gain=3.03 | lambda=3.00
+  Epoch  11/40 | train=0.9768 | val=0.9586 | FR1=0.211 FR2=0.244 | thresh=(0.508, 3.141) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9753 | val=0.9744 | FR1=0.202 FR2=0.240 | thresh=(0.515, 3.325) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9812 | val=0.9724 | FR1=0.209 FR2=0.234 | thresh=(0.519, 3.524) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9743 | val=0.9724 | FR1=0.207 FR2=0.232 | thresh=(0.533, 3.593) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9768 | val=0.9744 | FR1=0.202 FR2=0.231 | thresh=(0.540, 3.621) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9788 | val=0.9724 | FR1=0.202 FR2=0.233 | thresh=(0.544, 3.641) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9802 | val=0.9704 | FR1=0.198 FR2=0.237 | thresh=(0.547, 3.644) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.184, FR2=0.219
+  Best score: 1.9566
+  Exported: sparse_small_T10_fr20.ptl (thresh=0.549/3.629, gain=3.01)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_small_T10.pt
+  Initial firing rates: FR1=0.328, FR2=0.477
+  Epoch   1/40 | train=0.9733 | val=0.9566 | FR1=0.313 FR2=0.427 | thresh=(0.218, 0.709) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9575 | val=0.8935 | FR1=0.158 FR2=0.232 | thresh=(0.533, 3.187) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9719 | val=0.9704 | FR1=0.120 FR2=0.189 | thresh=(0.576, 4.283) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9743 | val=0.9744 | FR1=0.117 FR2=0.168 | thresh=(0.581, 4.763) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9788 | val=0.9704 | FR1=0.119 FR2=0.162 | thresh=(0.604, 4.959) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9802 | val=0.9783 | FR1=0.111 FR2=0.161 | thresh=(0.619, 4.988) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9778 | val=0.9783 | FR1=0.112 FR2=0.156 | thresh=(0.642, 5.087) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9773 | val=0.9763 | FR1=0.110 FR2=0.155 | thresh=(0.644, 5.107) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9827 | val=0.9803 | FR1=0.110 FR2=0.157 | thresh=(0.643, 5.109) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.103, FR2=0.156
+  Best score: 1.9630
+  Exported: sparse_small_T10_fr10.ptl (thresh=0.643/5.109, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_small_T10.pt
+  Initial firing rates: FR1=0.328, FR2=0.477
+  Epoch   1/40 | train=0.9699 | val=0.9665 | FR1=0.309 FR2=0.420 | thresh=(0.228, 0.785) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9640 | val=0.9527 | FR1=0.144 FR2=0.212 | thresh=(0.586, 3.445) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9625 | val=0.9566 | FR1=0.104 FR2=0.155 | thresh=(0.745, 4.512) | gain=3.02 | lambda=5.00
+  Epoch  16/40 | train=0.9723 | val=0.9586 | FR1=0.083 FR2=0.140 | thresh=(1.048, 5.078) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9728 | val=0.9704 | FR1=0.073 FR2=0.125 | thresh=(1.299, 4.861) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9753 | val=0.9684 | FR1=0.072 FR2=0.124 | thresh=(1.315, 4.660) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9798 | val=0.9684 | FR1=0.070 FR2=0.122 | thresh=(1.334, 4.346) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9812 | val=0.9704 | FR1=0.068 FR2=0.116 | thresh=(1.324, 4.318) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9798 | val=0.9783 | FR1=0.072 FR2=0.121 | thresh=(1.321, 4.319) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.058, FR2=0.103
+  Best score: 1.9684
+  Exported: sparse_small_T10_fr05.ptl (thresh=1.359/4.445, gain=3.04)
+
+======================================================================
+  Variant=medium (k=7), T=10
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T10.pt
+  Initial firing rates: FR1=0.245, FR2=0.486
+  Epoch   1/40 | train=0.9842 | val=0.9783 | FR1=0.252 FR2=0.459 | thresh=(0.082, 0.685) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9758 | val=0.9803 | FR1=0.287 FR2=0.343 | thresh=(0.056, 1.621) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9807 | val=0.9724 | FR1=0.294 FR2=0.319 | thresh=(0.071, 1.848) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9788 | val=0.9724 | FR1=0.296 FR2=0.317 | thresh=(0.129, 2.001) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9842 | val=0.9803 | FR1=0.293 FR2=0.313 | thresh=(0.135, 2.078) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9857 | val=0.9763 | FR1=0.296 FR2=0.310 | thresh=(0.116, 2.148) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9798 | val=0.9704 | FR1=0.299 FR2=0.308 | thresh=(0.143, 2.130) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9812 | val=0.9724 | FR1=0.293 FR2=0.314 | thresh=(0.148, 2.139) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9872 | val=0.9783 | FR1=0.302 FR2=0.305 | thresh=(0.145, 2.149) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.300, FR2=0.307
+  Best score: 1.9714
+  Exported: sparse_medium_T10_fr30.ptl (thresh=0.120/2.154, gain=2.98)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T10.pt
+  Initial firing rates: FR1=0.245, FR2=0.486
+  Epoch   1/40 | train=0.9807 | val=0.9803 | FR1=0.238 FR2=0.452 | thresh=(0.106, 0.798) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9788 | val=0.9783 | FR1=0.212 FR2=0.254 | thresh=(0.191, 2.583) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9807 | val=0.9704 | FR1=0.202 FR2=0.227 | thresh=(0.259, 3.311) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9817 | val=0.9803 | FR1=0.201 FR2=0.220 | thresh=(0.288, 3.409) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9812 | val=0.9803 | FR1=0.188 FR2=0.218 | thresh=(0.337, 3.621) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9827 | val=0.9763 | FR1=0.202 FR2=0.218 | thresh=(0.345, 3.705) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9842 | val=0.9763 | FR1=0.202 FR2=0.216 | thresh=(0.343, 3.731) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9783 | val=0.9783 | FR1=0.183 FR2=0.217 | thresh=(0.390, 3.796) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9788 | val=0.9783 | FR1=0.183 FR2=0.217 | thresh=(0.393, 3.799) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.195, FR2=0.232
+  Best score: 1.9669
+  Exported: sparse_medium_T10_fr20.ptl (thresh=0.178/2.792, gain=2.99)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T10.pt
+  Initial firing rates: FR1=0.245, FR2=0.486
+  Epoch   1/40 | train=0.9807 | val=0.9744 | FR1=0.229 FR2=0.426 | thresh=(0.147, 0.969) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9783 | val=0.9744 | FR1=0.137 FR2=0.200 | thresh=(0.410, 3.854) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9812 | val=0.9744 | FR1=0.118 FR2=0.155 | thresh=(0.453, 4.657) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9783 | val=0.9803 | FR1=0.112 FR2=0.149 | thresh=(0.527, 5.116) | gain=2.97 | lambda=5.00
+  Epoch  21/40 | train=0.9817 | val=0.9783 | FR1=0.110 FR2=0.142 | thresh=(0.535, 5.358) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9842 | val=0.9822 | FR1=0.114 FR2=0.136 | thresh=(0.572, 5.516) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9827 | val=0.9783 | FR1=0.118 FR2=0.136 | thresh=(0.571, 5.613) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9812 | val=0.9822 | FR1=0.104 FR2=0.137 | thresh=(0.606, 5.637) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9812 | val=0.9744 | FR1=0.103 FR2=0.138 | thresh=(0.607, 5.639) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.117, FR2=0.134
+  Best score: 1.9689
+  Exported: sparse_medium_T10_fr10.ptl (thresh=0.585/5.629, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T10.pt
+  Initial firing rates: FR1=0.245, FR2=0.486
+  Epoch   1/40 | train=0.9783 | val=0.9803 | FR1=0.226 FR2=0.412 | thresh=(0.118, 0.999) | gain=2.97 | lambda=0.50
+  Epoch   6/40 | train=0.9763 | val=0.9546 | FR1=0.124 FR2=0.183 | thresh=(0.459, 4.011) | gain=2.95 | lambda=3.00
+  Epoch  11/40 | train=0.9783 | val=0.9744 | FR1=0.088 FR2=0.126 | thresh=(0.556, 5.188) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9857 | val=0.9842 | FR1=0.071 FR2=0.113 | thresh=(0.567, 5.647) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9857 | val=0.9842 | FR1=0.064 FR2=0.097 | thresh=(0.536, 5.977) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9867 | val=0.9882 | FR1=0.065 FR2=0.099 | thresh=(0.677, 6.099) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9877 | val=0.9862 | FR1=0.064 FR2=0.097 | thresh=(0.740, 6.127) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9896 | val=0.9842 | FR1=0.064 FR2=0.096 | thresh=(0.763, 6.149) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9877 | val=0.9803 | FR1=0.064 FR2=0.096 | thresh=(0.766, 6.151) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.063, FR2=0.094
+  Best score: 1.9763
+  Exported: sparse_medium_T10_fr05.ptl (thresh=0.730/6.128, gain=3.00)
+
+======================================================================
+  Variant=large (k=9), T=10
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_large_T10.pt
+  Initial firing rates: FR1=0.273, FR2=0.486
+  Epoch   1/40 | train=0.9837 | val=0.9822 | FR1=0.271 FR2=0.439 | thresh=(0.010, 0.684) | gain=2.98 | lambda=0.50
+  Epoch   6/40 | train=0.9852 | val=0.9822 | FR1=0.289 FR2=0.330 | thresh=(0.035, 1.646) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9867 | val=0.9744 | FR1=0.294 FR2=0.317 | thresh=(0.049, 1.891) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9842 | val=0.9842 | FR1=0.293 FR2=0.311 | thresh=(0.054, 1.986) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9896 | val=0.9842 | FR1=0.294 FR2=0.311 | thresh=(0.066, 2.105) | gain=2.97 | lambda=5.00
+  Epoch  26/40 | train=0.9867 | val=0.9783 | FR1=0.295 FR2=0.310 | thresh=(0.075, 2.149) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9891 | val=0.9783 | FR1=0.296 FR2=0.309 | thresh=(0.070, 2.200) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9881 | val=0.9803 | FR1=0.295 FR2=0.307 | thresh=(0.070, 2.210) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9886 | val=0.9803 | FR1=0.294 FR2=0.306 | thresh=(0.070, 2.214) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.313, FR2=0.314
+  Best score: 1.9748
+  Exported: sparse_large_T10_fr30.ptl (thresh=0.046/2.135, gain=2.98)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_large_T10.pt
+  Initial firing rates: FR1=0.273, FR2=0.486
+  Epoch   1/40 | train=0.9812 | val=0.9822 | FR1=0.270 FR2=0.417 | thresh=(0.050, 0.892) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9812 | val=0.9783 | FR1=0.209 FR2=0.255 | thresh=(0.131, 2.391) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9822 | val=0.9822 | FR1=0.209 FR2=0.226 | thresh=(0.139, 2.907) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9862 | val=0.9862 | FR1=0.204 FR2=0.225 | thresh=(0.146, 3.133) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9877 | val=0.9803 | FR1=0.204 FR2=0.221 | thresh=(0.144, 3.241) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9872 | val=0.9842 | FR1=0.210 FR2=0.220 | thresh=(0.109, 3.345) | gain=2.98 | lambda=5.00
+  Epoch  31/40 | train=0.9896 | val=0.9783 | FR1=0.203 FR2=0.218 | thresh=(0.120, 3.353) | gain=2.99 | lambda=5.00
+  Epoch  36/40 | train=0.9881 | val=0.9822 | FR1=0.200 FR2=0.217 | thresh=(0.113, 3.368) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9872 | val=0.9842 | FR1=0.201 FR2=0.217 | thresh=(0.112, 3.371) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.200, FR2=0.216
+  Best score: 1.9763
+  Exported: sparse_large_T10_fr20.ptl (thresh=0.119/3.346, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_large_T10.pt
+  Initial firing rates: FR1=0.273, FR2=0.486
+  Epoch   1/40 | train=0.9837 | val=0.9803 | FR1=0.258 FR2=0.410 | thresh=(0.070, 0.948) | gain=2.98 | lambda=0.50
+  Epoch   6/40 | train=0.9842 | val=0.9763 | FR1=0.152 FR2=0.204 | thresh=(0.268, 3.208) | gain=2.96 | lambda=3.00
+  Epoch  11/40 | train=0.9788 | val=0.9744 | FR1=0.120 FR2=0.159 | thresh=(0.470, 4.027) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9857 | val=0.9763 | FR1=0.116 FR2=0.145 | thresh=(0.689, 4.446) | gain=2.96 | lambda=5.00
+  Epoch  21/40 | train=0.9877 | val=0.9803 | FR1=0.114 FR2=0.139 | thresh=(0.944, 4.496) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9847 | val=0.9783 | FR1=0.115 FR2=0.131 | thresh=(0.763, 4.748) | gain=2.93 | lambda=5.00
+  Epoch  31/40 | train=0.9862 | val=0.9822 | FR1=0.115 FR2=0.121 | thresh=(0.625, 4.903) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9862 | val=0.9783 | FR1=0.113 FR2=0.114 | thresh=(0.644, 4.888) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9872 | val=0.9803 | FR1=0.113 FR2=0.114 | thresh=(0.647, 4.884) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.115, FR2=0.132
+  Best score: 1.9704
+  Exported: sparse_large_T10_fr10.ptl (thresh=0.806/4.667, gain=2.96)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_large_T10.pt
+  Initial firing rates: FR1=0.273, FR2=0.486
+  Epoch   1/40 | train=0.9812 | val=0.9862 | FR1=0.258 FR2=0.411 | thresh=(0.092, 1.127) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9788 | val=0.9763 | FR1=0.122 FR2=0.201 | thresh=(0.594, 3.390) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9827 | val=0.9783 | FR1=0.101 FR2=0.114 | thresh=(1.184, 4.385) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9812 | val=0.9803 | FR1=0.068 FR2=0.086 | thresh=(1.443, 4.689) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9842 | val=0.9803 | FR1=0.065 FR2=0.082 | thresh=(1.461, 4.768) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9763 | val=0.9842 | FR1=0.065 FR2=0.082 | thresh=(1.496, 4.812) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9832 | val=0.9842 | FR1=0.063 FR2=0.076 | thresh=(1.501, 4.828) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9827 | val=0.9842 | FR1=0.063 FR2=0.077 | thresh=(1.509, 4.830) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9852 | val=0.9882 | FR1=0.063 FR2=0.078 | thresh=(1.510, 4.831) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.063, FR2=0.073
+  Best score: 1.9734
+  Exported: sparse_large_T10_fr05.ptl (thresh=1.510/4.831, gain=3.00)
+
+======================================================================
+  Variant=largest (k=11), T=10
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T10.pt
+  Initial firing rates: FR1=0.263, FR2=0.454
+  Epoch   1/40 | train=0.9857 | val=0.9803 | FR1=0.288 FR2=0.432 | thresh=(0.026, 0.422) | gain=2.98 | lambda=0.50
+  Epoch   6/40 | train=0.9852 | val=0.9822 | FR1=0.290 FR2=0.324 | thresh=(0.038, 1.257) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9901 | val=0.9822 | FR1=0.295 FR2=0.317 | thresh=(0.051, 1.459) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9881 | val=0.9822 | FR1=0.293 FR2=0.313 | thresh=(0.054, 1.523) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9886 | val=0.9822 | FR1=0.296 FR2=0.311 | thresh=(0.061, 1.630) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9916 | val=0.9803 | FR1=0.295 FR2=0.310 | thresh=(0.064, 1.701) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9916 | val=0.9803 | FR1=0.295 FR2=0.309 | thresh=(0.069, 1.767) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9916 | val=0.9783 | FR1=0.297 FR2=0.310 | thresh=(0.073, 1.775) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9931 | val=0.9822 | FR1=0.291 FR2=0.308 | thresh=(0.072, 1.774) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.292, FR2=0.309
+  Best score: 1.9813
+  Exported: sparse_largest_T10_fr30.ptl (thresh=0.072/1.774, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T10.pt
+  Initial firing rates: FR1=0.263, FR2=0.453
+  Epoch   1/40 | train=0.9872 | val=0.9803 | FR1=0.246 FR2=0.408 | thresh=(0.042, 0.610) | gain=2.98 | lambda=0.50
+  Epoch   6/40 | train=0.9881 | val=0.9803 | FR1=0.199 FR2=0.256 | thresh=(0.133, 1.791) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9847 | val=0.9842 | FR1=0.202 FR2=0.224 | thresh=(0.195, 2.138) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9867 | val=0.9803 | FR1=0.201 FR2=0.216 | thresh=(0.219, 2.358) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9881 | val=0.9822 | FR1=0.202 FR2=0.215 | thresh=(0.326, 2.458) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9862 | val=0.9763 | FR1=0.202 FR2=0.212 | thresh=(0.340, 2.531) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9867 | val=0.9803 | FR1=0.203 FR2=0.212 | thresh=(0.330, 2.534) | gain=2.99 | lambda=5.00
+  Epoch  36/40 | train=0.9877 | val=0.9842 | FR1=0.202 FR2=0.209 | thresh=(0.349, 2.533) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9901 | val=0.9882 | FR1=0.202 FR2=0.209 | thresh=(0.350, 2.533) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.202, FR2=0.207
+  Best score: 1.9783
+  Exported: sparse_largest_T10_fr20.ptl (thresh=0.350/2.533, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T10.pt
+  Initial firing rates: FR1=0.263, FR2=0.454
+  Epoch   1/40 | train=0.9867 | val=0.9822 | FR1=0.204 FR2=0.395 | thresh=(0.184, 0.830) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9832 | val=0.9842 | FR1=0.150 FR2=0.184 | thresh=(0.494, 2.422) | gain=2.95 | lambda=3.00
+  Epoch  11/40 | train=0.9862 | val=0.9862 | FR1=0.125 FR2=0.138 | thresh=(0.637, 3.079) | gain=2.94 | lambda=5.00
+  Epoch  16/40 | train=0.9832 | val=0.9842 | FR1=0.117 FR2=0.131 | thresh=(0.761, 3.306) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9857 | val=0.9822 | FR1=0.116 FR2=0.124 | thresh=(0.856, 3.466) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9847 | val=0.9803 | FR1=0.115 FR2=0.127 | thresh=(0.884, 3.573) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9877 | val=0.9862 | FR1=0.114 FR2=0.123 | thresh=(0.914, 3.628) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9872 | val=0.9862 | FR1=0.115 FR2=0.124 | thresh=(0.914, 3.658) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9891 | val=0.9822 | FR1=0.115 FR2=0.122 | thresh=(0.911, 3.660) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.115, FR2=0.126
+  Best score: 1.9743
+  Exported: sparse_largest_T10_fr10.ptl (thresh=0.864/3.527, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T10.pt
+  Initial firing rates: FR1=0.263, FR2=0.454
+  Epoch   1/40 | train=0.9881 | val=0.9822 | FR1=0.187 FR2=0.379 | thresh=(0.310, 0.841) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9793 | val=0.9684 | FR1=0.139 FR2=0.154 | thresh=(0.441, 2.972) | gain=2.95 | lambda=3.00
+  Epoch  11/40 | train=0.9837 | val=0.9882 | FR1=0.097 FR2=0.097 | thresh=(0.649, 3.796) | gain=2.93 | lambda=5.00
+  Epoch  16/40 | train=0.9862 | val=0.9822 | FR1=0.085 FR2=0.091 | thresh=(0.742, 4.311) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9886 | val=0.9822 | FR1=0.076 FR2=0.089 | thresh=(0.826, 4.591) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9886 | val=0.9842 | FR1=0.064 FR2=0.085 | thresh=(0.862, 4.821) | gain=2.97 | lambda=5.00
+  Epoch  31/40 | train=0.9857 | val=0.9822 | FR1=0.063 FR2=0.083 | thresh=(0.946, 4.970) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9867 | val=0.9862 | FR1=0.064 FR2=0.082 | thresh=(0.954, 5.013) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9891 | val=0.9842 | FR1=0.061 FR2=0.084 | thresh=(0.957, 5.018) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.071, FR2=0.084
+  Best score: 1.9778
+  Exported: sparse_largest_T10_fr05.ptl (thresh=0.843/4.518, gain=3.00)
+
+======================================================================
+  Variant=smallest (k=3), T=15
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T15.pt
+  Initial firing rates: FR1=0.353, FR2=0.460
+  Epoch   1/40 | train=0.9353 | val=0.8994 | FR1=0.342 FR2=0.445 | thresh=(0.077, 0.245) | gain=3.02 | lambda=0.50
+  Epoch   6/40 | train=0.9501 | val=0.9290 | FR1=0.314 FR2=0.369 | thresh=(0.437, 0.748) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9501 | val=0.9250 | FR1=0.306 FR2=0.342 | thresh=(0.485, 1.260) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9546 | val=0.9389 | FR1=0.305 FR2=0.339 | thresh=(0.456, 1.537) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9481 | val=0.9408 | FR1=0.307 FR2=0.333 | thresh=(0.461, 1.666) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9491 | val=0.9329 | FR1=0.301 FR2=0.329 | thresh=(0.485, 1.799) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9536 | val=0.9527 | FR1=0.302 FR2=0.329 | thresh=(0.477, 1.871) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9630 | val=0.9329 | FR1=0.301 FR2=0.330 | thresh=(0.478, 1.894) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9560 | val=0.9389 | FR1=0.300 FR2=0.333 | thresh=(0.479, 1.897) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.306, FR2=0.328
+  Best score: 1.9132
+  Exported: sparse_smallest_T15_fr30.ptl (thresh=0.477/1.851, gain=3.01)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T15.pt
+  Initial firing rates: FR1=0.352, FR2=0.459
+  Epoch   1/40 | train=0.9417 | val=0.9231 | FR1=0.335 FR2=0.436 | thresh=(0.217, 0.332) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9358 | val=0.8836 | FR1=0.229 FR2=0.332 | thresh=(0.642, 1.697) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9442 | val=0.9231 | FR1=0.212 FR2=0.294 | thresh=(0.685, 2.550) | gain=3.03 | lambda=5.00
+  Epoch  16/40 | train=0.9481 | val=0.9310 | FR1=0.209 FR2=0.286 | thresh=(0.674, 2.912) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9472 | val=0.9349 | FR1=0.211 FR2=0.281 | thresh=(0.693, 3.119) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9575 | val=0.9329 | FR1=0.213 FR2=0.280 | thresh=(0.684, 3.257) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9541 | val=0.9310 | FR1=0.219 FR2=0.276 | thresh=(0.681, 3.348) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9640 | val=0.9349 | FR1=0.211 FR2=0.276 | thresh=(0.693, 3.372) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9556 | val=0.9389 | FR1=0.206 FR2=0.275 | thresh=(0.694, 3.373) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.220, FR2=0.277
+  Best score: 1.9023
+  Exported: sparse_smallest_T15_fr20.ptl (thresh=0.690/3.148, gain=3.01)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T15.pt
+  Initial firing rates: FR1=0.353, FR2=0.459
+  Epoch   1/40 | train=0.9407 | val=0.8836 | FR1=0.334 FR2=0.431 | thresh=(0.385, 0.376) | gain=3.02 | lambda=0.50
+  Epoch   6/40 | train=0.9383 | val=0.9211 | FR1=0.179 FR2=0.299 | thresh=(1.011, 2.421) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9412 | val=0.9290 | FR1=0.148 FR2=0.249 | thresh=(1.178, 4.143) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9447 | val=0.9270 | FR1=0.134 FR2=0.229 | thresh=(1.309, 4.445) | gain=3.03 | lambda=5.00
+  Epoch  21/40 | train=0.9560 | val=0.9428 | FR1=0.128 FR2=0.218 | thresh=(1.383, 4.765) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9560 | val=0.9329 | FR1=0.124 FR2=0.211 | thresh=(1.487, 4.832) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9481 | val=0.9369 | FR1=0.121 FR2=0.208 | thresh=(1.503, 4.930) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9546 | val=0.9310 | FR1=0.123 FR2=0.211 | thresh=(1.480, 5.000) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9560 | val=0.9389 | FR1=0.125 FR2=0.214 | thresh=(1.480, 5.009) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.128, FR2=0.223
+  Best score: 1.8989
+  Exported: sparse_smallest_T15_fr10.ptl (thresh=1.383/4.765, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_smallest_T15.pt
+  Initial firing rates: FR1=0.352, FR2=0.459
+  Epoch   1/40 | train=0.9393 | val=0.9132 | FR1=0.332 FR2=0.432 | thresh=(0.408, 0.402) | gain=3.03 | lambda=0.50
+  Epoch   6/40 | train=0.9294 | val=0.9152 | FR1=0.158 FR2=0.279 | thresh=(1.134, 3.025) | gain=3.02 | lambda=3.00
+  Epoch  11/40 | train=0.9417 | val=0.9172 | FR1=0.105 FR2=0.170 | thresh=(1.926, 4.240) | gain=3.03 | lambda=5.00
+  Epoch  16/40 | train=0.9402 | val=0.9349 | FR1=0.099 FR2=0.150 | thresh=(2.121, 4.638) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9521 | val=0.9448 | FR1=0.096 FR2=0.146 | thresh=(2.180, 4.679) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9521 | val=0.9310 | FR1=0.091 FR2=0.142 | thresh=(2.245, 4.601) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9560 | val=0.9448 | FR1=0.089 FR2=0.141 | thresh=(2.283, 4.582) | gain=3.01 | lambda=5.00
+  Epoch  36/40 | train=0.9556 | val=0.9467 | FR1=0.087 FR2=0.141 | thresh=(2.295, 4.570) | gain=3.01 | lambda=5.00
+  Epoch  40/40 | train=0.9506 | val=0.9349 | FR1=0.088 FR2=0.141 | thresh=(2.297, 4.570) | gain=3.01 | lambda=5.00
+  Final firing rates: FR1=0.089, FR2=0.142
+  Best score: 1.9072
+  Exported: sparse_smallest_T15_fr05.ptl (thresh=2.296/4.569, gain=3.01)
+
+======================================================================
+  Variant=small (k=5), T=15
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_small_T15.pt
+  Initial firing rates: FR1=0.420, FR2=0.486
+  Epoch   1/40 | train=0.9689 | val=0.9645 | FR1=0.395 FR2=0.456 | thresh=(0.154, 0.555) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9704 | val=0.9665 | FR1=0.315 FR2=0.359 | thresh=(0.469, 1.936) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9748 | val=0.9625 | FR1=0.307 FR2=0.335 | thresh=(0.516, 2.271) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9778 | val=0.9724 | FR1=0.302 FR2=0.334 | thresh=(0.515, 2.591) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9748 | val=0.9704 | FR1=0.302 FR2=0.334 | thresh=(0.530, 2.754) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9802 | val=0.9665 | FR1=0.301 FR2=0.333 | thresh=(0.526, 2.897) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9802 | val=0.9744 | FR1=0.303 FR2=0.329 | thresh=(0.539, 2.951) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9793 | val=0.9783 | FR1=0.304 FR2=0.328 | thresh=(0.539, 2.974) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9822 | val=0.9744 | FR1=0.302 FR2=0.327 | thresh=(0.539, 2.977) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.302, FR2=0.328
+  Best score: 1.9576
+  Exported: sparse_small_T15_fr30.ptl (thresh=0.539/2.974, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_small_T15.pt
+  Initial firing rates: FR1=0.420, FR2=0.487
+  Epoch   1/40 | train=0.9635 | val=0.9665 | FR1=0.377 FR2=0.444 | thresh=(0.254, 0.560) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9689 | val=0.9527 | FR1=0.231 FR2=0.305 | thresh=(0.587, 2.422) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9709 | val=0.9645 | FR1=0.217 FR2=0.264 | thresh=(0.737, 3.297) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9753 | val=0.9684 | FR1=0.209 FR2=0.246 | thresh=(0.755, 3.740) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9773 | val=0.9704 | FR1=0.208 FR2=0.244 | thresh=(0.759, 3.978) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9723 | val=0.9704 | FR1=0.211 FR2=0.240 | thresh=(0.683, 4.152) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9783 | val=0.9645 | FR1=0.204 FR2=0.234 | thresh=(0.749, 4.315) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9798 | val=0.9684 | FR1=0.204 FR2=0.234 | thresh=(0.752, 4.396) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9788 | val=0.9783 | FR1=0.204 FR2=0.234 | thresh=(0.751, 4.402) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.205, FR2=0.241
+  Best score: 1.9571
+  Exported: sparse_small_T15_fr20.ptl (thresh=0.745/4.006, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_small_T15.pt
+  Initial firing rates: FR1=0.421, FR2=0.487
+  Epoch   1/40 | train=0.9644 | val=0.9606 | FR1=0.377 FR2=0.441 | thresh=(0.252, 0.751) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9556 | val=0.9408 | FR1=0.175 FR2=0.262 | thresh=(0.773, 3.002) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9551 | val=0.9507 | FR1=0.125 FR2=0.198 | thresh=(1.060, 5.129) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9600 | val=0.9684 | FR1=0.115 FR2=0.177 | thresh=(1.253, 5.763) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9669 | val=0.9645 | FR1=0.115 FR2=0.173 | thresh=(1.275, 5.872) | gain=2.98 | lambda=5.00
+  Epoch  26/40 | train=0.9719 | val=0.9645 | FR1=0.110 FR2=0.166 | thresh=(1.316, 5.923) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9723 | val=0.9665 | FR1=0.110 FR2=0.163 | thresh=(1.327, 5.988) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9753 | val=0.9704 | FR1=0.111 FR2=0.162 | thresh=(1.331, 6.026) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9783 | val=0.9684 | FR1=0.111 FR2=0.162 | thresh=(1.332, 6.032) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.109, FR2=0.163
+  Best score: 1.9507
+  Exported: sparse_small_T15_fr10.ptl (thresh=1.326/5.978, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_small_T15.pt
+  Initial firing rates: FR1=0.421, FR2=0.487
+  Epoch   1/40 | train=0.9536 | val=0.9625 | FR1=0.368 FR2=0.434 | thresh=(0.281, 0.713) | gain=3.01 | lambda=0.50
+  Epoch   6/40 | train=0.9595 | val=0.9586 | FR1=0.143 FR2=0.242 | thresh=(0.857, 3.214) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9501 | val=0.9507 | FR1=0.099 FR2=0.179 | thresh=(1.322, 5.161) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9630 | val=0.9606 | FR1=0.083 FR2=0.164 | thresh=(1.448, 5.524) | gain=3.01 | lambda=5.00
+  Epoch  21/40 | train=0.9659 | val=0.9546 | FR1=0.086 FR2=0.152 | thresh=(1.476, 5.801) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9679 | val=0.9645 | FR1=0.088 FR2=0.149 | thresh=(1.491, 6.043) | gain=3.01 | lambda=5.00
+  Epoch  31/40 | train=0.9728 | val=0.9625 | FR1=0.101 FR2=0.151 | thresh=(1.339, 6.420) | gain=2.83 | lambda=5.00
+  Epoch  36/40 | train=0.9689 | val=0.9566 | FR1=0.102 FR2=0.149 | thresh=(1.281, 6.555) | gain=2.80 | lambda=5.00
+  Epoch  40/40 | train=0.9644 | val=0.9606 | FR1=0.102 FR2=0.147 | thresh=(1.280, 6.565) | gain=2.81 | lambda=5.00
+  Final firing rates: FR1=0.101, FR2=0.150
+  Best score: 1.9383
+  Exported: sparse_small_T15_fr05.ptl (thresh=1.280/6.563, gain=2.81)
+
+======================================================================
+  Variant=medium (k=7), T=15
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T15.pt
+  Initial firing rates: FR1=0.246, FR2=0.468
+  Epoch   1/40 | train=0.9822 | val=0.9763 | FR1=0.248 FR2=0.439 | thresh=(0.049, 0.593) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9807 | val=0.9763 | FR1=0.285 FR2=0.329 | thresh=(0.021, 1.408) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9822 | val=0.9803 | FR1=0.300 FR2=0.319 | thresh=(0.056, 1.656) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9802 | val=0.9842 | FR1=0.298 FR2=0.314 | thresh=(0.048, 1.712) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9867 | val=0.9842 | FR1=0.294 FR2=0.315 | thresh=(0.058, 1.835) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9857 | val=0.9862 | FR1=0.297 FR2=0.313 | thresh=(0.059, 1.916) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9852 | val=0.9842 | FR1=0.296 FR2=0.313 | thresh=(0.067, 1.962) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9857 | val=0.9862 | FR1=0.299 FR2=0.312 | thresh=(0.065, 1.994) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9857 | val=0.9822 | FR1=0.293 FR2=0.314 | thresh=(0.068, 2.003) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.298, FR2=0.314
+  Best score: 1.9743
+  Exported: sparse_medium_T15_fr30.ptl (thresh=0.068/1.998, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T15.pt
+  Initial firing rates: FR1=0.246, FR2=0.467
+  Epoch   1/40 | train=0.9827 | val=0.9783 | FR1=0.235 FR2=0.423 | thresh=(0.073, 0.910) | gain=2.97 | lambda=0.50
+  Epoch   6/40 | train=0.9763 | val=0.9803 | FR1=0.177 FR2=0.277 | thresh=(0.410, 2.286) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9817 | val=0.9783 | FR1=0.203 FR2=0.244 | thresh=(0.406, 2.903) | gain=2.98 | lambda=5.00
+  Epoch  16/40 | train=0.9802 | val=0.9763 | FR1=0.209 FR2=0.226 | thresh=(0.370, 3.103) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9852 | val=0.9822 | FR1=0.206 FR2=0.222 | thresh=(0.336, 3.282) | gain=2.98 | lambda=5.00
+  Epoch  26/40 | train=0.9837 | val=0.9783 | FR1=0.203 FR2=0.213 | thresh=(0.344, 3.315) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9842 | val=0.9783 | FR1=0.205 FR2=0.215 | thresh=(0.343, 3.367) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9847 | val=0.9763 | FR1=0.201 FR2=0.209 | thresh=(0.344, 3.381) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9847 | val=0.9803 | FR1=0.203 FR2=0.211 | thresh=(0.344, 3.378) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.208, FR2=0.218
+  Best score: 1.9709
+  Exported: sparse_medium_T15_fr20.ptl (thresh=0.346/3.330, gain=2.99)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T15.pt
+  Initial firing rates: FR1=0.246, FR2=0.468
+  Epoch   1/40 | train=0.9832 | val=0.9665 | FR1=0.219 FR2=0.403 | thresh=(0.144, 0.986) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9758 | val=0.9763 | FR1=0.144 FR2=0.208 | thresh=(0.402, 3.156) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9847 | val=0.9803 | FR1=0.119 FR2=0.160 | thresh=(0.484, 4.054) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9852 | val=0.9822 | FR1=0.112 FR2=0.148 | thresh=(0.494, 4.463) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9837 | val=0.9822 | FR1=0.110 FR2=0.141 | thresh=(0.445, 4.839) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9852 | val=0.9783 | FR1=0.112 FR2=0.141 | thresh=(0.414, 5.052) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9832 | val=0.9842 | FR1=0.107 FR2=0.137 | thresh=(0.412, 5.121) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9832 | val=0.9862 | FR1=0.112 FR2=0.140 | thresh=(0.406, 5.162) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9852 | val=0.9842 | FR1=0.106 FR2=0.135 | thresh=(0.406, 5.165) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.091, FR2=0.146
+  Best score: 1.9724
+  Exported: sparse_medium_T15_fr10.ptl (thresh=0.524/4.252, gain=3.02)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_medium_T15.pt
+  Initial firing rates: FR1=0.246, FR2=0.468
+  Epoch   1/40 | train=0.9793 | val=0.9724 | FR1=0.216 FR2=0.392 | thresh=(0.217, 1.010) | gain=2.95 | lambda=0.50
+  Epoch   6/40 | train=0.9778 | val=0.9744 | FR1=0.127 FR2=0.190 | thresh=(0.395, 3.464) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9822 | val=0.9783 | FR1=0.091 FR2=0.126 | thresh=(0.374, 4.304) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9817 | val=0.9803 | FR1=0.083 FR2=0.112 | thresh=(0.369, 4.727) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9812 | val=0.9822 | FR1=0.071 FR2=0.109 | thresh=(0.394, 5.037) | gain=2.97 | lambda=5.00
+  Epoch  26/40 | train=0.9837 | val=0.9803 | FR1=0.073 FR2=0.105 | thresh=(0.370, 5.235) | gain=2.98 | lambda=5.00
+  Epoch  31/40 | train=0.9817 | val=0.9724 | FR1=0.074 FR2=0.105 | thresh=(0.363, 5.294) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9881 | val=0.9803 | FR1=0.074 FR2=0.102 | thresh=(0.369, 5.312) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9837 | val=0.9862 | FR1=0.070 FR2=0.103 | thresh=(0.368, 5.309) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.069, FR2=0.098
+  Best score: 1.9704
+  Exported: sparse_medium_T15_fr05.ptl (thresh=0.367/5.308, gain=3.00)
+
+======================================================================
+  Variant=large (k=9), T=15
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_large_T15.pt
+  Initial firing rates: FR1=0.211, FR2=0.496
+  Epoch   1/40 | train=0.9812 | val=0.9822 | FR1=0.218 FR2=0.445 | thresh=(0.011, 0.700) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9817 | val=0.9803 | FR1=0.284 FR2=0.340 | thresh=(0.029, 1.355) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9852 | val=0.9783 | FR1=0.294 FR2=0.317 | thresh=(0.023, 1.470) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9862 | val=0.9842 | FR1=0.295 FR2=0.316 | thresh=(0.052, 1.593) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9827 | val=0.9842 | FR1=0.293 FR2=0.314 | thresh=(0.098, 1.715) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9852 | val=0.9744 | FR1=0.294 FR2=0.311 | thresh=(0.088, 1.750) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9852 | val=0.9803 | FR1=0.294 FR2=0.310 | thresh=(0.091, 1.746) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9857 | val=0.9803 | FR1=0.293 FR2=0.314 | thresh=(0.093, 1.757) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9862 | val=0.9803 | FR1=0.296 FR2=0.312 | thresh=(0.090, 1.758) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.291, FR2=0.315
+  Best score: 1.9724
+  Exported: sparse_large_T15_fr30.ptl (thresh=0.089/1.736, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_large_T15.pt
+  Initial firing rates: FR1=0.211, FR2=0.496
+  Epoch   1/40 | train=0.9832 | val=0.9842 | FR1=0.199 FR2=0.431 | thresh=(0.028, 0.921) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9793 | val=0.9744 | FR1=0.205 FR2=0.275 | thresh=(0.028, 2.250) | gain=2.99 | lambda=3.00
+  Epoch  11/40 | train=0.9817 | val=0.9783 | FR1=0.203 FR2=0.240 | thresh=(0.066, 2.699) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9822 | val=0.9704 | FR1=0.203 FR2=0.231 | thresh=(0.066, 2.935) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9847 | val=0.9744 | FR1=0.202 FR2=0.221 | thresh=(0.073, 3.094) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9852 | val=0.9763 | FR1=0.194 FR2=0.221 | thresh=(0.073, 3.179) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9832 | val=0.9842 | FR1=0.207 FR2=0.218 | thresh=(0.066, 3.180) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9862 | val=0.9763 | FR1=0.198 FR2=0.220 | thresh=(0.070, 3.212) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9832 | val=0.9763 | FR1=0.205 FR2=0.222 | thresh=(0.070, 3.212) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.208, FR2=0.228
+  Best score: 1.9699
+  Exported: sparse_large_T15_fr20.ptl (thresh=0.069/3.203, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_large_T15.pt
+  Initial firing rates: FR1=0.211, FR2=0.496
+  Epoch   1/40 | train=0.9788 | val=0.9842 | FR1=0.186 FR2=0.405 | thresh=(0.059, 0.951) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9763 | val=0.9822 | FR1=0.136 FR2=0.232 | thresh=(0.123, 2.678) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9728 | val=0.9783 | FR1=0.132 FR2=0.174 | thresh=(0.109, 3.979) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9832 | val=0.9744 | FR1=0.130 FR2=0.151 | thresh=(0.163, 4.521) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9822 | val=0.9527 | FR1=0.121 FR2=0.139 | thresh=(0.213, 4.819) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9847 | val=0.9803 | FR1=0.107 FR2=0.117 | thresh=(0.223, 5.061) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9842 | val=0.9684 | FR1=0.109 FR2=0.118 | thresh=(0.247, 5.162) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9881 | val=0.9744 | FR1=0.117 FR2=0.120 | thresh=(0.249, 5.199) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9847 | val=0.9744 | FR1=0.100 FR2=0.110 | thresh=(0.251, 5.208) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.093, FR2=0.097
+  Best score: 1.9729
+  Exported: sparse_large_T15_fr10.ptl (thresh=0.251/5.208, gain=3.00)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_large_T15.pt
+  Initial firing rates: FR1=0.211, FR2=0.496
+  Epoch   1/40 | train=0.9768 | val=0.9803 | FR1=0.179 FR2=0.415 | thresh=(0.054, 0.982) | gain=2.99 | lambda=0.50
+  Epoch   6/40 | train=0.9743 | val=0.9803 | FR1=0.123 FR2=0.215 | thresh=(0.145, 3.019) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9758 | val=0.9822 | FR1=0.101 FR2=0.141 | thresh=(0.174, 4.237) | gain=2.99 | lambda=5.00
+  Epoch  16/40 | train=0.9812 | val=0.9783 | FR1=0.092 FR2=0.098 | thresh=(0.206, 4.932) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9881 | val=0.9882 | FR1=0.071 FR2=0.087 | thresh=(0.184, 5.202) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9891 | val=0.9921 | FR1=0.073 FR2=0.085 | thresh=(0.217, 5.425) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9891 | val=0.9822 | FR1=0.068 FR2=0.086 | thresh=(0.268, 5.538) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9857 | val=0.9882 | FR1=0.073 FR2=0.082 | thresh=(0.260, 5.581) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9877 | val=0.9822 | FR1=0.061 FR2=0.087 | thresh=(0.261, 5.585) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.075, FR2=0.080
+  Best score: 1.9827
+  Exported: sparse_large_T15_fr05.ptl (thresh=0.261/5.584, gain=3.00)
+
+======================================================================
+  Variant=largest (k=11), T=15
+======================================================================
+
+--- target_rate=0.3 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T15.pt
+  Initial firing rates: FR1=0.236, FR2=0.452
+  Epoch   1/40 | train=0.9862 | val=0.9882 | FR1=0.247 FR2=0.419 | thresh=(0.030, 0.443) | gain=2.95 | lambda=0.50
+  Epoch   6/40 | train=0.9901 | val=0.9862 | FR1=0.286 FR2=0.321 | thresh=(0.037, 1.123) | gain=2.98 | lambda=3.00
+  Epoch  11/40 | train=0.9886 | val=0.9862 | FR1=0.293 FR2=0.310 | thresh=(0.053, 1.375) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9901 | val=0.9842 | FR1=0.295 FR2=0.308 | thresh=(0.038, 1.488) | gain=3.00 | lambda=5.00
+  Epoch  21/40 | train=0.9911 | val=0.9842 | FR1=0.294 FR2=0.308 | thresh=(0.061, 1.623) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9916 | val=0.9882 | FR1=0.295 FR2=0.307 | thresh=(0.063, 1.694) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9911 | val=0.9842 | FR1=0.295 FR2=0.306 | thresh=(0.062, 1.740) | gain=2.99 | lambda=5.00
+  Epoch  36/40 | train=0.9921 | val=0.9862 | FR1=0.294 FR2=0.307 | thresh=(0.064, 1.740) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9931 | val=0.9842 | FR1=0.294 FR2=0.308 | thresh=(0.066, 1.744) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.293, FR2=0.308
+  Best score: 1.9808
+  Exported: sparse_largest_T15_fr30.ptl (thresh=0.056/1.679, gain=3.00)
+
+--- target_rate=0.2 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T15.pt
+  Initial firing rates: FR1=0.236, FR2=0.452
+  Epoch   1/40 | train=0.9852 | val=0.9822 | FR1=0.228 FR2=0.403 | thresh=(0.035, 0.581) | gain=2.95 | lambda=0.50
+  Epoch   6/40 | train=0.9872 | val=0.9783 | FR1=0.200 FR2=0.245 | thresh=(0.177, 1.741) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9847 | val=0.9803 | FR1=0.209 FR2=0.223 | thresh=(0.147, 2.386) | gain=3.00 | lambda=5.00
+  Epoch  16/40 | train=0.9906 | val=0.9822 | FR1=0.203 FR2=0.212 | thresh=(0.114, 2.611) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9901 | val=0.9822 | FR1=0.199 FR2=0.212 | thresh=(0.134, 2.704) | gain=2.99 | lambda=5.00
+  Epoch  26/40 | train=0.9896 | val=0.9862 | FR1=0.202 FR2=0.209 | thresh=(0.136, 2.808) | gain=2.99 | lambda=5.00
+  Epoch  31/40 | train=0.9936 | val=0.9901 | FR1=0.201 FR2=0.209 | thresh=(0.136, 2.819) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9936 | val=0.9882 | FR1=0.204 FR2=0.207 | thresh=(0.136, 2.842) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9916 | val=0.9882 | FR1=0.200 FR2=0.211 | thresh=(0.136, 2.841) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.199, FR2=0.207
+  Best score: 1.9837
+  Exported: sparse_largest_T15_fr20.ptl (thresh=0.136/2.819, gain=3.00)
+
+--- target_rate=0.1 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T15.pt
+  Initial firing rates: FR1=0.236, FR2=0.452
+  Epoch   1/40 | train=0.9857 | val=0.9862 | FR1=0.212 FR2=0.375 | thresh=(0.093, 0.623) | gain=3.00 | lambda=0.50
+  Epoch   6/40 | train=0.9852 | val=0.9763 | FR1=0.139 FR2=0.186 | thresh=(0.449, 2.248) | gain=3.00 | lambda=3.00
+  Epoch  11/40 | train=0.9827 | val=0.9783 | FR1=0.111 FR2=0.142 | thresh=(0.917, 3.251) | gain=3.01 | lambda=5.00
+  Epoch  16/40 | train=0.9862 | val=0.9882 | FR1=0.120 FR2=0.119 | thresh=(0.629, 3.695) | gain=2.99 | lambda=5.00
+  Epoch  21/40 | train=0.9906 | val=0.9822 | FR1=0.112 FR2=0.116 | thresh=(0.667, 3.788) | gain=3.01 | lambda=5.00
+  Epoch  26/40 | train=0.9901 | val=0.9803 | FR1=0.106 FR2=0.126 | thresh=(0.694, 4.054) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9906 | val=0.9862 | FR1=0.109 FR2=0.119 | thresh=(0.696, 4.085) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9901 | val=0.9842 | FR1=0.106 FR2=0.120 | thresh=(0.699, 4.077) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9906 | val=0.9842 | FR1=0.109 FR2=0.120 | thresh=(0.699, 4.081) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.114, FR2=0.109
+  Best score: 1.9783
+  Exported: sparse_largest_T15_fr10.ptl (thresh=0.643/3.720, gain=2.99)
+
+--- target_rate=0.05 ---
+  Loaded KD student from: ./models/snn1d_student_largest_T15.pt
+  Initial firing rates: FR1=0.236, FR2=0.452
+  Epoch   1/40 | train=0.9852 | val=0.9842 | FR1=0.210 FR2=0.357 | thresh=(0.087, 0.604) | gain=3.03 | lambda=0.50
+  Epoch   6/40 | train=0.9832 | val=0.9606 | FR1=0.117 FR2=0.153 | thresh=(0.527, 2.811) | gain=3.01 | lambda=3.00
+  Epoch  11/40 | train=0.9852 | val=0.9882 | FR1=0.090 FR2=0.102 | thresh=(0.596, 4.329) | gain=2.96 | lambda=5.00
+  Epoch  16/40 | train=0.9886 | val=0.9901 | FR1=0.076 FR2=0.090 | thresh=(0.577, 4.867) | gain=2.98 | lambda=5.00
+  Epoch  21/40 | train=0.9881 | val=0.9862 | FR1=0.073 FR2=0.083 | thresh=(0.562, 5.184) | gain=3.00 | lambda=5.00
+  Epoch  26/40 | train=0.9916 | val=0.9862 | FR1=0.068 FR2=0.082 | thresh=(0.619, 5.326) | gain=3.00 | lambda=5.00
+  Epoch  31/40 | train=0.9901 | val=0.9901 | FR1=0.066 FR2=0.080 | thresh=(0.650, 5.421) | gain=3.00 | lambda=5.00
+  Epoch  36/40 | train=0.9901 | val=0.9921 | FR1=0.063 FR2=0.082 | thresh=(0.666, 5.438) | gain=3.00 | lambda=5.00
+  Epoch  40/40 | train=0.9916 | val=0.9901 | FR1=0.062 FR2=0.082 | thresh=(0.668, 5.441) | gain=3.00 | lambda=5.00
+  Final firing rates: FR1=0.073, FR2=0.078
+  Best score: 1.9832
+  Exported: sparse_largest_T15_fr05.ptl (thresh=0.570/5.223, gain=2.99)
+
+================================================================================
+SUMMARY: Sparsification Results
+================================================================================
+Variant      T  Target   Score   FR1_i   FR1_f   FR2_i   FR2_f     Th1     Th2   Gain
+-------------------------------------------------------------------------------------
+smallest     3    0.30  1.8421   0.429   0.304   0.492   0.344   0.627   2.539   3.01
+smallest     3    0.20  1.8327   0.429   0.228   0.492   0.292   0.918   3.177   3.00
+smallest     3    0.10  1.8238   0.429   0.128   0.492   0.216   1.430   4.059   3.00
+smallest     3    0.05  1.8337   0.429   0.092   0.492   0.156   1.780   5.005   3.01
+small        3    0.30  1.9393   0.365   0.301   0.500   0.325   0.263   2.470   3.00
+small        3    0.20  1.9280   0.364   0.205   0.500   0.247   0.671   3.861   3.00
+small        3    0.10  1.9359   0.365   0.095   0.500   0.140   1.095   5.927   3.00
+small        3    0.05  1.9413   0.364   0.079   0.500   0.123   1.577   4.766   3.01
+medium       3    0.30  1.9625   0.217   0.301   0.480   0.311   0.100   2.399   2.99
+medium       3    0.20  1.9620   0.217   0.200   0.480   0.222   0.261   3.545   3.00
+medium       3    0.10  1.9586   0.217   0.110   0.479   0.125   0.914   6.323   3.00
+medium       3    0.05  1.9714   0.217   0.064   0.480   0.089   1.025   6.306   3.00
+large        3    0.30  1.9650   0.244   0.290   0.538   0.315   0.035   2.422   3.01
+large        3    0.20  1.9674   0.244   0.195   0.538   0.223   0.238   3.635   3.00
+large        3    0.10  1.9581   0.244   0.111   0.538   0.140   0.618   4.854   3.00
+large        3    0.05  1.9704   0.244   0.066   0.538   0.081   0.793   4.954   3.00
+largest      3    0.30  1.9734   0.273   0.292   0.484   0.307   0.078   2.352   3.00
+largest      3    0.20  1.9763   0.273   0.197   0.484   0.207   0.144   3.206   3.01
+largest      3    0.10  1.9714   0.273   0.120   0.485   0.128   0.468   5.054   3.00
+largest      3    0.05  1.9778   0.273   0.066   0.484   0.079   1.169   5.931   3.00
+smallest     5    0.30  1.8811   0.298   0.304   0.479   0.331   0.115   2.467   3.01
+smallest     5    0.20  1.8702   0.297   0.214   0.479   0.265   0.656   3.050   3.00
+smallest     5    0.10  1.8539   0.297   0.131   0.479   0.190   0.988   5.153   3.01
+smallest     5    0.05  1.8638   0.297   0.095   0.480   0.160   1.275   5.394   3.01
+small        5    0.30  1.9546   0.395   0.296   0.463   0.315   0.285   2.135   3.00
+small        5    0.20  1.9536   0.395   0.213   0.463   0.244   0.650   3.245   3.01
+small        5    0.10  1.9428   0.395   0.133   0.463   0.164   1.192   5.257   3.00
+small        5    0.05  1.9388   0.395   0.088   0.463   0.144   1.771   4.700   3.02
+medium       5    0.30  1.9689   0.247   0.298   0.506   0.304   0.089   2.424   3.00
+medium       5    0.20  1.9615   0.247   0.212   0.506   0.216   0.201   3.540   3.00
+medium       5    0.10  1.9640   0.247   0.118   0.506   0.149   0.628   5.537   3.00
+medium       5    0.05  1.9625   0.247   0.087   0.506   0.111   0.608   6.844   3.00
+large        5    0.30  1.9709   0.295   0.285   0.487   0.325   0.059   2.143   3.00
+large        5    0.20  1.9753   0.295   0.199   0.487   0.211   0.661   4.403   3.00
+large        5    0.10  1.9669   0.295   0.109   0.487   0.128   0.719   5.334   3.00
+large        5    0.05  1.9709   0.295   0.078   0.487   0.087   1.412   5.705   3.00
+largest      5    0.30  1.9778   0.233   0.296   0.482   0.309   0.079   2.510   3.00
+largest      5    0.20  1.9798   0.234   0.215   0.482   0.202   0.103   3.222   2.99
+largest      5    0.10  1.9798   0.233   0.118   0.481   0.114   0.403   4.638   3.00
+largest      5    0.05  1.9817   0.233   0.055   0.482   0.078   0.506   6.072   3.00
+smallest    10    0.30  1.9018   0.422   0.294   0.459   0.337   0.606   2.503   3.01
+smallest    10    0.20  1.8959   0.422   0.225   0.459   0.257   0.955   3.657   3.01
+smallest    10    0.10  1.8865   0.422   0.130   0.459   0.198   1.271   4.691   3.01
+smallest    10    0.05  1.8826   0.422   0.086   0.459   0.168   1.554   4.614   3.01
+small       10    0.30  1.9625   0.328   0.296   0.477   0.321   0.420   2.641   3.00
+small       10    0.20  1.9566   0.328   0.184   0.477   0.219   0.549   3.629   3.01
+small       10    0.10  1.9630   0.328   0.103   0.477   0.156   0.643   5.109   3.00
+small       10    0.05  1.9684   0.328   0.058   0.477   0.103   1.359   4.444   3.04
+medium      10    0.30  1.9714   0.245   0.300   0.486   0.307   0.120   2.154   2.98
+medium      10    0.20  1.9669   0.245   0.195   0.486   0.232   0.178   2.792   2.99
+medium      10    0.10  1.9689   0.245   0.117   0.486   0.134   0.585   5.629   3.00
+medium      10    0.05  1.9763   0.244   0.063   0.486   0.094   0.730   6.128   3.00
+large       10    0.30  1.9748   0.273   0.313   0.486   0.314   0.046   2.135   2.98
+large       10    0.20  1.9763   0.273   0.200   0.486   0.216   0.119   3.346   3.00
+large       10    0.10  1.9704   0.273   0.115   0.486   0.132   0.806   4.667   2.96
+large       10    0.05  1.9734   0.273   0.063   0.486   0.073   1.510   4.831   3.00
+largest     10    0.30  1.9813   0.263   0.292   0.454   0.309   0.072   1.774   3.00
+largest     10    0.20  1.9783   0.263   0.202   0.453   0.207   0.350   2.533   3.00
+largest     10    0.10  1.9743   0.263   0.115   0.454   0.127   0.864   3.527   3.00
+largest     10    0.05  1.9778   0.263   0.071   0.454   0.084   0.843   4.518   3.00
+smallest    15    0.30  1.9132   0.353   0.306   0.460   0.328   0.477   1.851   3.01
+smallest    15    0.20  1.9023   0.352   0.220   0.459   0.277   0.690   3.148   3.01
+smallest    15    0.10  1.8989   0.353   0.128   0.460   0.223   1.383   4.765   3.00
+smallest    15    0.05  1.9072   0.352   0.089   0.459   0.141   2.296   4.569   3.01
+small       15    0.30  1.9576   0.420   0.301   0.486   0.328   0.539   2.974   3.00
+small       15    0.20  1.9571   0.420   0.205   0.487   0.241   0.745   4.006   3.00
+small       15    0.10  1.9507   0.420   0.109   0.487   0.163   1.326   5.978   3.00
+small       15    0.05  1.9383   0.421   0.101   0.487   0.150   1.280   6.563   2.81
+medium      15    0.30  1.9743   0.246   0.298   0.468   0.314   0.068   1.998   3.00
+medium      15    0.20  1.9709   0.246   0.208   0.468   0.218   0.346   3.330   2.99
+medium      15    0.10  1.9724   0.246   0.091   0.468   0.146   0.524   4.252   3.02
+medium      15    0.05  1.9704   0.246   0.069   0.468   0.098   0.367   5.308   3.00
+large       15    0.30  1.9724   0.211   0.291   0.496   0.315   0.089   1.736   3.00
+large       15    0.20  1.9699   0.211   0.208   0.496   0.228   0.069   3.203   3.00
+large       15    0.10  1.9729   0.211   0.093   0.496   0.097   0.251   5.208   3.00
+large       15    0.05  1.9827   0.211   0.075   0.496   0.080   0.261   5.584   3.00
+largest     15    0.30  1.9808   0.236   0.293   0.452   0.308   0.056   1.679   3.00
+largest     15    0.20  1.9837   0.236   0.199   0.452   0.207   0.136   2.819   3.00
+largest     15    0.10  1.9783   0.236   0.114   0.452   0.109   0.643   3.720   2.99
+largest     15    0.05  1.9832   0.236   0.073   0.452   0.078   0.570   5.223   2.99
+
+Results saved to ./result/sparse_results.json

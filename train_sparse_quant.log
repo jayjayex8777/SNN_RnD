@@ -1,0 +1,696 @@
+================================================================================
+  Phase 4: INT8 Static Quantization for Sparse SNN
+================================================================================
+  T values:      [3, 5, 10, 15]
+  Kernel sizes:  [3, 5, 7, 9, 11]
+  Target rates:  [0.3, 0.2, 0.1, 0.05]
+  Total configs: 80
+  Channels:      C1=32, C2=64
+  Backend:       qnnpack
+
+
+======================================================================
+  Loading dataset for T=3...
+======================================================================
+  Dataset: 2025 train / 507 val
+
+[  1/80] sparse_smallest_T3_fr30  (elapsed: 0s, ETA: 0s)
+  Loaded: sparse_smallest_T3_fr30.pt
+  thresh=(0.6272, 2.5392)  gain=3.0097  params=7,652
+  FP32  → Acc: 0.9172  Size: 29.9 KB
+  INT8  → Acc: 0.9132  Size: 1.0 KB  Drop: +0.0039  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T3_fr30.ptl (27.4 KB)
+
+[  2/80] sparse_smallest_T3_fr20  (elapsed: 28s, ETA: 1080s)
+  Loaded: sparse_smallest_T3_fr20.pt
+  thresh=(0.9182, 3.1771)  gain=3.0015  params=7,652
+  FP32  → Acc: 0.8935  Size: 29.9 KB
+  INT8  → Acc: 0.8974  Size: 1.0 KB  Drop: -0.0039  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T3_fr20.ptl (27.4 KB)
+
+[  3/80] sparse_smallest_T3_fr10  (elapsed: 55s, ETA: 1402s)
+  Loaded: sparse_smallest_T3_fr10.pt
+  thresh=(1.4302, 4.0590)  gain=3.0049  params=7,652
+  FP32  → Acc: 0.9034  Size: 29.9 KB
+  INT8  → Acc: 0.8619  Size: 1.0 KB  Drop: +0.0414  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T3_fr10.ptl (27.4 KB)
+
+[  4/80] sparse_smallest_T3_fr05  (elapsed: 81s, ETA: 1548s)
+  Loaded: sparse_smallest_T3_fr05.pt
+  thresh=(1.7800, 5.0049)  gain=3.0139  params=7,652
+  FP32  → Acc: 0.8836  Size: 29.9 KB
+  INT8  → Acc: 0.7574  Size: 1.0 KB  Drop: +0.1262  Compress: 28.8x  [WARN]
+  Export → qsparse_smallest_T3_fr05.ptl (27.4 KB)
+
+[  5/80] sparse_small_T3_fr30  (elapsed: 108s, ETA: 1620s)
+  Loaded: sparse_small_T3_fr30.pt
+  thresh=(0.2633, 2.4703)  gain=2.9962  params=12,516
+  FP32  → Acc: 0.9625  Size: 48.9 KB
+  INT8  → Acc: 0.9546  Size: 1.0 KB  Drop: +0.0079  Compress: 47.1x  [OK]
+  Export → qsparse_small_T3_fr30.ptl (31.9 KB)
+
+[  6/80] sparse_small_T3_fr20  (elapsed: 134s, ETA: 1651s)
+  Loaded: sparse_small_T3_fr20.pt
+  thresh=(0.6711, 3.8615)  gain=3.0018  params=12,516
+  FP32  → Acc: 0.9527  Size: 48.9 KB
+  INT8  → Acc: 0.7850  Size: 1.0 KB  Drop: +0.1677  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T3_fr20.ptl (31.9 KB)
+
+[  7/80] sparse_small_T3_fr10  (elapsed: 160s, ETA: 1670s)
+  Loaded: sparse_small_T3_fr10.pt
+  thresh=(1.0955, 5.9268)  gain=3.0013  params=12,516
+  FP32  → Acc: 0.9625  Size: 48.9 KB
+  INT8  → Acc: 0.9566  Size: 1.0 KB  Drop: +0.0059  Compress: 47.1x  [OK]
+  Export → qsparse_small_T3_fr10.ptl (31.9 KB)
+
+[  8/80] sparse_small_T3_fr05  (elapsed: 186s, ETA: 1674s)
+  Loaded: sparse_small_T3_fr05.pt
+  thresh=(1.5771, 4.7659)  gain=3.0077  params=12,516
+  FP32  → Acc: 0.9665  Size: 48.9 KB
+  INT8  → Acc: 0.9665  Size: 1.0 KB  Drop: +0.0000  Compress: 47.1x  [OK]
+  Export → qsparse_small_T3_fr05.ptl (31.9 KB)
+
+[  9/80] sparse_medium_T3_fr30  (elapsed: 212s, ETA: 1672s)
+  Loaded: sparse_medium_T3_fr30.pt
+  thresh=(0.1002, 2.3988)  gain=2.9935  params=17,380
+  FP32  → Acc: 0.9724  Size: 67.9 KB
+  INT8  → Acc: 0.9665  Size: 1.0 KB  Drop: +0.0059  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T3_fr30.ptl (36.8 KB)
+
+[ 10/80] sparse_medium_T3_fr20  (elapsed: 238s, ETA: 1669s)
+  Loaded: sparse_medium_T3_fr20.pt
+  thresh=(0.2606, 3.5451)  gain=3.0026  params=17,380
+  FP32  → Acc: 0.9763  Size: 67.9 KB
+  INT8  → Acc: 0.9763  Size: 1.0 KB  Drop: +0.0000  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T3_fr20.ptl (36.8 KB)
+
+[ 11/80] sparse_medium_T3_fr10  (elapsed: 265s, ETA: 1660s)
+  Loaded: sparse_medium_T3_fr10.pt
+  thresh=(0.9139, 6.3233)  gain=2.9991  params=17,380
+  FP32  → Acc: 0.9665  Size: 67.9 KB
+  INT8  → Acc: 0.9586  Size: 1.0 KB  Drop: +0.0079  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T3_fr10.ptl (36.8 KB)
+
+[ 12/80] sparse_medium_T3_fr05  (elapsed: 290s, ETA: 1644s)
+  Loaded: sparse_medium_T3_fr05.pt
+  thresh=(1.0246, 6.3055)  gain=3.0037  params=17,380
+  FP32  → Acc: 0.9744  Size: 67.9 KB
+  INT8  → Acc: 0.9744  Size: 1.0 KB  Drop: +0.0000  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T3_fr05.ptl (36.8 KB)
+
+[ 13/80] sparse_large_T3_fr30  (elapsed: 317s, ETA: 1632s)
+  Loaded: sparse_large_T3_fr30.pt
+  thresh=(0.0346, 2.4224)  gain=3.0053  params=22,244
+  FP32  → Acc: 0.9803  Size: 86.9 KB
+  INT8  → Acc: 0.8935  Size: 1.0 KB  Drop: +0.0868  Compress: 83.6x  [WARN]
+  Export → qsparse_large_T3_fr30.ptl (41.4 KB)
+
+[ 14/80] sparse_large_T3_fr20  (elapsed: 342s, ETA: 1611s)
+  Loaded: sparse_large_T3_fr20.pt
+  thresh=(0.2382, 3.6351)  gain=3.0008  params=22,244
+  FP32  → Acc: 0.9803  Size: 86.9 KB
+  INT8  → Acc: 0.9803  Size: 1.0 KB  Drop: +0.0000  Compress: 83.6x  [OK]
+  Export → qsparse_large_T3_fr20.ptl (41.4 KB)
+
+[ 15/80] sparse_large_T3_fr10  (elapsed: 366s, ETA: 1588s)
+  Loaded: sparse_large_T3_fr10.pt
+  thresh=(0.6179, 4.8535)  gain=3.0014  params=22,244
+  FP32  → Acc: 0.9704  Size: 86.9 KB
+  INT8  → Acc: 0.9763  Size: 1.0 KB  Drop: -0.0059  Compress: 83.6x  [OK]
+  Export → qsparse_large_T3_fr10.ptl (41.4 KB)
+
+[ 16/80] sparse_large_T3_fr05  (elapsed: 390s, ETA: 1561s)
+  Loaded: sparse_large_T3_fr05.pt
+  thresh=(0.7932, 4.9536)  gain=3.0015  params=22,244
+  FP32  → Acc: 0.9783  Size: 86.9 KB
+  INT8  → Acc: 0.9822  Size: 1.0 KB  Drop: -0.0039  Compress: 83.6x  [OK]
+  Export → qsparse_large_T3_fr05.ptl (41.4 KB)
+
+[ 17/80] sparse_largest_T3_fr30  (elapsed: 414s, ETA: 1535s)
+  Loaded: sparse_largest_T3_fr30.pt
+  thresh=(0.0781, 2.3521)  gain=3.0007  params=27,108
+  FP32  → Acc: 0.9822  Size: 105.9 KB
+  INT8  → Acc: 0.7436  Size: 1.0 KB  Drop: +0.2387  Compress: 101.9x  [WARN]
+  Export → qsparse_largest_T3_fr30.ptl (46.3 KB)
+
+[ 18/80] sparse_largest_T3_fr20  (elapsed: 441s, ETA: 1518s)
+  Loaded: sparse_largest_T3_fr20.pt
+  thresh=(0.1442, 3.2064)  gain=3.0053  params=27,108
+  FP32  → Acc: 0.9803  Size: 105.9 KB
+  INT8  → Acc: 0.9882  Size: 1.0 KB  Drop: -0.0079  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T3_fr20.ptl (46.3 KB)
+
+[ 19/80] sparse_largest_T3_fr10  (elapsed: 465s, ETA: 1494s)
+  Loaded: sparse_largest_T3_fr10.pt
+  thresh=(0.4682, 5.0541)  gain=3.0002  params=27,108
+  FP32  → Acc: 0.9803  Size: 105.9 KB
+  INT8  → Acc: 0.9704  Size: 1.0 KB  Drop: +0.0099  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T3_fr10.ptl (46.3 KB)
+
+[ 20/80] sparse_largest_T3_fr05  (elapsed: 491s, ETA: 1474s)
+  Loaded: sparse_largest_T3_fr05.pt
+  thresh=(1.1685, 5.9315)  gain=3.0019  params=27,108
+  FP32  → Acc: 0.9862  Size: 105.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: +0.0020  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T3_fr05.ptl (46.3 KB)
+
+======================================================================
+  Loading dataset for T=5...
+======================================================================
+  Dataset: 2025 train / 507 val
+
+[ 21/80] sparse_smallest_T5_fr30  (elapsed: 517s, ETA: 1451s)
+  Loaded: sparse_smallest_T5_fr30.pt
+  thresh=(0.1146, 2.4674)  gain=3.0075  params=7,652
+  FP32  → Acc: 0.9270  Size: 29.9 KB
+  INT8  → Acc: 0.9310  Size: 1.0 KB  Drop: -0.0039  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T5_fr30.ptl (31.5 KB)
+
+[ 22/80] sparse_smallest_T5_fr20  (elapsed: 556s, ETA: 1465s)
+  Loaded: sparse_smallest_T5_fr20.pt
+  thresh=(0.6556, 3.0497)  gain=3.0047  params=7,652
+  FP32  → Acc: 0.9191  Size: 29.9 KB
+  INT8  → Acc: 0.8600  Size: 1.0 KB  Drop: +0.0592  Compress: 28.8x  [WARN]
+  Export → qsparse_smallest_T5_fr20.ptl (31.5 KB)
+
+[ 23/80] sparse_smallest_T5_fr10  (elapsed: 594s, ETA: 1472s)
+  Loaded: sparse_smallest_T5_fr10.pt
+  thresh=(0.9875, 5.1534)  gain=3.0133  params=7,652
+  FP32  → Acc: 0.9152  Size: 29.9 KB
+  INT8  → Acc: 0.5069  Size: 1.0 KB  Drop: +0.4083  Compress: 28.8x  [WARN]
+  Export → qsparse_smallest_T5_fr10.ptl (31.5 KB)
+
+[ 24/80] sparse_smallest_T5_fr05  (elapsed: 632s, ETA: 1474s)
+  Loaded: sparse_smallest_T5_fr05.pt
+  thresh=(1.2748, 5.3945)  gain=3.0064  params=7,652
+  FP32  → Acc: 0.9191  Size: 29.9 KB
+  INT8  → Acc: 0.9152  Size: 1.0 KB  Drop: +0.0039  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T5_fr05.ptl (31.5 KB)
+
+[ 25/80] sparse_small_T5_fr30  (elapsed: 668s, ETA: 1471s)
+  Loaded: sparse_small_T5_fr30.pt
+  thresh=(0.2855, 2.1345)  gain=3.0038  params=12,516
+  FP32  → Acc: 0.9665  Size: 48.9 KB
+  INT8  → Acc: 0.8422  Size: 1.0 KB  Drop: +0.1243  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T5_fr30.ptl (36.0 KB)
+
+[ 26/80] sparse_small_T5_fr20  (elapsed: 706s, ETA: 1466s)
+  Loaded: sparse_small_T5_fr20.pt
+  thresh=(0.6501, 3.2450)  gain=3.0051  params=12,516
+  FP32  → Acc: 0.9704  Size: 48.9 KB
+  INT8  → Acc: 0.9606  Size: 1.0 KB  Drop: +0.0099  Compress: 47.1x  [OK]
+  Export → qsparse_small_T5_fr20.ptl (36.0 KB)
+
+[ 27/80] sparse_small_T5_fr10  (elapsed: 743s, ETA: 1459s)
+  Loaded: sparse_small_T5_fr10.pt
+  thresh=(1.1923, 5.2572)  gain=3.0025  params=12,516
+  FP32  → Acc: 0.9665  Size: 48.9 KB
+  INT8  → Acc: 0.9487  Size: 1.0 KB  Drop: +0.0178  Compress: 47.1x  [OK]
+  Export → qsparse_small_T5_fr10.ptl (36.0 KB)
+
+[ 28/80] sparse_small_T5_fr05  (elapsed: 780s, ETA: 1448s)
+  Loaded: sparse_small_T5_fr05.pt
+  thresh=(1.7707, 4.7005)  gain=3.0235  params=12,516
+  FP32  → Acc: 0.9606  Size: 48.9 KB
+  INT8  → Acc: 0.9625  Size: 1.0 KB  Drop: -0.0020  Compress: 47.1x  [OK]
+  Export → qsparse_small_T5_fr05.ptl (36.0 KB)
+
+[ 29/80] sparse_medium_T5_fr30  (elapsed: 816s, ETA: 1435s)
+  Loaded: sparse_medium_T5_fr30.pt
+  thresh=(0.0895, 2.4241)  gain=3.0015  params=17,380
+  FP32  → Acc: 0.9783  Size: 67.9 KB
+  INT8  → Acc: 0.7574  Size: 1.0 KB  Drop: +0.2209  Compress: 65.3x  [WARN]
+  Export → qsparse_medium_T5_fr30.ptl (40.8 KB)
+
+[ 30/80] sparse_medium_T5_fr20  (elapsed: 854s, ETA: 1423s)
+  Loaded: sparse_medium_T5_fr20.pt
+  thresh=(0.2013, 3.5396)  gain=2.9982  params=17,380
+  FP32  → Acc: 0.9763  Size: 67.9 KB
+  INT8  → Acc: 0.9724  Size: 1.0 KB  Drop: +0.0039  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T5_fr20.ptl (40.8 KB)
+
+[ 31/80] sparse_medium_T5_fr10  (elapsed: 890s, ETA: 1407s)
+  Loaded: sparse_medium_T5_fr10.pt
+  thresh=(0.6279, 5.5365)  gain=3.0020  params=17,380
+  FP32  → Acc: 0.9763  Size: 67.9 KB
+  INT8  → Acc: 0.9803  Size: 1.0 KB  Drop: -0.0039  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T5_fr10.ptl (40.8 KB)
+
+[ 32/80] sparse_medium_T5_fr05  (elapsed: 928s, ETA: 1392s)
+  Loaded: sparse_medium_T5_fr05.pt
+  thresh=(0.6078, 6.8440)  gain=2.9961  params=17,380
+  FP32  → Acc: 0.9842  Size: 67.9 KB
+  INT8  → Acc: 0.9744  Size: 1.0 KB  Drop: +0.0099  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T5_fr05.ptl (40.8 KB)
+
+[ 33/80] sparse_large_T5_fr30  (elapsed: 965s, ETA: 1374s)
+  Loaded: sparse_large_T5_fr30.pt
+  thresh=(0.0586, 2.1430)  gain=3.0031  params=22,244
+  FP32  → Acc: 0.9803  Size: 86.9 KB
+  INT8  → Acc: 0.8836  Size: 1.0 KB  Drop: +0.0966  Compress: 83.6x  [WARN]
+  Export → qsparse_large_T5_fr30.ptl (45.5 KB)
+
+[ 34/80] sparse_large_T5_fr20  (elapsed: 1002s, ETA: 1355s)
+  Loaded: sparse_large_T5_fr20.pt
+  thresh=(0.6614, 4.4029)  gain=3.0005  params=22,244
+  FP32  → Acc: 0.9803  Size: 86.9 KB
+  INT8  → Acc: 0.9586  Size: 1.0 KB  Drop: +0.0217  Compress: 83.6x  [OK]
+  Export → qsparse_large_T5_fr20.ptl (45.5 KB)
+
+[ 35/80] sparse_large_T5_fr10  (elapsed: 1039s, ETA: 1336s)
+  Loaded: sparse_large_T5_fr10.pt
+  thresh=(0.7194, 5.3341)  gain=3.0016  params=22,244
+  FP32  → Acc: 0.9862  Size: 86.9 KB
+  INT8  → Acc: 0.9665  Size: 1.0 KB  Drop: +0.0197  Compress: 83.6x  [OK]
+  Export → qsparse_large_T5_fr10.ptl (45.5 KB)
+
+[ 36/80] sparse_large_T5_fr05  (elapsed: 1077s, ETA: 1316s)
+  Loaded: sparse_large_T5_fr05.pt
+  thresh=(1.4119, 5.7047)  gain=3.0006  params=22,244
+  FP32  → Acc: 0.9842  Size: 86.9 KB
+  INT8  → Acc: 0.5602  Size: 1.0 KB  Drop: +0.4241  Compress: 83.6x  [WARN]
+  Export → qsparse_large_T5_fr05.ptl (45.5 KB)
+
+[ 37/80] sparse_largest_T5_fr30  (elapsed: 1114s, ETA: 1294s)
+  Loaded: sparse_largest_T5_fr30.pt
+  thresh=(0.0789, 2.5100)  gain=2.9968  params=27,108
+  FP32  → Acc: 0.9882  Size: 105.9 KB
+  INT8  → Acc: 0.9822  Size: 1.0 KB  Drop: +0.0059  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T5_fr30.ptl (50.3 KB)
+
+[ 38/80] sparse_largest_T5_fr20  (elapsed: 1151s, ETA: 1272s)
+  Loaded: sparse_largest_T5_fr20.pt
+  thresh=(0.1027, 3.2216)  gain=2.9871  params=27,108
+  FP32  → Acc: 0.9901  Size: 105.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: +0.0059  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T5_fr20.ptl (50.4 KB)
+
+[ 39/80] sparse_largest_T5_fr10  (elapsed: 1189s, ETA: 1250s)
+  Loaded: sparse_largest_T5_fr10.pt
+  thresh=(0.4033, 4.6385)  gain=3.0008  params=27,108
+  FP32  → Acc: 0.9941  Size: 105.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: +0.0099  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T5_fr10.ptl (50.4 KB)
+
+[ 40/80] sparse_largest_T5_fr05  (elapsed: 1226s, ETA: 1226s)
+  Loaded: sparse_largest_T5_fr05.pt
+  thresh=(0.5060, 6.0719)  gain=3.0011  params=27,108
+  FP32  → Acc: 0.9901  Size: 105.9 KB
+  INT8  → Acc: 0.9882  Size: 1.0 KB  Drop: +0.0020  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T5_fr05.ptl (50.4 KB)
+
+======================================================================
+  Loading dataset for T=10...
+======================================================================
+  Dataset: 2025 train / 507 val
+
+[ 41/80] sparse_smallest_T10_fr30  (elapsed: 1263s, ETA: 1201s)
+  Loaded: sparse_smallest_T10_fr30.pt
+  thresh=(0.6059, 2.5032)  gain=3.0054  params=7,652
+  FP32  → Acc: 0.9250  Size: 29.9 KB
+  INT8  → Acc: 0.6213  Size: 1.0 KB  Drop: +0.3037  Compress: 28.8x  [WARN]
+  Export → qsparse_smallest_T10_fr30.ptl (41.8 KB)
+
+[ 42/80] sparse_smallest_T10_fr20  (elapsed: 1334s, ETA: 1207s)
+  Loaded: sparse_smallest_T10_fr20.pt
+  thresh=(0.9546, 3.6573)  gain=3.0057  params=7,652
+  FP32  → Acc: 0.9349  Size: 29.9 KB
+  INT8  → Acc: 0.9290  Size: 1.0 KB  Drop: +0.0059  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T10_fr20.ptl (41.8 KB)
+
+[ 43/80] sparse_smallest_T10_fr10  (elapsed: 1404s, ETA: 1208s)
+  Loaded: sparse_smallest_T10_fr10.pt
+  thresh=(1.2713, 4.6909)  gain=3.0086  params=7,652
+  FP32  → Acc: 0.9349  Size: 29.9 KB
+  INT8  → Acc: 0.9310  Size: 1.0 KB  Drop: +0.0039  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T10_fr10.ptl (41.8 KB)
+
+[ 44/80] sparse_smallest_T10_fr05  (elapsed: 1473s, ETA: 1205s)
+  Loaded: sparse_smallest_T10_fr05.pt
+  thresh=(1.5545, 4.6142)  gain=3.0147  params=7,652
+  FP32  → Acc: 0.9231  Size: 29.9 KB
+  INT8  → Acc: 0.9231  Size: 1.0 KB  Drop: +0.0000  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T10_fr05.ptl (41.8 KB)
+
+[ 45/80] sparse_small_T10_fr30  (elapsed: 1543s, ETA: 1200s)
+  Loaded: sparse_small_T10_fr30.pt
+  thresh=(0.4204, 2.6414)  gain=3.0046  params=12,516
+  FP32  → Acc: 0.9783  Size: 48.9 KB
+  INT8  → Acc: 0.7179  Size: 1.0 KB  Drop: +0.2604  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T10_fr30.ptl (46.4 KB)
+
+[ 46/80] sparse_small_T10_fr20  (elapsed: 1612s, ETA: 1191s)
+  Loaded: sparse_small_T10_fr20.pt
+  thresh=(0.5491, 3.6288)  gain=3.0086  params=12,516
+  FP32  → Acc: 0.9783  Size: 48.9 KB
+  INT8  → Acc: 0.9724  Size: 1.0 KB  Drop: +0.0059  Compress: 47.1x  [OK]
+  Export → qsparse_small_T10_fr20.ptl (46.4 KB)
+
+[ 47/80] sparse_small_T10_fr10  (elapsed: 1680s, ETA: 1180s)
+  Loaded: sparse_small_T10_fr10.pt
+  thresh=(0.6427, 5.1091)  gain=3.0036  params=12,516
+  FP32  → Acc: 0.9763  Size: 48.9 KB
+  INT8  → Acc: 0.6785  Size: 1.0 KB  Drop: +0.2978  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T10_fr10.ptl (46.4 KB)
+
+[ 48/80] sparse_small_T10_fr05  (elapsed: 1749s, ETA: 1166s)
+  Loaded: sparse_small_T10_fr05.pt
+  thresh=(1.3592, 4.4445)  gain=3.0386  params=12,516
+  FP32  → Acc: 0.9862  Size: 48.9 KB
+  INT8  → Acc: 0.9822  Size: 1.0 KB  Drop: +0.0039  Compress: 47.1x  [OK]
+  Export → qsparse_small_T10_fr05.ptl (46.4 KB)
+
+[ 49/80] sparse_medium_T10_fr30  (elapsed: 1819s, ETA: 1151s)
+  Loaded: sparse_medium_T10_fr30.pt
+  thresh=(0.1197, 2.1540)  gain=2.9826  params=17,380
+  FP32  → Acc: 0.9822  Size: 67.9 KB
+  INT8  → Acc: 0.9093  Size: 1.0 KB  Drop: +0.0730  Compress: 65.3x  [WARN]
+  Export → qsparse_medium_T10_fr30.ptl (51.2 KB)
+
+[ 50/80] sparse_medium_T10_fr20  (elapsed: 1889s, ETA: 1133s)
+  Loaded: sparse_medium_T10_fr20.pt
+  thresh=(0.1777, 2.7921)  gain=2.9947  params=17,380
+  FP32  → Acc: 0.9803  Size: 67.9 KB
+  INT8  → Acc: 0.9803  Size: 1.0 KB  Drop: +0.0000  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T10_fr20.ptl (51.2 KB)
+
+[ 51/80] sparse_medium_T10_fr10  (elapsed: 1956s, ETA: 1112s)
+  Loaded: sparse_medium_T10_fr10.pt
+  thresh=(0.5845, 5.6290)  gain=2.9998  params=17,380
+  FP32  → Acc: 0.9763  Size: 67.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: -0.0079  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T10_fr10.ptl (51.2 KB)
+
+[ 52/80] sparse_medium_T10_fr05  (elapsed: 2026s, ETA: 1091s)
+  Loaded: sparse_medium_T10_fr05.pt
+  thresh=(0.7295, 6.1276)  gain=3.0018  params=17,380
+  FP32  → Acc: 0.9822  Size: 67.9 KB
+  INT8  → Acc: 0.9822  Size: 1.0 KB  Drop: +0.0000  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T10_fr05.ptl (51.2 KB)
+
+[ 53/80] sparse_large_T10_fr30  (elapsed: 2096s, ETA: 1068s)
+  Loaded: sparse_large_T10_fr30.pt
+  thresh=(0.0456, 2.1346)  gain=2.9755  params=22,244
+  FP32  → Acc: 0.9842  Size: 86.9 KB
+  INT8  → Acc: 0.5641  Size: 1.0 KB  Drop: +0.4201  Compress: 83.6x  [WARN]
+  Export → qsparse_large_T10_fr30.ptl (55.8 KB)
+
+[ 54/80] sparse_large_T10_fr20  (elapsed: 2164s, ETA: 1042s)
+  Loaded: sparse_large_T10_fr20.pt
+  thresh=(0.1188, 3.3459)  gain=2.9969  params=22,244
+  FP32  → Acc: 0.9842  Size: 86.9 KB
+  INT8  → Acc: 0.9724  Size: 1.0 KB  Drop: +0.0118  Compress: 83.6x  [OK]
+  Export → qsparse_large_T10_fr20.ptl (55.9 KB)
+
+[ 55/80] sparse_large_T10_fr10  (elapsed: 2233s, ETA: 1015s)
+  Loaded: sparse_large_T10_fr10.pt
+  thresh=(0.8056, 4.6668)  gain=2.9612  params=22,244
+  FP32  → Acc: 0.9803  Size: 86.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: -0.0039  Compress: 83.6x  [OK]
+  Export → qsparse_large_T10_fr10.ptl (55.9 KB)
+
+[ 56/80] sparse_large_T10_fr05  (elapsed: 2302s, ETA: 987s)
+  Loaded: sparse_large_T10_fr05.pt
+  thresh=(1.5099, 4.8306)  gain=3.0011  params=22,244
+  FP32  → Acc: 0.9783  Size: 86.9 KB
+  INT8  → Acc: 0.9822  Size: 1.0 KB  Drop: -0.0039  Compress: 83.6x  [OK]
+  Export → qsparse_large_T10_fr05.ptl (55.9 KB)
+
+[ 57/80] sparse_largest_T10_fr30  (elapsed: 2370s, ETA: 956s)
+  Loaded: sparse_largest_T10_fr30.pt
+  thresh=(0.0722, 1.7738)  gain=3.0008  params=27,108
+  FP32  → Acc: 0.9822  Size: 105.9 KB
+  INT8  → Acc: 0.9606  Size: 1.0 KB  Drop: +0.0217  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T10_fr30.ptl (60.8 KB)
+
+[ 58/80] sparse_largest_T10_fr20  (elapsed: 2440s, ETA: 925s)
+  Loaded: sparse_largest_T10_fr20.pt
+  thresh=(0.3499, 2.5330)  gain=3.0007  params=27,108
+  FP32  → Acc: 0.9803  Size: 105.9 KB
+  INT8  → Acc: 0.9783  Size: 1.0 KB  Drop: +0.0020  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T10_fr20.ptl (60.9 KB)
+
+[ 59/80] sparse_largest_T10_fr10  (elapsed: 2510s, ETA: 893s)
+  Loaded: sparse_largest_T10_fr10.pt
+  thresh=(0.8640, 3.5268)  gain=2.9988  params=27,108
+  FP32  → Acc: 0.9822  Size: 105.9 KB
+  INT8  → Acc: 0.9250  Size: 1.0 KB  Drop: +0.0572  Compress: 101.9x  [WARN]
+  Export → qsparse_largest_T10_fr10.ptl (60.9 KB)
+
+[ 60/80] sparse_largest_T10_fr05  (elapsed: 2579s, ETA: 860s)
+  Loaded: sparse_largest_T10_fr05.pt
+  thresh=(0.8434, 4.5176)  gain=3.0021  params=27,108
+  FP32  → Acc: 0.9882  Size: 105.9 KB
+  INT8  → Acc: 0.9803  Size: 1.0 KB  Drop: +0.0079  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T10_fr05.ptl (60.9 KB)
+
+======================================================================
+  Loading dataset for T=15...
+======================================================================
+  Dataset: 2025 train / 507 val
+
+[ 61/80] sparse_smallest_T15_fr30  (elapsed: 2648s, ETA: 825s)
+  Loaded: sparse_smallest_T15_fr30.pt
+  thresh=(0.4773, 1.8515)  gain=3.0052  params=7,652
+  FP32  → Acc: 0.9310  Size: 29.9 KB
+  INT8  → Acc: 0.9389  Size: 1.0 KB  Drop: -0.0079  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T15_fr30.ptl (52.2 KB)
+
+[ 62/80] sparse_smallest_T15_fr20  (elapsed: 2749s, ETA: 798s)
+  Loaded: sparse_smallest_T15_fr20.pt
+  thresh=(0.6897, 3.1484)  gain=3.0078  params=7,652
+  FP32  → Acc: 0.9408  Size: 29.9 KB
+  INT8  → Acc: 0.9369  Size: 1.0 KB  Drop: +0.0039  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T15_fr20.ptl (52.2 KB)
+
+[ 63/80] sparse_smallest_T15_fr10  (elapsed: 2851s, ETA: 769s)
+  Loaded: sparse_smallest_T15_fr10.pt
+  thresh=(1.3834, 4.7646)  gain=3.0040  params=7,652
+  FP32  → Acc: 0.9310  Size: 29.9 KB
+  INT8  → Acc: 0.9231  Size: 1.0 KB  Drop: +0.0079  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T15_fr10.ptl (52.2 KB)
+
+[ 64/80] sparse_smallest_T15_fr05  (elapsed: 2951s, ETA: 738s)
+  Loaded: sparse_smallest_T15_fr05.pt
+  thresh=(2.2960, 4.5690)  gain=3.0128  params=7,652
+  FP32  → Acc: 0.9467  Size: 29.9 KB
+  INT8  → Acc: 0.9073  Size: 1.0 KB  Drop: +0.0394  Compress: 28.8x  [OK]
+  Export → qsparse_smallest_T15_fr05.ptl (52.2 KB)
+
+[ 65/80] sparse_small_T15_fr30  (elapsed: 3056s, ETA: 705s)
+  Loaded: sparse_small_T15_fr30.pt
+  thresh=(0.5387, 2.9741)  gain=3.0039  params=12,516
+  FP32  → Acc: 0.9744  Size: 48.9 KB
+  INT8  → Acc: 0.6824  Size: 1.0 KB  Drop: +0.2919  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T15_fr30.ptl (56.7 KB)
+
+[ 66/80] sparse_small_T15_fr20  (elapsed: 3157s, ETA: 670s)
+  Loaded: sparse_small_T15_fr20.pt
+  thresh=(0.7452, 4.0056)  gain=2.9977  params=12,516
+  FP32  → Acc: 0.9744  Size: 48.9 KB
+  INT8  → Acc: 0.7120  Size: 1.0 KB  Drop: +0.2623  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T15_fr20.ptl (56.7 KB)
+
+[ 67/80] sparse_small_T15_fr10  (elapsed: 3259s, ETA: 632s)
+  Loaded: sparse_small_T15_fr10.pt
+  thresh=(1.3260, 5.9780)  gain=3.0045  params=12,516
+  FP32  → Acc: 0.9606  Size: 48.9 KB
+  INT8  → Acc: 0.6174  Size: 1.0 KB  Drop: +0.3432  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T15_fr10.ptl (56.8 KB)
+
+[ 68/80] sparse_small_T15_fr05  (elapsed: 3360s, ETA: 593s)
+  Loaded: sparse_small_T15_fr05.pt
+  thresh=(1.2799, 6.5630)  gain=2.8058  params=12,516
+  FP32  → Acc: 0.9625  Size: 48.9 KB
+  INT8  → Acc: 0.7298  Size: 1.0 KB  Drop: +0.2327  Compress: 47.1x  [WARN]
+  Export → qsparse_small_T15_fr05.ptl (56.7 KB)
+
+[ 69/80] sparse_medium_T15_fr30  (elapsed: 3463s, ETA: 552s)
+  Loaded: sparse_medium_T15_fr30.pt
+  thresh=(0.0679, 1.9982)  gain=3.0015  params=17,380
+  FP32  → Acc: 0.9862  Size: 67.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: +0.0020  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T15_fr30.ptl (61.5 KB)
+
+[ 70/80] sparse_medium_T15_fr20  (elapsed: 3564s, ETA: 509s)
+  Loaded: sparse_medium_T15_fr20.pt
+  thresh=(0.3458, 3.3299)  gain=2.9885  params=17,380
+  FP32  → Acc: 0.9803  Size: 67.9 KB
+  INT8  → Acc: 0.9744  Size: 1.0 KB  Drop: +0.0059  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T15_fr20.ptl (61.5 KB)
+
+[ 71/80] sparse_medium_T15_fr10  (elapsed: 3666s, ETA: 465s)
+  Loaded: sparse_medium_T15_fr10.pt
+  thresh=(0.5241, 4.2517)  gain=3.0173  params=17,380
+  FP32  → Acc: 0.9822  Size: 67.9 KB
+  INT8  → Acc: 0.9862  Size: 1.0 KB  Drop: -0.0039  Compress: 65.3x  [OK]
+  Export → qsparse_medium_T15_fr10.ptl (61.5 KB)
+
+[ 72/80] sparse_medium_T15_fr05  (elapsed: 3767s, ETA: 419s)
+  Loaded: sparse_medium_T15_fr05.pt
+  thresh=(0.3671, 5.3083)  gain=3.0017  params=17,380
+  FP32  → Acc: 0.9882  Size: 67.9 KB
+  INT8  → Acc: 0.6765  Size: 1.0 KB  Drop: +0.3116  Compress: 65.3x  [WARN]
+  Export → qsparse_medium_T15_fr05.ptl (61.5 KB)
+
+[ 73/80] sparse_large_T15_fr30  (elapsed: 3868s, ETA: 371s)
+  Loaded: sparse_large_T15_fr30.pt
+  thresh=(0.0890, 1.7358)  gain=3.0038  params=22,244
+  FP32  → Acc: 0.9803  Size: 86.9 KB
+  INT8  → Acc: 0.6095  Size: 1.0 KB  Drop: +0.3708  Compress: 83.6x  [WARN]
+  Export → qsparse_large_T15_fr30.ptl (66.2 KB)
+
+[ 74/80] sparse_large_T15_fr20  (elapsed: 3971s, ETA: 322s)
+  Loaded: sparse_large_T15_fr20.pt
+  thresh=(0.0690, 3.2033)  gain=2.9973  params=22,244
+  FP32  → Acc: 0.9862  Size: 86.9 KB
+  INT8  → Acc: 0.7456  Size: 1.0 KB  Drop: +0.2406  Compress: 83.6x  [WARN]
+  Export → qsparse_large_T15_fr20.ptl (66.2 KB)
+
+[ 75/80] sparse_large_T15_fr10  (elapsed: 4072s, ETA: 271s)
+  Loaded: sparse_large_T15_fr10.pt
+  thresh=(0.2511, 5.2077)  gain=3.0016  params=22,244
+  FP32  → Acc: 0.9901  Size: 86.9 KB
+  INT8  → Acc: 0.9744  Size: 1.0 KB  Drop: +0.0158  Compress: 83.6x  [OK]
+  Export → qsparse_large_T15_fr10.ptl (66.2 KB)
+
+[ 76/80] sparse_large_T15_fr05  (elapsed: 4173s, ETA: 220s)
+  Loaded: sparse_large_T15_fr05.pt
+  thresh=(0.2611, 5.5838)  gain=3.0021  params=22,244
+  FP32  → Acc: 0.9882  Size: 86.9 KB
+  INT8  → Acc: 0.9921  Size: 1.0 KB  Drop: -0.0039  Compress: 83.6x  [OK]
+  Export → qsparse_large_T15_fr05.ptl (66.2 KB)
+
+[ 77/80] sparse_largest_T15_fr30  (elapsed: 4274s, ETA: 167s)
+  Loaded: sparse_largest_T15_fr30.pt
+  thresh=(0.0557, 1.6787)  gain=2.9965  params=27,108
+  FP32  → Acc: 0.9822  Size: 105.9 KB
+  INT8  → Acc: 0.9882  Size: 1.0 KB  Drop: -0.0059  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T15_fr30.ptl (71.1 KB)
+
+[ 78/80] sparse_largest_T15_fr20  (elapsed: 4375s, ETA: 112s)
+  Loaded: sparse_largest_T15_fr20.pt
+  thresh=(0.1362, 2.8191)  gain=2.9973  params=27,108
+  FP32  → Acc: 0.9842  Size: 105.9 KB
+  INT8  → Acc: 0.9744  Size: 1.0 KB  Drop: +0.0099  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T15_fr20.ptl (71.1 KB)
+
+[ 79/80] sparse_largest_T15_fr10  (elapsed: 4476s, ETA: 57s)
+  Loaded: sparse_largest_T15_fr10.pt
+  thresh=(0.6434, 3.7203)  gain=2.9888  params=27,108
+  FP32  → Acc: 0.9882  Size: 105.9 KB
+  INT8  → Acc: 0.9842  Size: 1.0 KB  Drop: +0.0039  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T15_fr10.ptl (71.2 KB)
+
+[ 80/80] sparse_largest_T15_fr05  (elapsed: 4576s, ETA: 0s)
+  Loaded: sparse_largest_T15_fr05.pt
+  thresh=(0.5701, 5.2233)  gain=2.9912  params=27,108
+  FP32  → Acc: 0.9882  Size: 105.9 KB
+  INT8  → Acc: 0.9901  Size: 1.0 KB  Drop: -0.0020  Compress: 101.9x  [OK]
+  Export → qsparse_largest_T15_fr05.ptl (71.1 KB)
+
+
+================================================================================
+  SUMMARY: INT8 Quantization Complete
+  Total time: 4677s (77.9 min)
+  Processed: 80  Skipped: 0  Failed: 0
+================================================================================
+
+Variant      T   FR%     FP32     INT8    Drop  FP32KB  INT8KB  Ratio
+------------------------------------------------------------------------
+smallest     3    30   0.9172   0.9132 +0.0039    29.9     1.0  28.8x
+smallest     3    20   0.8935   0.8974 -0.0039    29.9     1.0  28.8x
+smallest     3    10   0.9034   0.8619 +0.0414    29.9     1.0  28.8x
+smallest     3     5   0.8836   0.7574 +0.1262    29.9     1.0  28.8x
+small        3    30   0.9625   0.9546 +0.0079    48.9     1.0  47.0x
+small        3    20   0.9527   0.7850 +0.1677    48.9     1.0  47.0x
+small        3    10   0.9625   0.9566 +0.0059    48.9     1.0  47.0x
+small        3     5   0.9665   0.9665 +0.0000    48.9     1.0  47.0x
+medium       3    30   0.9724   0.9665 +0.0059    67.9     1.0  65.3x
+medium       3    20   0.9763   0.9763 +0.0000    67.9     1.0  65.3x
+medium       3    10   0.9665   0.9586 +0.0079    67.9     1.0  65.3x
+medium       3     5   0.9744   0.9744 +0.0000    67.9     1.0  65.3x
+large        3    30   0.9803   0.8935 +0.0868    86.9     1.0  83.6x
+large        3    20   0.9803   0.9803 +0.0000    86.9     1.0  83.6x
+large        3    10   0.9704   0.9763 -0.0059    86.9     1.0  83.6x
+large        3     5   0.9783   0.9822 -0.0039    86.9     1.0  83.6x
+largest      3    30   0.9822   0.7436 +0.2387   105.9     1.0 101.9x
+largest      3    20   0.9803   0.9882 -0.0079   105.9     1.0 101.9x
+largest      3    10   0.9803   0.9704 +0.0099   105.9     1.0 101.9x
+largest      3     5   0.9862   0.9842 +0.0020   105.9     1.0 101.9x
+smallest     5    30   0.9270   0.9310 -0.0039    29.9     1.0  28.8x
+smallest     5    20   0.9191   0.8600 +0.0592    29.9     1.0  28.8x
+smallest     5    10   0.9152   0.5069 +0.4083    29.9     1.0  28.8x
+smallest     5     5   0.9191   0.9152 +0.0039    29.9     1.0  28.8x
+small        5    30   0.9665   0.8422 +0.1243    48.9     1.0  47.0x
+small        5    20   0.9704   0.9606 +0.0099    48.9     1.0  47.0x
+small        5    10   0.9665   0.9487 +0.0178    48.9     1.0  47.0x
+small        5     5   0.9606   0.9625 -0.0020    48.9     1.0  47.0x
+medium       5    30   0.9783   0.7574 +0.2209    67.9     1.0  65.3x
+medium       5    20   0.9763   0.9724 +0.0039    67.9     1.0  65.3x
+medium       5    10   0.9763   0.9803 -0.0039    67.9     1.0  65.3x
+medium       5     5   0.9842   0.9744 +0.0099    67.9     1.0  65.3x
+large        5    30   0.9803   0.8836 +0.0966    86.9     1.0  83.6x
+large        5    20   0.9803   0.9586 +0.0217    86.9     1.0  83.6x
+large        5    10   0.9862   0.9665 +0.0197    86.9     1.0  83.6x
+large        5     5   0.9842   0.5602 +0.4241    86.9     1.0  83.6x
+largest      5    30   0.9882   0.9822 +0.0059   105.9     1.0 101.9x
+largest      5    20   0.9901   0.9842 +0.0059   105.9     1.0 101.9x
+largest      5    10   0.9941   0.9842 +0.0099   105.9     1.0 101.9x
+largest      5     5   0.9901   0.9882 +0.0020   105.9     1.0 101.9x
+smallest    10    30   0.9250   0.6213 +0.3037    29.9     1.0  28.8x
+smallest    10    20   0.9349   0.9290 +0.0059    29.9     1.0  28.8x
+smallest    10    10   0.9349   0.9310 +0.0039    29.9     1.0  28.8x
+smallest    10     5   0.9231   0.9231 +0.0000    29.9     1.0  28.8x
+small       10    30   0.9783   0.7179 +0.2604    48.9     1.0  47.0x
+small       10    20   0.9783   0.9724 +0.0059    48.9     1.0  47.0x
+small       10    10   0.9763   0.6785 +0.2978    48.9     1.0  47.0x
+small       10     5   0.9862   0.9822 +0.0039    48.9     1.0  47.0x
+medium      10    30   0.9822   0.9093 +0.0730    67.9     1.0  65.3x
+medium      10    20   0.9803   0.9803 +0.0000    67.9     1.0  65.3x
+medium      10    10   0.9763   0.9842 -0.0079    67.9     1.0  65.3x
+medium      10     5   0.9822   0.9822 +0.0000    67.9     1.0  65.3x
+large       10    30   0.9842   0.5641 +0.4201    86.9     1.0  83.6x
+large       10    20   0.9842   0.9724 +0.0118    86.9     1.0  83.6x
+large       10    10   0.9803   0.9842 -0.0039    86.9     1.0  83.6x
+large       10     5   0.9783   0.9822 -0.0039    86.9     1.0  83.6x
+largest     10    30   0.9822   0.9606 +0.0217   105.9     1.0 101.9x
+largest     10    20   0.9803   0.9783 +0.0020   105.9     1.0 101.9x
+largest     10    10   0.9822   0.9250 +0.0572   105.9     1.0 101.9x
+largest     10     5   0.9882   0.9803 +0.0079   105.9     1.0 101.9x
+smallest    15    30   0.9310   0.9389 -0.0079    29.9     1.0  28.8x
+smallest    15    20   0.9408   0.9369 +0.0039    29.9     1.0  28.8x
+smallest    15    10   0.9310   0.9231 +0.0079    29.9     1.0  28.8x
+smallest    15     5   0.9467   0.9073 +0.0394    29.9     1.0  28.8x
+small       15    30   0.9744   0.6824 +0.2919    48.9     1.0  47.0x
+small       15    20   0.9744   0.7120 +0.2623    48.9     1.0  47.0x
+small       15    10   0.9606   0.6174 +0.3432    48.9     1.0  47.0x
+small       15     5   0.9625   0.7298 +0.2327    48.9     1.0  47.0x
+medium      15    30   0.9862   0.9842 +0.0020    67.9     1.0  65.3x
+medium      15    20   0.9803   0.9744 +0.0059    67.9     1.0  65.3x
+medium      15    10   0.9822   0.9862 -0.0039    67.9     1.0  65.3x
+medium      15     5   0.9882   0.6765 +0.3116    67.9     1.0  65.3x
+large       15    30   0.9803   0.6095 +0.3708    86.9     1.0  83.6x
+large       15    20   0.9862   0.7456 +0.2406    86.9     1.0  83.6x
+large       15    10   0.9901   0.9744 +0.0158    86.9     1.0  83.6x
+large       15     5   0.9882   0.9921 -0.0039    86.9     1.0  83.6x
+largest     15    30   0.9822   0.9882 -0.0059   105.9     1.0 101.9x
+largest     15    20   0.9842   0.9744 +0.0099   105.9     1.0 101.9x
+largest     15    10   0.9882   0.9842 +0.0039   105.9     1.0 101.9x
+largest     15     5   0.9882   0.9901 -0.0020   105.9     1.0 101.9x
+
+  Top 5 by INT8 Accuracy:
+    large T=15 fr=5%  INT8=0.9921  drop=-0.0039  size=1.0KB
+    largest T=15 fr=5%  INT8=0.9901  drop=-0.0020  size=1.0KB
+    largest T=3 fr=20%  INT8=0.9882  drop=-0.0079  size=1.0KB
+    largest T=5 fr=5%  INT8=0.9882  drop=+0.0020  size=1.0KB
+    largest T=15 fr=30%  INT8=0.9882  drop=-0.0059  size=1.0KB
+
+  Top 5 smallest INT8 models (acc >= 0.95):
+    small T=3 fr=30%  INT8=0.9546  size=1.0KB
+    small T=3 fr=10%  INT8=0.9566  size=1.0KB
+    small T=3 fr=5%  INT8=0.9665  size=1.0KB
+    medium T=3 fr=30%  INT8=0.9665  size=1.0KB
+    medium T=3 fr=20%  INT8=0.9763  size=1.0KB
+
+Results saved to ./result/qsparse_results.json

@@ -1,0 +1,227 @@
+/home/bst/Thumbthing_easy_intae2/benchmark.py:486: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_q = torch.quantization.quantize_dynamic(
+/home/bst/Thumbthing_easy_intae2/benchmark.py:486: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_q = torch.quantization.quantize_dynamic(
+/home/bst/Thumbthing_easy_intae2/benchmark.py:486: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_q = torch.quantization.quantize_dynamic(
+/home/bst/Thumbthing_easy_intae2/benchmark.py:486: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_q = torch.quantization.quantize_dynamic(
+/home/bst/Thumbthing_easy_intae2/benchmark.py:486: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  model_q = torch.quantization.quantize_dynamic(
+====================================================================================================
+  BENCHMARK: SNN vs CNN — Accuracy / Latency / Energy
+====================================================================================================
+  Device: cpu
+
+Loading dataset...
+Validation samples: 507
+Sample input shape: torch.Size([1, 12, 81, 20]) (B, 12, N=81, T=20)
+
+Discovered 140 models
+Selected 40 models for benchmarking
+
+[1/40] CNN smallest k=9...
+    Acc=0.9862  Lat=0.08ms  E_actual=2361.4nJ  E_potential=2361.4nJ  FR=(1.000,1.000)
+[2/40] CNN small k=9...
+    Acc=0.9961  Lat=0.07ms  E_actual=4829.8nJ  E_potential=4829.8nJ  FR=(1.000,1.000)
+[3/40] CNN medium k=9...
+    Acc=0.9980  Lat=0.08ms  E_actual=8156.6nJ  E_potential=8156.6nJ  FR=(1.000,1.000)
+[4/40] CNN large k=9...
+    Acc=0.9941  Lat=0.08ms  E_actual=12342.0nJ  E_potential=12342.0nJ  FR=(1.000,1.000)
+[5/40] CNN largest k=9...
+    Acc=0.9961  Lat=0.09ms  E_actual=17385.8nJ  E_potential=17385.8nJ  FR=(1.000,1.000)
+[6/40] QCNN smallest k=9...
+    Acc=0.9862  Lat=0.09ms  E_actual=102.7nJ  E_potential=102.7nJ  FR=(1.000,1.000)
+[7/40] QCNN small k=9...
+    Acc=0.9961  Lat=0.09ms  E_actual=210.0nJ  E_potential=210.0nJ  FR=(1.000,1.000)
+[8/40] QCNN medium k=9...
+    Acc=0.9961  Lat=0.09ms  E_actual=354.6nJ  E_potential=354.6nJ  FR=(1.000,1.000)
+[9/40] QCNN large k=9...
+    Acc=0.9961  Lat=0.10ms  E_actual=536.6nJ  E_potential=536.6nJ  FR=(1.000,1.000)
+[10/40] QCNN largest k=9...
+    Acc=0.9980  Lat=0.10ms  E_actual=755.9nJ  E_potential=755.9nJ  FR=(1.000,1.000)
+[11/40] Teacher smallest k=3 T=3...
+    Acc=0.9152  Lat=0.58ms  E_actual=8159.0nJ  E_potential=8159.0nJ  FR=(1.000,1.000)
+[12/40] Teacher small k=5 T=3...
+    Acc=0.9763  Lat=0.40ms  E_actual=13596.0nJ  E_potential=13596.0nJ  FR=(1.000,1.000)
+[13/40] Teacher medium k=7 T=3...
+    Acc=0.9842  Lat=0.59ms  E_actual=19033.0nJ  E_potential=19033.0nJ  FR=(1.000,1.000)
+[14/40] Teacher large k=9 T=3...
+    Acc=0.9803  Lat=0.40ms  E_actual=24469.9nJ  E_potential=24469.9nJ  FR=(1.000,1.000)
+[15/40] Teacher largest k=11 T=3...
+    Acc=0.9744  Lat=0.62ms  E_actual=29906.9nJ  E_potential=29906.9nJ  FR=(1.000,1.000)
+[16/40] Teacher smallest k=3 T=20...
+    Acc=0.9684  Lat=3.68ms  E_actual=54393.3nJ  E_potential=54393.3nJ  FR=(1.000,1.000)
+[17/40] Teacher small k=5 T=20...
+    Acc=0.9822  Lat=4.90ms  E_actual=90639.9nJ  E_potential=90639.9nJ  FR=(1.000,1.000)
+[18/40] Teacher medium k=7 T=20...
+    Acc=0.9803  Lat=3.75ms  E_actual=126886.4nJ  E_potential=126886.4nJ  FR=(1.000,1.000)
+[19/40] Teacher large k=9 T=20...
+    Acc=0.9901  Lat=3.79ms  E_actual=163132.9nJ  E_potential=163132.9nJ  FR=(1.000,1.000)
+[20/40] Teacher largest k=11 T=20...
+    Acc=0.9901  Lat=3.87ms  E_actual=199379.5nJ  E_potential=199379.5nJ  FR=(1.000,1.000)
+[21/40] Student smallest k=3 T=3...
+    Acc=0.6844  Lat=0.51ms  E_actual=8159.0nJ  E_potential=1712.2nJ  FR=(0.313,0.505)
+[22/40] Student small k=5 T=3...
+    Acc=0.9369  Lat=0.52ms  E_actual=13596.0nJ  E_potential=2668.9nJ  FR=(0.232,0.527)
+[23/40] Student medium k=7 T=3...
+    Acc=0.9862  Lat=0.36ms  E_actual=19033.0nJ  E_potential=3571.2nJ  FR=(0.180,0.482)
+[24/40] Student large k=9 T=3...
+    Acc=0.9783  Lat=0.56ms  E_actual=24469.9nJ  E_potential=4806.8nJ  FR=(0.233,0.526)
+[25/40] Student largest k=11 T=3...
+    Acc=0.9882  Lat=0.37ms  E_actual=29906.9nJ  E_potential=5907.9nJ  FR=(0.240,0.557)
+[26/40] Student smallest k=3 T=20...
+    Acc=0.7022  Lat=2.30ms  E_actual=54393.3nJ  E_potential=11445.4nJ  FR=(0.317,0.498)
+[27/40] Student small k=5 T=20...
+    Acc=0.9763  Lat=2.25ms  E_actual=90639.9nJ  E_potential=17447.9nJ  FR=(0.209,0.516)
+[28/40] Student medium k=7 T=20...
+    Acc=0.9862  Lat=2.40ms  E_actual=126886.4nJ  E_potential=24922.7nJ  FR=(0.233,0.529)
+[29/40] Student large k=9 T=20...
+    Acc=0.9901  Lat=2.33ms  E_actual=163132.9nJ  E_potential=30940.2nJ  FR=(0.192,0.519)
+[30/40] Student largest k=11 T=20...
+    Acc=0.9882  Lat=2.52ms  E_actual=199379.5nJ  E_potential=37954.6nJ  FR=(0.196,0.556)
+[31/40] Sparse smallest k=3 T=3 fr=0.05...
+    Acc=0.7574  Lat=0.29ms  E_actual=8159.0nJ  E_potential=1474.6nJ  FR=(0.136,0.165)
+[32/40] Sparse smallest k=3 T=3 fr=0.3...
+    Acc=0.7870  Lat=0.29ms  E_actual=8159.0nJ  E_potential=1693.9nJ  FR=(0.300,0.308)
+[33/40] Sparse small k=5 T=3 fr=0.05...
+    Acc=0.9625  Lat=0.42ms  E_actual=13596.0nJ  E_potential=2409.1nJ  FR=(0.116,0.168)
+[34/40] Sparse small k=5 T=3 fr=0.3...
+    Acc=0.9329  Lat=0.43ms  E_actual=13596.0nJ  E_potential=2721.6nJ  FR=(0.255,0.295)
+[35/40] Sparse medium k=7 T=3 fr=0.05...
+    Acc=0.9822  Lat=0.31ms  E_actual=19033.0nJ  E_potential=3360.2nJ  FR=(0.112,0.141)
+[36/40] Sparse medium k=7 T=3 fr=0.3...
+    Acc=0.9684  Lat=0.43ms  E_actual=19033.0nJ  E_potential=3754.2nJ  FR=(0.238,0.278)
+[37/40] Sparse large k=9 T=3 fr=0.05...
+    Acc=0.9803  Lat=0.45ms  E_actual=24469.9nJ  E_potential=4339.3nJ  FR=(0.117,0.124)
+[38/40] Sparse large k=9 T=3 fr=0.3...
+    Acc=0.9862  Lat=0.30ms  E_actual=24469.9nJ  E_potential=4941.9nJ  FR=(0.267,0.272)
+[39/40] Sparse largest k=11 T=3 fr=0.05...
+    Acc=0.9822  Lat=0.31ms  E_actual=29906.9nJ  E_potential=5315.1nJ  FR=(0.120,0.133)
+[40/40] Sparse largest k=11 T=3 fr=0.3...
+    Acc=0.9862  Lat=0.31ms  E_actual=29906.9nJ  E_potential=6058.0nJ  FR=(0.271,0.293)
+
+
+============================================================================================================================================
+  BENCHMARK RESULTS
+============================================================================================================================================
+Type       Variant      k   T   FR%   Params      KB  Val Acc   Lat(ms)   Lat_p95   E_actual    E_poten   vs CNN
+--------------------------------------------------------------------------------------------------------------------------------------------
+CNN        large        9   1     -   33,804   132.0   0.9941      0.08      0.08   12342.0nJ   12342.0nJ    1.51x
+CNN        largest      9   1     -   47,476   185.5   0.9961      0.09      0.09   17385.8nJ   17385.8nJ    2.13x
+CNN        medium       9   1     -   22,436    87.6   0.9980      0.07      0.08    8156.6nJ    8156.6nJ    1.00x
+CNN        small        9   1     -   13,372    52.2   0.9961      0.07      0.07    4829.8nJ    4829.8nJ    0.59x
+CNN        smallest     9   1     -    6,612    25.8   0.9862      0.08      0.07    2361.4nJ    2361.4nJ    0.29x
+
+QCNN       large        9   1     -   33,480   130.8   0.9961      0.10      0.10     536.6nJ     536.6nJ    0.07x
+QCNN       largest      9   1     -   47,088   183.9   0.9980      0.10      0.11     755.9nJ     755.9nJ    0.09x
+QCNN       medium       9   1     -   22,176    86.6   0.9961      0.09      0.10     354.6nJ     354.6nJ    0.04x
+QCNN       small        9   1     -   13,176    51.5   0.9961      0.09      0.09     210.0nJ     210.0nJ    0.03x
+QCNN       smallest     9   1     -    6,480    25.3   0.9862      0.09      0.09     102.7nJ     102.7nJ    0.01x
+
+Teacher    large        9   3     -   22,244   117.3   0.9803      0.40      0.40   24469.9nJ   24469.9nJ    3.00x
+Teacher    large        9  20     -   22,244   117.3   0.9901      3.79      3.83  163132.9nJ  163132.9nJ   20.00x
+Teacher    largest     11   3     -   27,108   136.3   0.9744      0.62      0.66   29906.9nJ   29906.9nJ    3.67x
+Teacher    largest     11  20     -   27,108   136.3   0.9901      3.87      4.02  199379.5nJ  199379.5nJ   24.44x
+Teacher    medium       7   3     -   17,380    98.3   0.9842      0.59      0.59   19033.0nJ   19033.0nJ    2.33x
+Teacher    medium       7  20     -   17,380    98.3   0.9803      3.75      3.78  126886.4nJ  126886.4nJ   15.56x
+Teacher    small        5   3     -   12,516    79.3   0.9763      0.40      0.40   13596.0nJ   13596.0nJ    1.67x
+Teacher    small        5  20     -   12,516    79.3   0.9822      4.90      3.81   90639.9nJ   90639.9nJ   11.11x
+Teacher    smallest     3   3     -    7,652    60.3   0.9152      0.58      0.58    8159.0nJ    8159.0nJ    1.00x
+Teacher    smallest     3  20     -    7,652    60.3   0.9684      3.68      3.68   54393.3nJ   54393.3nJ    6.67x
+
+Student    large        9   3     -   22,244   117.3   0.9783      0.56      0.56   24469.9nJ    4806.8nJ    3.00x
+Student    large        9  20     -   22,244   117.3   0.9901      2.33      2.36  163132.9nJ   30940.2nJ   20.00x
+Student    largest     11   3     -   27,108   136.3   0.9882      0.37      0.38   29906.9nJ    5907.9nJ    3.67x
+Student    largest     11  20     -   27,108   136.3   0.9882      2.52      3.40  199379.5nJ   37954.6nJ   24.44x
+Student    medium       7   3     -   17,380    98.3   0.9862      0.36      0.37   19033.0nJ    3571.2nJ    2.33x
+Student    medium       7  20     -   17,380    98.3   0.9862      2.40      3.04  126886.4nJ   24922.7nJ   15.56x
+Student    small        5   3     -   12,516    79.3   0.9369      0.52      0.52   13596.0nJ    2668.9nJ    1.67x
+Student    small        5  20     -   12,516    79.3   0.9763      2.25      2.33   90639.9nJ   17447.9nJ   11.11x
+Student    smallest     3   3     -    7,652    60.3   0.6844      0.51      0.52    8159.0nJ    1712.2nJ    1.00x
+Student    smallest     3  20     -    7,652    60.3   0.7022      2.29      2.87   54393.3nJ   11445.4nJ    6.67x
+
+Sparse     large        9   3     5   22,247    92.9   0.9803      0.45      0.45   24469.9nJ    4339.3nJ    3.00x
+Sparse     large        9   3    30   22,247    92.9   0.9862      0.30      0.31   24469.9nJ    4941.9nJ    3.00x
+Sparse     largest     11   3     5   27,111   111.9   0.9822      0.31      0.32   29906.9nJ    5315.1nJ    3.67x
+Sparse     largest     11   3    30   27,111   111.9   0.9862      0.32      0.32   29906.9nJ    6058.0nJ    3.67x
+Sparse     medium       7   3     5   17,383    73.9   0.9822      0.31      0.30   19033.0nJ    3360.2nJ    2.33x
+Sparse     medium       7   3    30   17,383    73.9   0.9684      0.43      0.43   19033.0nJ    3754.2nJ    2.33x
+Sparse     small        5   3     5   12,519    54.9   0.9625      0.42      0.42   13596.0nJ    2409.1nJ    1.67x
+Sparse     small        5   3    30   12,519    54.9   0.9329      0.43      0.43   13596.0nJ    2721.6nJ    1.67x
+Sparse     smallest     3   3     5    7,655    35.9   0.7574      0.29      0.29    8159.0nJ    1474.6nJ    1.00x
+Sparse     smallest     3   3    30    7,655    35.9   0.7870      0.29      0.30    8159.0nJ    1693.9nJ    1.00x
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+  ENERGY COMPARISON vs CNN medium baseline
+--------------------------------------------------------------------------------------------------------------------------------------------
+  Model                                            Actual (now)  Potential (AC)   Actual vs CNN Potential vs CNN
+                                                           (nJ)            (nJ)         (ratio)         (ratio)
+  ---------------------------------------------------------------------------------------------------------
+  CNN smallest k=9 T=1                                 2361.4nJ        2361.4nJ           0.29x           0.29x <<< ENERGY WIN
+  CNN small k=9 T=1                                    4829.8nJ        4829.8nJ           0.59x           0.59x
+  CNN medium k=9 T=1                                   8156.6nJ        8156.6nJ           1.00x           1.00x
+  CNN large k=9 T=1                                   12342.0nJ       12342.0nJ           1.51x           1.51x
+  CNN largest k=9 T=1                                 17385.8nJ       17385.8nJ           2.13x           2.13x (worse)
+  QCNN smallest k=9 T=1                                 102.7nJ         102.7nJ           0.01x           0.01x <<< ENERGY WIN
+  QCNN small k=9 T=1                                    210.0nJ         210.0nJ           0.03x           0.03x <<< ENERGY WIN
+  QCNN medium k=9 T=1                                   354.6nJ         354.6nJ           0.04x           0.04x <<< ENERGY WIN
+  QCNN large k=9 T=1                                    536.6nJ         536.6nJ           0.07x           0.07x <<< ENERGY WIN
+  QCNN largest k=9 T=1                                  755.9nJ         755.9nJ           0.09x           0.09x <<< ENERGY WIN
+  Teacher smallest k=3 T=3                             8159.0nJ        8159.0nJ           1.00x           1.00x
+  Teacher small k=5 T=3                               13596.0nJ       13596.0nJ           1.67x           1.67x
+  Teacher medium k=7 T=3                              19033.0nJ       19033.0nJ           2.33x           2.33x (worse)
+  Teacher large k=9 T=3                               24469.9nJ       24469.9nJ           3.00x           3.00x (worse)
+  Teacher largest k=11 T=3                            29906.9nJ       29906.9nJ           3.67x           3.67x (worse)
+  Teacher smallest k=3 T=20                           54393.3nJ       54393.3nJ           6.67x           6.67x (worse)
+  Teacher small k=5 T=20                              90639.9nJ       90639.9nJ          11.11x          11.11x (worse)
+  Teacher medium k=7 T=20                            126886.4nJ      126886.4nJ          15.56x          15.56x (worse)
+  Teacher large k=9 T=20                             163132.9nJ      163132.9nJ          20.00x          20.00x (worse)
+  Teacher largest k=11 T=20                          199379.5nJ      199379.5nJ          24.44x          24.44x (worse)
+  Student smallest k=3 T=3                             8159.0nJ        1712.2nJ           1.00x           0.21x <<< ENERGY WIN
+  Student small k=5 T=3                               13596.0nJ        2668.9nJ           1.67x           0.33x <<< ENERGY WIN
+  Student medium k=7 T=3                              19033.0nJ        3571.2nJ           2.33x           0.44x <<< ENERGY WIN
+  Student large k=9 T=3                               24469.9nJ        4806.8nJ           3.00x           0.59x (worse)
+  Student largest k=11 T=3                            29906.9nJ        5907.9nJ           3.67x           0.72x (worse)
+  Student smallest k=3 T=20                           54393.3nJ       11445.4nJ           6.67x           1.40x (worse)
+  Student small k=5 T=20                              90639.9nJ       17447.9nJ          11.11x           2.14x (worse)
+  Student medium k=7 T=20                            126886.4nJ       24922.7nJ          15.56x           3.06x (worse)
+  Student large k=9 T=20                             163132.9nJ       30940.2nJ          20.00x           3.79x (worse)
+  Student largest k=11 T=20                          199379.5nJ       37954.6nJ          24.44x           4.65x (worse)
+  Sparse smallest k=3 T=3 fr=5%                        8159.0nJ        1474.6nJ           1.00x           0.18x <<< ENERGY WIN
+  Sparse smallest k=3 T=3 fr=30%                       8159.0nJ        1693.9nJ           1.00x           0.21x <<< ENERGY WIN
+  Sparse small k=5 T=3 fr=5%                          13596.0nJ        2409.1nJ           1.67x           0.30x <<< ENERGY WIN
+  Sparse small k=5 T=3 fr=30%                         13596.0nJ        2721.6nJ           1.67x           0.33x <<< ENERGY WIN
+  Sparse medium k=7 T=3 fr=5%                         19033.0nJ        3360.2nJ           2.33x           0.41x <<< ENERGY WIN
+  Sparse medium k=7 T=3 fr=30%                        19033.0nJ        3754.2nJ           2.33x           0.46x <<< ENERGY WIN
+  Sparse large k=9 T=3 fr=5%                          24469.9nJ        4339.3nJ           3.00x           0.53x (worse)
+  Sparse large k=9 T=3 fr=30%                         24469.9nJ        4941.9nJ           3.00x           0.61x (worse)
+  Sparse largest k=11 T=3 fr=5%                       29906.9nJ        5315.1nJ           3.67x           0.65x (worse)
+  Sparse largest k=11 T=3 fr=30%                      29906.9nJ        6058.0nJ           3.67x           0.74x (worse)
+
+Results saved to ./result/benchmark_results.json

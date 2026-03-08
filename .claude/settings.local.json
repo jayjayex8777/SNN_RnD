@@ -1,8 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(wc -l /home/bst/Thumbthing_easy_intae/data/2_ffilled_data/*)",
-      "Bash(du -sh /home/bst/Thumbthing_easy_intae/*)"
+      "Bash(grep -n \"benchmark\\\\|latency\\\\|perf_counter\\\\|wall.clock\\\\|time\\\\.\\\\|FLOPs\\\\|flops\\\\|MAC\\\\|energy\" *.py)",
+      "Bash(grep -n \"mem_out\\\\|membrane.*output\\\\|softmax.*mem\\\\|mem.*classify\\\\|\\\\.fc\\(mem\" *.py)",
+      "Bash(grep -n \"multi.*time\\\\|fast.*lif\\\\|slow.*lif\\\\|multi.*scale\\\\|learn.*tau\\\\|learn.*beta\\\\|beta.*Parameter\\\\|tau.*Parameter\" *.py)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/snn1d_teacher_*.pt)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/snn1d_student_*.pt)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/sparse_*_T3_*.pt)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/cnn1d_*_sensor.pt)",
+      "Bash(ls /home/bst/Thumbthing_easy_intae2/models/qcnn1d_*_sensor.ptl)",
+      "Bash(python3 benchmark.py)"
     ]
   }
 }
