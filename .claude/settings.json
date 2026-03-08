@@ -7,7 +7,8 @@
       "Bash(ls /home/bst/Thumbthing_easy_intae2/models/*.pt)",
       "Bash(ls /home/bst/Thumbthing_easy_intae2/models/qsparse_*.ptl)",
       "Bash(ls /home/bst/Thumbthing_easy_intae2/models/qcnn*.ptl)",
-      "Bash(python train_sparse_quant.py)"
+      "Bash(python train_sparse_quant.py)",
+      "Bash(git add \"Qparse_SNN구현.md\")"
     ]
   }
 }
