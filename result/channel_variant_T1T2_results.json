@@ -1,0 +1,538 @@
+{
+  "teacher_student": [
+    {
+      "T": 1,
+      "variant": "smallest",
+      "type": "teacher",
+      "channels": [
+        16,
+        32
+      ],
+      "val_acc": 0.8682,
+      "best_score": 1.8682
+    },
+    {
+      "T": 1,
+      "variant": "smallest",
+      "type": "student",
+      "channels": [
+        16,
+        32
+      ],
+      "best_score": 1.8929
+    },
+    {
+      "T": 1,
+      "variant": "small",
+      "type": "teacher",
+      "channels": [
+        24,
+        48
+      ],
+      "val_acc": 0.8924,
+      "best_score": 1.8924
+    },
+    {
+      "T": 1,
+      "variant": "small",
+      "type": "student",
+      "channels": [
+        24,
+        48
+      ],
+      "best_score": 1.9289
+    },
+    {
+      "T": 1,
+      "variant": "medium",
+      "type": "teacher",
+      "channels": [
+        32,
+        64
+      ],
+      "val_acc": 0.8954,
+      "best_score": 1.8954
+    },
+    {
+      "T": 1,
+      "variant": "medium",
+      "type": "student",
+      "channels": [
+        32,
+        64
+      ],
+      "best_score": 1.9289
+    },
+    {
+      "T": 1,
+      "variant": "large",
+      "type": "teacher",
+      "channels": [
+        40,
+        80
+      ],
+      "val_acc": 0.922,
+      "best_score": 1.922
+    },
+    {
+      "T": 1,
+      "variant": "large",
+      "type": "student",
+      "channels": [
+        40,
+        80
+      ],
+      "best_score": 1.9393
+    },
+    {
+      "T": 1,
+      "variant": "largest",
+      "type": "teacher",
+      "channels": [
+        48,
+        96
+      ],
+      "val_acc": 0.9156,
+      "best_score": 1.9156
+    },
+    {
+      "T": 1,
+      "variant": "largest",
+      "type": "student",
+      "channels": [
+        48,
+        96
+      ],
+      "best_score": 1.9413
+    },
+    {
+      "T": 2,
+      "variant": "smallest",
+      "type": "teacher",
+      "channels": [
+        16,
+        32
+      ],
+      "val_acc": 0.9304,
+      "best_score": 1.9304
+    },
+    {
+      "T": 2,
+      "variant": "smallest",
+      "type": "student",
+      "channels": [
+        16,
+        32
+      ],
+      "best_score": 1.9413
+    },
+    {
+      "T": 2,
+      "variant": "small",
+      "type": "teacher",
+      "channels": [
+        24,
+        48
+      ],
+      "val_acc": 0.9432,
+      "best_score": 1.9432
+    },
+    {
+      "T": 2,
+      "variant": "small",
+      "type": "student",
+      "channels": [
+        24,
+        48
+      ],
+      "best_score": 1.9442
+    },
+    {
+      "T": 2,
+      "variant": "medium",
+      "type": "teacher",
+      "channels": [
+        32,
+        64
+      ],
+      "val_acc": 0.9408,
+      "best_score": 1.9408
+    },
+    {
+      "T": 2,
+      "variant": "medium",
+      "type": "student",
+      "channels": [
+        32,
+        64
+      ],
+      "best_score": 1.9541
+    },
+    {
+      "T": 2,
+      "variant": "large",
+      "type": "teacher",
+      "channels": [
+        40,
+        80
+      ],
+      "val_acc": 0.9423,
+      "best_score": 1.9423
+    },
+    {
+      "T": 2,
+      "variant": "large",
+      "type": "student",
+      "channels": [
+        40,
+        80
+      ],
+      "best_score": 1.9571
+    },
+    {
+      "T": 2,
+      "variant": "largest",
+      "type": "teacher",
+      "channels": [
+        48,
+        96
+      ],
+      "val_acc": 0.9482,
+      "best_score": 1.9482
+    },
+    {
+      "T": 2,
+      "variant": "largest",
+      "type": "student",
+      "channels": [
+        48,
+        96
+      ],
+      "best_score": 1.9556
+    }
+  ],
+  "sparse": [
+    {
+      "T": 1,
+      "variant": "smallest",
+      "channels": [
+        16,
+        32
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9008,
+      "fr1_final": 0.1192,
+      "fr2_final": 0.1766,
+      "final_thresh1": 2.4211,
+      "final_thresh2": 4.3319,
+      "final_gain": 3.0051
+    },
+    {
+      "T": 1,
+      "variant": "small",
+      "channels": [
+        24,
+        48
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9171,
+      "fr1_final": 0.1068,
+      "fr2_final": 0.1381,
+      "final_thresh1": 1.2951,
+      "final_thresh2": 4.9367,
+      "final_gain": 3.0068
+    },
+    {
+      "T": 1,
+      "variant": "medium",
+      "channels": [
+        32,
+        64
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9393,
+      "fr1_final": 0.0921,
+      "fr2_final": 0.1046,
+      "final_thresh1": 0.9533,
+      "final_thresh2": 6.0006,
+      "final_gain": 2.9838
+    },
+    {
+      "T": 1,
+      "variant": "large",
+      "channels": [
+        40,
+        80
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9501,
+      "fr1_final": 0.0893,
+      "fr2_final": 0.0981,
+      "final_thresh1": 1.241,
+      "final_thresh2": 4.5761,
+      "final_gain": 3.0066
+    },
+    {
+      "T": 1,
+      "variant": "largest",
+      "channels": [
+        48,
+        96
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9576,
+      "fr1_final": 0.0653,
+      "fr2_final": 0.0899,
+      "final_thresh1": 1.1815,
+      "final_thresh2": 5.9359,
+      "final_gain": 2.981
+    },
+    {
+      "T": 2,
+      "variant": "smallest",
+      "channels": [
+        16,
+        32
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9408,
+      "fr1_final": 0.1093,
+      "fr2_final": 0.1378,
+      "final_thresh1": 2.1185,
+      "final_thresh2": 4.8915,
+      "final_gain": 3.0139
+    },
+    {
+      "T": 2,
+      "variant": "small",
+      "channels": [
+        24,
+        48
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9467,
+      "fr1_final": 0.082,
+      "fr2_final": 0.0898,
+      "final_thresh1": 1.1318,
+      "final_thresh2": 4.3529,
+      "final_gain": 3.0087
+    },
+    {
+      "T": 2,
+      "variant": "medium",
+      "channels": [
+        32,
+        64
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9699,
+      "fr1_final": 0.0616,
+      "fr2_final": 0.0901,
+      "final_thresh1": 1.4453,
+      "final_thresh2": 6.0645,
+      "final_gain": 3.0016
+    },
+    {
+      "T": 2,
+      "variant": "large",
+      "channels": [
+        40,
+        80
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9724,
+      "fr1_final": 0.0553,
+      "fr2_final": 0.0875,
+      "final_thresh1": 0.959,
+      "final_thresh2": 5.5509,
+      "final_gain": 3.004
+    },
+    {
+      "T": 2,
+      "variant": "largest",
+      "channels": [
+        48,
+        96
+      ],
+      "target_rate": 0.05,
+      "best_score": 1.9738,
+      "fr1_final": 0.0633,
+      "fr2_final": 0.0814,
+      "final_thresh1": 1.4931,
+      "final_thresh2": 5.0282,
+      "final_gain": 3.002
+    }
+  ],
+  "qsparse": [
+    {
+      "T": 1,
+      "variant": "smallest",
+      "channels": [
+        16,
+        32
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9448,
+      "int8_val_acc": 0.927,
+      "acc_drop": 0.0178,
+      "ptl_size_kb": 21.5,
+      "thresh1": 2.4211,
+      "thresh2": 4.3319,
+      "gain": 3.0051
+    },
+    {
+      "T": 1,
+      "variant": "small",
+      "channels": [
+        24,
+        48
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9606,
+      "int8_val_acc": 0.9546,
+      "acc_drop": 0.0059,
+      "ptl_size_kb": 28.0,
+      "thresh1": 1.2951,
+      "thresh2": 4.9367,
+      "gain": 3.0068
+    },
+    {
+      "T": 1,
+      "variant": "medium",
+      "channels": [
+        32,
+        64
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9606,
+      "int8_val_acc": 0.9586,
+      "acc_drop": 0.002,
+      "ptl_size_kb": 37.2,
+      "thresh1": 0.9533,
+      "thresh2": 6.0006,
+      "gain": 2.9838
+    },
+    {
+      "T": 1,
+      "variant": "large",
+      "channels": [
+        40,
+        80
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9645,
+      "int8_val_acc": 0.9606,
+      "acc_drop": 0.0039,
+      "ptl_size_kb": 48.4,
+      "thresh1": 1.241,
+      "thresh2": 4.5761,
+      "gain": 3.0066
+    },
+    {
+      "T": 1,
+      "variant": "largest",
+      "channels": [
+        48,
+        96
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9645,
+      "int8_val_acc": 0.9704,
+      "acc_drop": -0.0059,
+      "ptl_size_kb": 62.1,
+      "thresh1": 1.1815,
+      "thresh2": 5.9359,
+      "gain": 2.981
+    },
+    {
+      "T": 2,
+      "variant": "smallest",
+      "channels": [
+        16,
+        32
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9645,
+      "int8_val_acc": 0.9842,
+      "acc_drop": -0.0197,
+      "ptl_size_kb": 23.6,
+      "thresh1": 2.1185,
+      "thresh2": 4.8915,
+      "gain": 3.0139
+    },
+    {
+      "T": 2,
+      "variant": "small",
+      "channels": [
+        24,
+        48
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9684,
+      "int8_val_acc": 0.9724,
+      "acc_drop": -0.0039,
+      "ptl_size_kb": 30.0,
+      "thresh1": 1.1318,
+      "thresh2": 4.3529,
+      "gain": 3.0087
+    },
+    {
+      "T": 2,
+      "variant": "medium",
+      "channels": [
+        32,
+        64
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9744,
+      "int8_val_acc": 0.9842,
+      "acc_drop": -0.0099,
+      "ptl_size_kb": 39.3,
+      "thresh1": 1.4453,
+      "thresh2": 6.0645,
+      "gain": 3.0016
+    },
+    {
+      "T": 2,
+      "variant": "large",
+      "channels": [
+        40,
+        80
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9842,
+      "int8_val_acc": 0.9783,
+      "acc_drop": 0.0059,
+      "ptl_size_kb": 50.4,
+      "thresh1": 0.959,
+      "thresh2": 5.5509,
+      "gain": 3.004
+    },
+    {
+      "T": 2,
+      "variant": "largest",
+      "channels": [
+        48,
+        96
+      ],
+      "target_rate": 0.05,
+      "type": "qsparse",
+      "fp32_val_acc": 0.9842,
+      "int8_val_acc": 0.9862,
+      "acc_drop": -0.002,
+      "ptl_size_kb": 64.2,
+      "thresh1": 1.4931,
+      "thresh2": 5.0282,
+      "gain": 3.002
+    }
+  ]
+}

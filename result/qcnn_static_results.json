@@ -1,0 +1,72 @@
+[
+  {
+    "variant": "smallest",
+    "channels": [
+      16,
+      32
+    ],
+    "kernel_size": 9,
+    "fp32_val_acc": 0.9842209072978304,
+    "int8_val_acc": 0.9585798816568047,
+    "acc_drop": 0.0256,
+    "fp32_ptl_kb": 38.1,
+    "int8_ptl_kb": 16.5,
+    "compression_ratio": 2.31
+  },
+  {
+    "variant": "small",
+    "channels": [
+      24,
+      48
+    ],
+    "kernel_size": 9,
+    "fp32_val_acc": 0.9921104536489151,
+    "int8_val_acc": 0.9644970414201184,
+    "acc_drop": 0.0276,
+    "fp32_ptl_kb": 64.3,
+    "int8_ptl_kb": 22.9,
+    "compression_ratio": 2.8
+  },
+  {
+    "variant": "medium",
+    "channels": [
+      32,
+      64
+    ],
+    "kernel_size": 9,
+    "fp32_val_acc": 0.9842209072978304,
+    "int8_val_acc": 0.9743589743589743,
+    "acc_drop": 0.0099,
+    "fp32_ptl_kb": 99.9,
+    "int8_ptl_kb": 31.9,
+    "compression_ratio": 3.13
+  },
+  {
+    "variant": "large",
+    "channels": [
+      40,
+      80
+    ],
+    "kernel_size": 9,
+    "fp32_val_acc": 0.9881656804733728,
+    "int8_val_acc": 0.9743589743589743,
+    "acc_drop": 0.0138,
+    "fp32_ptl_kb": 144.1,
+    "int8_ptl_kb": 42.9,
+    "compression_ratio": 3.36
+  },
+  {
+    "variant": "largest",
+    "channels": [
+      48,
+      96
+    ],
+    "kernel_size": 9,
+    "fp32_val_acc": 0.9861932938856016,
+    "int8_val_acc": 0.9763313609467456,
+    "acc_drop": 0.0099,
+    "fp32_ptl_kb": 197.7,
+    "int8_ptl_kb": 56.4,
+    "compression_ratio": 3.5
+  }
+]

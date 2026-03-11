@@ -1,0 +1,82 @@
+[
+  {
+    "variant": "smallest",
+    "channels": [
+      16,
+      32
+    ],
+    "T": 2,
+    "target_rate": 0.05,
+    "confidence_threshold": 0.9,
+    "int8_val_acc": 0.9704,
+    "early_exit_pct": 64.7,
+    "ptl_size_kb": 24.1,
+    "thresh1": 2.1185,
+    "thresh2": 4.8915,
+    "gain": 3.0139
+  },
+  {
+    "variant": "small",
+    "channels": [
+      24,
+      48
+    ],
+    "T": 2,
+    "target_rate": 0.05,
+    "confidence_threshold": 0.8,
+    "int8_val_acc": 0.9684,
+    "early_exit_pct": 86.6,
+    "ptl_size_kb": 30.7,
+    "thresh1": 1.1318,
+    "thresh2": 4.3529,
+    "gain": 3.0087
+  },
+  {
+    "variant": "medium",
+    "channels": [
+      32,
+      64
+    ],
+    "T": 2,
+    "target_rate": 0.05,
+    "confidence_threshold": 0.8,
+    "int8_val_acc": 0.9842,
+    "early_exit_pct": 91.3,
+    "ptl_size_kb": 39.9,
+    "thresh1": 1.4453,
+    "thresh2": 6.0645,
+    "gain": 3.0016
+  },
+  {
+    "variant": "large",
+    "channels": [
+      40,
+      80
+    ],
+    "T": 2,
+    "target_rate": 0.05,
+    "confidence_threshold": 0.8,
+    "int8_val_acc": 0.9842,
+    "early_exit_pct": 92.1,
+    "ptl_size_kb": 51.2,
+    "thresh1": 0.959,
+    "thresh2": 5.5509,
+    "gain": 3.004
+  },
+  {
+    "variant": "largest",
+    "channels": [
+      48,
+      96
+    ],
+    "T": 2,
+    "target_rate": 0.05,
+    "confidence_threshold": 0.85,
+    "int8_val_acc": 0.9803,
+    "early_exit_pct": 91.9,
+    "ptl_size_kb": 64.8,
+    "thresh1": 1.4931,
+    "thresh2": 5.0282,
+    "gain": 3.002
+  }
+]

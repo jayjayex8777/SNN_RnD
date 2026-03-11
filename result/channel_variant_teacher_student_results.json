@@ -1,0 +1,912 @@
+[
+  {
+    "T": 3,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "train_acc": 1.0,
+    "val_acc": 0.9418,
+    "best_score": 1.9418
+  },
+  {
+    "T": 3,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "best_score": 1.9393
+  },
+  {
+    "T": 3,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "train_acc": 1.0,
+    "val_acc": 0.9536,
+    "best_score": 1.9536
+  },
+  {
+    "T": 3,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "best_score": 1.958
+  },
+  {
+    "T": 3,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9507,
+    "best_score": 1.9507
+  },
+  {
+    "T": 3,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "best_score": 1.961
+  },
+  {
+    "T": 3,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "train_acc": 1.0,
+    "val_acc": 0.9635,
+    "best_score": 1.9635
+  },
+  {
+    "T": 3,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "best_score": 1.966
+  },
+  {
+    "T": 3,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "train_acc": 1.0,
+    "val_acc": 0.9576,
+    "best_score": 1.9576
+  },
+  {
+    "T": 3,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "best_score": 1.965
+  },
+  {
+    "T": 5,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "train_acc": 1.0,
+    "val_acc": 0.963,
+    "best_score": 1.963
+  },
+  {
+    "T": 5,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "best_score": 1.9581
+  },
+  {
+    "T": 5,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "train_acc": 1.0,
+    "val_acc": 0.9615,
+    "best_score": 1.9615
+  },
+  {
+    "T": 5,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "best_score": 1.962
+  },
+  {
+    "T": 5,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9576,
+    "best_score": 1.9576
+  },
+  {
+    "T": 5,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "best_score": 1.9689
+  },
+  {
+    "T": 5,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "train_acc": 1.0,
+    "val_acc": 0.9625,
+    "best_score": 1.9625
+  },
+  {
+    "T": 5,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "best_score": 1.9719
+  },
+  {
+    "T": 5,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "train_acc": 1.0,
+    "val_acc": 0.9684,
+    "best_score": 1.9684
+  },
+  {
+    "T": 5,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "best_score": 1.9704
+  },
+  {
+    "T": 10,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "train_acc": 1.0,
+    "val_acc": 0.966,
+    "best_score": 1.966
+  },
+  {
+    "T": 10,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "best_score": 1.9497
+  },
+  {
+    "T": 10,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "train_acc": 1.0,
+    "val_acc": 0.9719,
+    "best_score": 1.9719
+  },
+  {
+    "T": 10,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "best_score": 1.9709
+  },
+  {
+    "T": 10,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "train_acc": 1.0,
+    "val_acc": 0.966,
+    "best_score": 1.966
+  },
+  {
+    "T": 10,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "best_score": 1.9684
+  },
+  {
+    "T": 10,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "train_acc": 1.0,
+    "val_acc": 0.9724,
+    "best_score": 1.9724
+  },
+  {
+    "T": 10,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "best_score": 1.9738
+  },
+  {
+    "T": 10,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "train_acc": 1.0,
+    "val_acc": 0.9788,
+    "best_score": 1.9788
+  },
+  {
+    "T": 10,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "best_score": 1.9743
+  },
+  {
+    "T": 15,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "train_acc": 1.0,
+    "val_acc": 0.9674,
+    "best_score": 1.9674
+  },
+  {
+    "T": 15,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "best_score": 1.961
+  },
+  {
+    "T": 15,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "train_acc": 1.0,
+    "val_acc": 0.965,
+    "best_score": 1.965
+  },
+  {
+    "T": 15,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "best_score": 1.9679
+  },
+  {
+    "T": 15,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9714,
+    "best_score": 1.9714
+  },
+  {
+    "T": 15,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "best_score": 1.9679
+  },
+  {
+    "T": 15,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "train_acc": 1.0,
+    "val_acc": 0.9689,
+    "best_score": 1.9689
+  },
+  {
+    "T": 15,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "best_score": 1.9734
+  },
+  {
+    "T": 15,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "train_acc": 1.0,
+    "val_acc": 0.9738,
+    "best_score": 1.9738
+  },
+  {
+    "T": 15,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "best_score": 1.9758
+  },
+  {
+    "T": 20,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "train_acc": 1.0,
+    "val_acc": 0.9659,
+    "best_score": 1.9659
+  },
+  {
+    "T": 20,
+    "variant": "smallest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "params": 6516,
+    "size_kb": 44.2,
+    "best_score": 1.9541
+  },
+  {
+    "T": 20,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "train_acc": 1.0,
+    "val_acc": 0.9724,
+    "best_score": 1.9724
+  },
+  {
+    "T": 20,
+    "variant": "small",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "params": 13228,
+    "size_kb": 79.8,
+    "best_score": 1.9684
+  },
+  {
+    "T": 20,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "train_acc": 1.0,
+    "val_acc": 0.9704,
+    "best_score": 1.9704
+  },
+  {
+    "T": 20,
+    "variant": "medium",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "params": 22244,
+    "size_kb": 124.4,
+    "best_score": 1.9768
+  },
+  {
+    "T": 20,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "train_acc": 1.0,
+    "val_acc": 0.9743,
+    "best_score": 1.9743
+  },
+  {
+    "T": 20,
+    "variant": "large",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "params": 33564,
+    "size_kb": 178.0,
+    "best_score": 1.9808
+  },
+  {
+    "T": 20,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "train_acc": 1.0,
+    "val_acc": 0.9734,
+    "best_score": 1.9734
+  },
+  {
+    "T": 20,
+    "variant": "largest",
+    "kernel_size": 9,
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "params": 47188,
+    "size_kb": 240.6,
+    "best_score": 1.9743
+  },
+  {
+    "T": 1,
+    "variant": "smallest",
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "val_acc": 0.8682,
+    "best_score": 1.8682
+  },
+  {
+    "T": 1,
+    "variant": "smallest",
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "best_score": 1.8929
+  },
+  {
+    "T": 1,
+    "variant": "small",
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "val_acc": 0.8924,
+    "best_score": 1.8924
+  },
+  {
+    "T": 1,
+    "variant": "small",
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "best_score": 1.9289
+  },
+  {
+    "T": 1,
+    "variant": "medium",
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "val_acc": 0.8954,
+    "best_score": 1.8954
+  },
+  {
+    "T": 1,
+    "variant": "medium",
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "best_score": 1.9289
+  },
+  {
+    "T": 1,
+    "variant": "large",
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "val_acc": 0.922,
+    "best_score": 1.922
+  },
+  {
+    "T": 1,
+    "variant": "large",
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "best_score": 1.9393
+  },
+  {
+    "T": 1,
+    "variant": "largest",
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "val_acc": 0.9156,
+    "best_score": 1.9156
+  },
+  {
+    "T": 1,
+    "variant": "largest",
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "best_score": 1.9413
+  },
+  {
+    "T": 2,
+    "variant": "smallest",
+    "type": "teacher",
+    "channels": [
+      16,
+      32
+    ],
+    "val_acc": 0.9304,
+    "best_score": 1.9304
+  },
+  {
+    "T": 2,
+    "variant": "smallest",
+    "type": "student",
+    "channels": [
+      16,
+      32
+    ],
+    "best_score": 1.9413
+  },
+  {
+    "T": 2,
+    "variant": "small",
+    "type": "teacher",
+    "channels": [
+      24,
+      48
+    ],
+    "val_acc": 0.9432,
+    "best_score": 1.9432
+  },
+  {
+    "T": 2,
+    "variant": "small",
+    "type": "student",
+    "channels": [
+      24,
+      48
+    ],
+    "best_score": 1.9442
+  },
+  {
+    "T": 2,
+    "variant": "medium",
+    "type": "teacher",
+    "channels": [
+      32,
+      64
+    ],
+    "val_acc": 0.9408,
+    "best_score": 1.9408
+  },
+  {
+    "T": 2,
+    "variant": "medium",
+    "type": "student",
+    "channels": [
+      32,
+      64
+    ],
+    "best_score": 1.9541
+  },
+  {
+    "T": 2,
+    "variant": "large",
+    "type": "teacher",
+    "channels": [
+      40,
+      80
+    ],
+    "val_acc": 0.9423,
+    "best_score": 1.9423
+  },
+  {
+    "T": 2,
+    "variant": "large",
+    "type": "student",
+    "channels": [
+      40,
+      80
+    ],
+    "best_score": 1.9571
+  },
+  {
+    "T": 2,
+    "variant": "largest",
+    "type": "teacher",
+    "channels": [
+      48,
+      96
+    ],
+    "val_acc": 0.9482,
+    "best_score": 1.9482
+  },
+  {
+    "T": 2,
+    "variant": "largest",
+    "type": "student",
+    "channels": [
+      48,
+      96
+    ],
+    "best_score": 1.9556
+  }
+]
