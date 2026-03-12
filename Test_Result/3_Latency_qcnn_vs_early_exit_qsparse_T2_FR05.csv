@@ -1,0 +1,11 @@
+group,model,model_size_kb,total_forward_ms,avg_forward_ms,count,threads
+QCNN,qcnn1d_smallest_static.ptl,16.5,28523.443,0.451,63300,8
+QCNN,qcnn1d_small_static.ptl,22.9,34974.415,0.553,63300,8
+QCNN,qcnn1d_medium_static.ptl,31.9,44389.781,0.701,63300,8
+QCNN,qcnn1d_large_static.ptl,42.9,55275.839,0.873,63300,8
+QCNN,qcnn1d_largest_static.ptl,56.4,69933.122,1.105,63300,8
+SNN,ee_qsparse_smallest_T2_fr05.ptl,24.1,48943.758,0.773,63300,8
+SNN,ee_qsparse_small_T2_fr05.ptl,30.7,59272.785,0.936,63300,8
+SNN,ee_qsparse_medium_T2_fr05.ptl,39.9,69709.884,1.101,63300,8
+SNN,ee_qsparse_large_T2_fr05.ptl,51.2,85928.573,1.357,63300,8
+SNN,ee_qsparse_largest_T2_fr05.ptl,64.8,103273.811,1.631,63300,8

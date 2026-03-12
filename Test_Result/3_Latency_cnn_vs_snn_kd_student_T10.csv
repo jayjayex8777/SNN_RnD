@@ -1,0 +1,11 @@
+group,model,model_size_kb,total_forward_ms,avg_forward_ms,count,threads
+QCNN,cnn1d_smallest.ptl,38.1,39057.715,0.617,63300,8
+QCNN,cnn1d_small.ptl,64.3,46689.812,0.738,63300,8
+QCNN,cnn1d_medium.ptl,99.9,60346.669,0.953,63300,8
+QCNN,cnn1d_large.ptl,144.1,84951.764,1.342,63300,8
+QCNN,cnn1d_largest.ptl,197.7,96578.809,1.526,63300,8
+SNN,snn1d_student_smallest_T10.ptl,44.6,290895.099,4.595,63300,8
+SNN,snn1d_student_small_T10.ptl,70.8,398835.027,6.301,63300,8
+SNN,snn1d_student_medium_T10.ptl,106.0,534287.470,8.441,63300,8
+SNN,snn1d_student_large_T10.ptl,150.2,663876.355,10.488,63300,8
+SNN,snn1d_student_largest_T10.ptl,203.5,811155.164,12.814,63300,8
